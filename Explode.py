@@ -32,6 +32,12 @@ class Explode:
 
         for shape_index, shape in enumerate(self.root.findall('.//Shape')):
             if shape is not None:
+                for coordinate in shape.findall(".//Coordinate"):
+                    numbers = coordinate.get("point").split()
+                    for num_index, num in enumerate(numbers):
+                        numbers[num_index] = float(num) * 0.029
+                    point = ['%.5f' % n for n in numbers]
+                    coordinate.set("point", " ".join(point))
                 out_file = shape.get("DEF")
                 if out_file is None:
                     out_file = "shape"+str(shape_index)
