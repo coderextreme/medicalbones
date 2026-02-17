@@ -25,9 +25,10 @@
   
 
   <HAnimHumanoid DEF="hanim_humanoid" name="humanoid" version="1.0">
+      <HAnimJoint DEF="hanim_humanoid_root" name="humanoid_root" containerField="skeleton" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
 
     
-      <HAnimJoint DEF="sacrum_joint" name="sacrum_joint" containerField="skeleton" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+      <HAnimJoint DEF="sacrum_joint" name="sacrum_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
         <HAnimSegment DEF="sacrum_seg" name="sacrum_seg">
           <Inline url="&quot;sacrum.x3d&quot;" /></HAnimSegment>
         <HAnimJoint DEF="coccyx_joint" name="coccyx_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
@@ -1208,6 +1209,7 @@
         </HAnimJoint>
       </HAnimJoint>
 
+    </HAnimJoint>
   </HAnimHumanoid>
 
   
