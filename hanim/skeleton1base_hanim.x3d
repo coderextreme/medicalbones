@@ -1,0 +1,1222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 4.1//EN" "https://www.web3d.org/specifications/x3d-4.1.dtd"><X3D xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" profile="Immersive" version="3.3" xsi:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.3.xsd">
+<head>
+ <component level="1" name="H-Anim" />
+ <meta name="Creator" content="Damon showed me it" />
+ <meta name="description" content="Humanoid skeleton with HAnim joints and segments" />
+</head>
+<Scene>
+
+<NavigationInfo avatarSize="0.25 1.6 0.75" visibilityLimit="0" speed="1" headlight="false" type="&quot;EXAMINE&quot; &quot;ANY&quot;" />
+
+<DirectionalLight direction="0 1 1" />
+
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 Front" position="0 0.4 4" />
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 FrontClose" position="0 0.8 2" />
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 FrontCloser" position="0 1.2 1" />
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 Right Side" orientation="0 1 0 1.5708" position="2.6 0.8 0" />
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 Right Side Close" orientation="0 1 0 1.2" position="1 0.8 0.5" />
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 Left Side Close" orientation="0 1 0 -1.2" position="-1 0.8 0.5" />
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 Left Side" orientation="0 1 0 -1.5708" position="-2.6 0.8 0" />
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 Top" orientation="1 0 0 -1.5708" position="0 3.5 0" />
+
+  
+  
+  
+
+  <HAnimHumanoid DEF="hanim_humanoid" name="humanoid" version="1.0">
+
+    
+      <HAnimJoint DEF="sacrum_joint" name="sacrum_joint" containerField="skeleton" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+        <HAnimSegment DEF="sacrum_seg" name="sacrum_seg">
+          <Inline url="&quot;sacrum.x3d&quot;" /></HAnimSegment>
+        <HAnimJoint DEF="coccyx_joint" name="coccyx_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+          <HAnimSegment DEF="coccyx_seg" name="coccyx_seg">
+            <Inline url="&quot;coccyx.x3d&quot;" /></HAnimSegment>
+        </HAnimJoint>
+        <HAnimJoint DEF="l5_joint" name="l5_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+          <HAnimSegment DEF="l5_seg" name="l5_seg">
+            <Inline url="&quot;l5.x3d&quot;" /></HAnimSegment>
+          <HAnimJoint DEF="l5disc_joint" name="l5disc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+            <HAnimSegment DEF="l5disc_seg" name="l5disc_seg">
+              <Inline url="&quot;l5disc.x3d&quot;" /></HAnimSegment>
+            <HAnimJoint DEF="l4_joint" name="l4_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+              <HAnimSegment DEF="l4_seg" name="l4_seg">
+                <Inline url="&quot;l4.x3d&quot;" /></HAnimSegment>
+              <HAnimJoint DEF="l4disk_joint" name="l4disk_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                <HAnimSegment DEF="l4disk_seg" name="l4disk_seg">
+                  <Inline url="&quot;l4disk.x3d&quot;" /></HAnimSegment>
+                <HAnimJoint DEF="l3_joint" name="l3_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                  <HAnimSegment DEF="l3_seg" name="l3_seg">
+                    <Inline url="&quot;l3.x3d&quot;" /></HAnimSegment>
+                  <HAnimJoint DEF="l3disk_joint" name="l3disk_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                    <HAnimSegment DEF="l3disk_seg" name="l3disk_seg">
+                      <Inline url="&quot;l3disk.x3d&quot;" /></HAnimSegment>
+                    <HAnimJoint DEF="l2_joint" name="l2_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                      <HAnimSegment DEF="l2_seg" name="l2_seg">
+                        <Inline url="&quot;l2.x3d&quot;" /></HAnimSegment>
+                      <HAnimJoint DEF="l2disk_joint" name="l2disk_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                        <HAnimSegment DEF="l2disk_seg" name="l2disk_seg">
+                          <Inline url="&quot;l2disk.x3d&quot;" /></HAnimSegment>
+                        <HAnimJoint DEF="l1disk_joint" name="l1disk_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                          <HAnimSegment DEF="l1disk_seg" name="l1disk_seg">
+                            <Inline url="&quot;l1disk.x3d&quot;" /></HAnimSegment>
+                          <HAnimJoint DEF="lum_joint" name="lum_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                            <HAnimSegment DEF="lum_seg" name="lum_seg">
+                              <Inline url="&quot;lum.x3d&quot;" /></HAnimSegment>
+                            <HAnimJoint DEF="t12disc_joint" name="t12disc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                              <HAnimSegment DEF="t12disc_seg" name="t12disc_seg">
+                                <Inline url="&quot;t12disc.x3d&quot;" /></HAnimSegment>
+                              <HAnimJoint DEF="t12_joint" name="t12_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                <HAnimSegment DEF="t12_seg" name="t12_seg">
+                                  <Inline url="&quot;t12.x3d&quot;" /></HAnimSegment>
+                                <HAnimJoint DEF="lrib12_joint" name="lrib12_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                  <HAnimSegment DEF="lrib12_seg" name="lrib12_seg">
+                                    <Inline url="&quot;lrib12.x3d&quot;" /></HAnimSegment>
+                                </HAnimJoint>
+                                <HAnimJoint DEF="rrib12_joint" name="rrib12_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                  <HAnimSegment DEF="rrib12_seg" name="rrib12_seg">
+                                    <Inline url="&quot;rrib12.x3d&quot;" /></HAnimSegment>
+                                </HAnimJoint>
+                                <HAnimJoint DEF="t11disc_joint" name="t11disc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                  <HAnimSegment DEF="t11disc_seg" name="t11disc_seg">
+                                    <Inline url="&quot;t11disc.x3d&quot;" /></HAnimSegment>
+                                  <HAnimJoint DEF="t11_joint" name="t11_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                    <HAnimSegment DEF="t11_seg" name="t11_seg">
+                                      <Inline url="&quot;t11.x3d&quot;" /></HAnimSegment>
+                                    <HAnimJoint DEF="lrib11_joint" name="lrib11_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                      <HAnimSegment DEF="lrib11_seg" name="lrib11_seg">
+                                        <Inline url="&quot;lrib11.x3d&quot;" /></HAnimSegment>
+                                    </HAnimJoint>
+                                    <HAnimJoint DEF="rrib11_joint" name="rrib11_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                      <HAnimSegment DEF="rrib11_seg" name="rrib11_seg">
+                                        <Inline url="&quot;rrib11.x3d&quot;" /></HAnimSegment>
+                                    </HAnimJoint>
+                                    <HAnimJoint DEF="t10disc_joint" name="t10disc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                      <HAnimSegment DEF="t10disc_seg" name="t10disc_seg">
+                                        <Inline url="&quot;t10disc.x3d&quot;" /></HAnimSegment>
+                                      <HAnimJoint DEF="t10_joint" name="t10_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                        <HAnimSegment DEF="t10_seg" name="t10_seg">
+                                          <Inline url="&quot;t10.x3d&quot;" /></HAnimSegment>
+                                        <HAnimJoint DEF="lrib10_joint" name="lrib10_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                          <HAnimSegment DEF="lrib10_seg" name="lrib10_seg">
+                                            <Inline url="&quot;lrib10.x3d&quot;" /></HAnimSegment>
+                                        </HAnimJoint>
+                                        <HAnimJoint DEF="rrib10_joint" name="rrib10_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                          <HAnimSegment DEF="rrib10_seg" name="rrib10_seg">
+                                            <Inline url="&quot;rrib10.x3d&quot;" /></HAnimSegment>
+                                        </HAnimJoint>
+                                        <HAnimJoint DEF="t9disc_joint" name="t9disc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                          <HAnimSegment DEF="t9disc_seg" name="t9disc_seg">
+                                            <Inline url="&quot;t9disc.x3d&quot;" /></HAnimSegment>
+                                          <HAnimJoint DEF="t9_joint" name="t9_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                            <HAnimSegment DEF="t9_seg" name="t9_seg">
+                                              <Inline url="&quot;t9.x3d&quot;" /></HAnimSegment>
+                                            <HAnimJoint DEF="lrib9_joint" name="lrib9_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                              <HAnimSegment DEF="lrib9_seg" name="lrib9_seg">
+                                                <Inline url="&quot;lrib9.x3d&quot;" /></HAnimSegment>
+                                            </HAnimJoint>
+                                            <HAnimJoint DEF="rrib9_joint" name="rrib9_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                              <HAnimSegment DEF="rrib9_seg" name="rrib9_seg">
+                                                <Inline url="&quot;rrib9.x3d&quot;" /></HAnimSegment>
+                                            </HAnimJoint>
+                                            <HAnimJoint DEF="t8disc_joint" name="t8disc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                              <HAnimSegment DEF="t8disc_seg" name="t8disc_seg">
+                                                <Inline url="&quot;t8disc.x3d&quot;" /></HAnimSegment>
+                                              <HAnimJoint DEF="t8_joint" name="t8_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                <HAnimSegment DEF="t8_seg" name="t8_seg">
+                                                  <Inline url="&quot;t8.x3d&quot;" /></HAnimSegment>
+                                                <HAnimJoint DEF="lrib8_joint" name="lrib8_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                  <HAnimSegment DEF="lrib8_seg" name="lrib8_seg">
+                                                    <Inline url="&quot;lrib8.x3d&quot;" /></HAnimSegment>
+                                                  <HAnimJoint DEF="lfreecrt_joint" name="lfreecrt_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                    <HAnimSegment DEF="lfreecrt_seg" name="lfreecrt_seg">
+                                                      <Inline url="&quot;lfreecrt.x3d&quot;" /></HAnimSegment>
+                                                  </HAnimJoint>
+                                                </HAnimJoint>
+                                                <HAnimJoint DEF="rrib8_joint" name="rrib8_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                  <HAnimSegment DEF="rrib8_seg" name="rrib8_seg">
+                                                    <Inline url="&quot;rrib8.x3d&quot;" /></HAnimSegment>
+                                                  <HAnimJoint DEF="rfreecrt_joint" name="rfreecrt_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                    <HAnimSegment DEF="rfreecrt_seg" name="rfreecrt_seg">
+                                                      <Inline url="&quot;rfreecrt.x3d&quot;" /></HAnimSegment>
+                                                  </HAnimJoint>
+                                                </HAnimJoint>
+                                                <HAnimJoint DEF="t7disc_joint" name="t7disc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                  <HAnimSegment DEF="t7disc_seg" name="t7disc_seg">
+                                                    <Inline url="&quot;t7disc.x3d&quot;" /></HAnimSegment>
+                                                  <HAnimJoint DEF="t7_joint" name="t7_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                    <HAnimSegment DEF="t7_seg" name="t7_seg">
+                                                      <Inline url="&quot;t7.x3d&quot;" /></HAnimSegment>
+                                                    <HAnimJoint DEF="lrib7_joint" name="lrib7_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                      <HAnimSegment DEF="lrib7_seg" name="lrib7_seg">
+                                                        <Inline url="&quot;lrib7.x3d&quot;" /></HAnimSegment>
+                                                    </HAnimJoint>
+                                                    <HAnimJoint DEF="rrib7_joint" name="rrib7_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                      <HAnimSegment DEF="rrib7_seg" name="rrib7_seg">
+                                                        <Inline url="&quot;rrib7.x3d&quot;" /></HAnimSegment>
+                                                    </HAnimJoint>
+                                                    <HAnimJoint DEF="t6disc_joint" name="t6disc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                      <HAnimSegment DEF="t6disc_seg" name="t6disc_seg">
+                                                        <Inline url="&quot;t6disc.x3d&quot;" /></HAnimSegment>
+                                                      <HAnimJoint DEF="t6_joint" name="t6_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                        <HAnimSegment DEF="t6_seg" name="t6_seg">
+                                                          <Inline url="&quot;t6.x3d&quot;" /></HAnimSegment>
+                                                        <HAnimJoint DEF="lrib6_joint" name="lrib6_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                          <HAnimSegment DEF="lrib6_seg" name="lrib6_seg">
+                                                            <Inline url="&quot;lrib6.x3d&quot;" /></HAnimSegment>
+                                                        </HAnimJoint>
+                                                        <HAnimJoint DEF="rrib6_joint" name="rrib6_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                          <HAnimSegment DEF="rrib6_seg" name="rrib6_seg">
+                                                            <Inline url="&quot;rrib6.x3d&quot;" /></HAnimSegment>
+                                                        </HAnimJoint>
+                                                        <HAnimJoint DEF="t5disc_joint" name="t5disc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                          <HAnimSegment DEF="t5disc_seg" name="t5disc_seg">
+                                                            <Inline url="&quot;t5disc.x3d&quot;" /></HAnimSegment>
+                                                          <HAnimJoint DEF="t5_joint" name="t5_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                            <HAnimSegment DEF="t5_seg" name="t5_seg">
+                                                              <Inline url="&quot;t5.x3d&quot;" /></HAnimSegment>
+                                                            <HAnimJoint DEF="lrib5_joint" name="lrib5_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                              <HAnimSegment DEF="lrib5_seg" name="lrib5_seg">
+                                                                <Inline url="&quot;lrib5.x3d&quot;" /></HAnimSegment>
+                                                              <HAnimJoint DEF="lcoscart_joint" name="lcoscart_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                <HAnimSegment DEF="lcoscart_seg" name="lcoscart_seg">
+                                                                  <Inline url="&quot;lcoscart.x3d&quot;" /></HAnimSegment>
+                                                              </HAnimJoint>
+                                                            </HAnimJoint>
+                                                            <HAnimJoint DEF="rrib5_joint" name="rrib5_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                              <HAnimSegment DEF="rrib5_seg" name="rrib5_seg">
+                                                                <Inline url="&quot;rrib5.x3d&quot;" /></HAnimSegment>
+                                                              <HAnimJoint DEF="rcoscart_joint" name="rcoscart_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                <HAnimSegment DEF="rcoscart_seg" name="rcoscart_seg">
+                                                                  <Inline url="&quot;rcoscart.x3d&quot;" /></HAnimSegment>
+                                                              </HAnimJoint>
+                                                            </HAnimJoint>
+                                                            <HAnimJoint DEF="t4disc_joint" name="t4disc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                              <HAnimSegment DEF="t4disc_seg" name="t4disc_seg">
+                                                                <Inline url="&quot;t4disc.x3d&quot;" /></HAnimSegment>
+                                                              <HAnimJoint DEF="t4_joint" name="t4_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                <HAnimSegment DEF="t4_seg" name="t4_seg">
+                                                                  <Inline url="&quot;t4.x3d&quot;" /></HAnimSegment>
+                                                                <HAnimJoint DEF="lrib4_joint" name="lrib4_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                  <HAnimSegment DEF="lrib4_seg" name="lrib4_seg">
+                                                                    <Inline url="&quot;lrib4.x3d&quot;" /></HAnimSegment>
+                                                                </HAnimJoint>
+                                                                <HAnimJoint DEF="rrib4_joint" name="rrib4_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                  <HAnimSegment DEF="rrib4_seg" name="rrib4_seg">
+                                                                    <Inline url="&quot;rrib4.x3d&quot;" /></HAnimSegment>
+                                                                </HAnimJoint>
+                                                                <HAnimJoint DEF="t3disc_joint" name="t3disc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                  <HAnimSegment DEF="t3disc_seg" name="t3disc_seg">
+                                                                    <Inline url="&quot;t3disc.x3d&quot;" /></HAnimSegment>
+                                                                  <HAnimJoint DEF="t3_joint" name="t3_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                    <HAnimSegment DEF="t3_seg" name="t3_seg">
+                                                                      <Inline url="&quot;t3.x3d&quot;" /></HAnimSegment>
+                                                                    <HAnimJoint DEF="lrib3_joint" name="lrib3_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                      <HAnimSegment DEF="lrib3_seg" name="lrib3_seg">
+                                                                        <Inline url="&quot;lrib3.x3d&quot;" /></HAnimSegment>
+                                                                    </HAnimJoint>
+                                                                    <HAnimJoint DEF="rrib3_joint" name="rrib3_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                      <HAnimSegment DEF="rrib3_seg" name="rrib3_seg">
+                                                                        <Inline url="&quot;rrib3.x3d&quot;" /></HAnimSegment>
+                                                                    </HAnimJoint>
+                                                                    <HAnimJoint DEF="t2disc_joint" name="t2disc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                      <HAnimSegment DEF="t2disc_seg" name="t2disc_seg">
+                                                                        <Inline url="&quot;t2disc.x3d&quot;" /></HAnimSegment>
+                                                                      <HAnimJoint DEF="t2_joint" name="t2_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                        <HAnimSegment DEF="t2_seg" name="t2_seg">
+                                                                          <Inline url="&quot;t2.x3d&quot;" /></HAnimSegment>
+                                                                        <HAnimJoint DEF="lrib2_joint" name="lrib2_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                          <HAnimSegment DEF="lrib2_seg" name="lrib2_seg">
+                                                                            <Inline url="&quot;lrib2.x3d&quot;" /></HAnimSegment>
+                                                                        </HAnimJoint>
+                                                                        <HAnimJoint DEF="rrib2_joint" name="rrib2_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                          <HAnimSegment DEF="rrib2_seg" name="rrib2_seg">
+                                                                            <Inline url="&quot;rrib2.x3d&quot;" /></HAnimSegment>
+                                                                        </HAnimJoint>
+                                                                        <HAnimJoint DEF="t1disc_joint" name="t1disc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                          <HAnimSegment DEF="t1disc_seg" name="t1disc_seg">
+                                                                            <Inline url="&quot;t1disc.x3d&quot;" /></HAnimSegment>
+                                                                          <HAnimJoint DEF="t_joint" name="t_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                            <HAnimSegment DEF="t_seg" name="t_seg">
+                                                                              <Inline url="&quot;t.x3d&quot;" /></HAnimSegment>
+                                                                            <HAnimJoint DEF="c7_joint" name="c7_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                              <HAnimSegment DEF="c7_seg" name="c7_seg">
+                                                                                <Inline url="&quot;c7.x3d&quot;" /></HAnimSegment>
+                                                                              <HAnimJoint DEF="c7disc_joint" name="c7disc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                <HAnimSegment DEF="c7disc_seg" name="c7disc_seg">
+                                                                                  <Inline url="&quot;c7disc.x3d&quot;" /></HAnimSegment>
+                                                                                <HAnimJoint DEF="c6_joint" name="c6_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                  <HAnimSegment DEF="c6_seg" name="c6_seg">
+                                                                                    <Inline url="&quot;c6.x3d&quot;" /></HAnimSegment>
+                                                                                  <HAnimJoint DEF="c6disc_joint" name="c6disc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                    <HAnimSegment DEF="c6disc_seg" name="c6disc_seg">
+                                                                                      <Inline url="&quot;c6disc.x3d&quot;" /></HAnimSegment>
+                                                                                    <HAnimJoint DEF="c5_joint" name="c5_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                      <HAnimSegment DEF="c5_seg" name="c5_seg">
+                                                                                        <Inline url="&quot;c5.x3d&quot;" /></HAnimSegment>
+                                                                                      <HAnimJoint DEF="c5disc_joint" name="c5disc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                        <HAnimSegment DEF="c5disc_seg" name="c5disc_seg">
+                                                                                          <Inline url="&quot;c5disc.x3d&quot;" /></HAnimSegment>
+                                                                                        <HAnimJoint DEF="c4_joint" name="c4_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                          <HAnimSegment DEF="c4_seg" name="c4_seg">
+                                                                                            <Inline url="&quot;c4.x3d&quot;" /></HAnimSegment>
+                                                                                          <HAnimJoint DEF="c4disc_joint" name="c4disc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                            <HAnimSegment DEF="c4disc_seg" name="c4disc_seg">
+                                                                                              <Inline url="&quot;c4disc.x3d&quot;" /></HAnimSegment>
+                                                                                            <HAnimJoint DEF="c3_joint" name="c3_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                              <HAnimSegment DEF="c3_seg" name="c3_seg">
+                                                                                                <Inline url="&quot;c3.x3d&quot;" /></HAnimSegment>
+                                                                                              <HAnimJoint DEF="c3disc_joint" name="c3disc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                <HAnimSegment DEF="c3disc_seg" name="c3disc_seg">
+                                                                                                  <Inline url="&quot;c3disc.x3d&quot;" /></HAnimSegment>
+                                                                                                <HAnimJoint DEF="c2disc_joint" name="c2disc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                  <HAnimSegment DEF="c2disc_seg" name="c2disc_seg">
+                                                                                                    <Inline url="&quot;c2disc.x3d&quot;" /></HAnimSegment>
+                                                                                                  <HAnimJoint DEF="axis_joint" name="axis_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                    <HAnimSegment DEF="axis_seg" name="axis_seg">
+                                                                                                      <Inline url="&quot;axis.x3d&quot;" /></HAnimSegment>
+                                                                                                    <HAnimJoint DEF="atlas_joint" name="atlas_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                      <HAnimSegment DEF="atlas_seg" name="atlas_seg">
+                                                                                                        <Inline url="&quot;atlas.x3d&quot;" /></HAnimSegment>
+                                                                                                      <HAnimJoint DEF="occip_joint" name="occip_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                        <HAnimSegment DEF="occip_seg" name="occip_seg">
+                                                                                                          <Inline url="&quot;occip.x3d&quot;" /></HAnimSegment>
+                                                                                                        <HAnimJoint DEF="frontal_joint" name="frontal_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                          <HAnimSegment DEF="frontal_seg" name="frontal_seg">
+                                                                                                            <Inline url="&quot;frontal.x3d&quot;" /></HAnimSegment>
+                                                                                                          <HAnimJoint DEF="lacl_joint" name="lacl_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                            <HAnimSegment DEF="lacl_seg" name="lacl_seg">
+                                                                                                              <Inline url="&quot;lacl.x3d&quot;" /></HAnimSegment>
+                                                                                                          </HAnimJoint>
+                                                                                                          <HAnimJoint DEF="lacr_joint" name="lacr_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                            <HAnimSegment DEF="lacr_seg" name="lacr_seg">
+                                                                                                              <Inline url="&quot;lacr.x3d&quot;" /></HAnimSegment>
+                                                                                                          </HAnimJoint>
+                                                                                                          <HAnimJoint DEF="lcenincc_joint" name="lcenincc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                            <HAnimSegment DEF="lcenincc_seg" name="lcenincc_seg">
+                                                                                                              <Inline url="&quot;lcenincc.x3d&quot;" /></HAnimSegment>
+                                                                                                          </HAnimJoint>
+                                                                                                          <HAnimJoint DEF="lcenincr_joint" name="lcenincr_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                            <HAnimSegment DEF="lcenincr_seg" name="lcenincr_seg">
+                                                                                                              <Inline url="&quot;lcenincr.x3d&quot;" /></HAnimSegment>
+                                                                                                          </HAnimJoint>
+                                                                                                          <HAnimJoint DEF="nasall_joint" name="nasall_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                            <HAnimSegment DEF="nasall_seg" name="nasall_seg">
+                                                                                                              <Inline url="&quot;nasall.x3d&quot;" /></HAnimSegment>
+                                                                                                          </HAnimJoint>
+                                                                                                          <HAnimJoint DEF="nasalr_joint" name="nasalr_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                            <HAnimSegment DEF="nasalr_seg" name="nasalr_seg">
+                                                                                                              <Inline url="&quot;nasalr.x3d&quot;" /></HAnimSegment>
+                                                                                                          </HAnimJoint>
+                                                                                                          <HAnimJoint DEF="rcenincc_joint" name="rcenincc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                            <HAnimSegment DEF="rcenincc_seg" name="rcenincc_seg">
+                                                                                                              <Inline url="&quot;rcenincc.x3d&quot;" /></HAnimSegment>
+                                                                                                          </HAnimJoint>
+                                                                                                          <HAnimJoint DEF="rcenincr_joint" name="rcenincr_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                            <HAnimSegment DEF="rcenincr_seg" name="rcenincr_seg">
+                                                                                                              <Inline url="&quot;rcenincr.x3d&quot;" /></HAnimSegment>
+                                                                                                          </HAnimJoint>
+                                                                                                        </HAnimJoint>
+                                                                                                        <HAnimJoint DEF="parietl_joint" name="parietl_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                          <HAnimSegment DEF="parietl_seg" name="parietl_seg">
+                                                                                                            <Inline url="&quot;parietl.x3d&quot;" /></HAnimSegment>
+                                                                                                        </HAnimJoint>
+                                                                                                        <HAnimJoint DEF="parietr_joint" name="parietr_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                          <HAnimSegment DEF="parietr_seg" name="parietr_seg">
+                                                                                                            <Inline url="&quot;parietr.x3d&quot;" /></HAnimSegment>
+                                                                                                        </HAnimJoint>
+                                                                                                        <HAnimJoint DEF="sphenoid_joint" name="sphenoid_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                          <HAnimSegment DEF="sphenoid_seg" name="sphenoid_seg">
+                                                                                                            <Inline url="&quot;sphenoid.x3d&quot;" /></HAnimSegment>
+                                                                                                          <HAnimJoint DEF="ethmoid_joint" name="ethmoid_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                            <HAnimSegment DEF="ethmoid_seg" name="ethmoid_seg">
+                                                                                                              <Inline url="&quot;ethmoid.x3d&quot;" /></HAnimSegment>
+                                                                                                          </HAnimJoint>
+                                                                                                          <HAnimJoint DEF="ethmoid2_joint" name="ethmoid2_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                            <HAnimSegment DEF="ethmoid2_seg" name="ethmoid2_seg">
+                                                                                                              <Inline url="&quot;ethmoid2.x3d&quot;" /></HAnimSegment>
+                                                                                                          </HAnimJoint>
+                                                                                                          <HAnimJoint DEF="vom_joint" name="vom_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                            <HAnimSegment DEF="vom_seg" name="vom_seg">
+                                                                                                              <Inline url="&quot;vom.x3d&quot;" /></HAnimSegment>
+                                                                                                          </HAnimJoint>
+                                                                                                        </HAnimJoint>
+                                                                                                        <HAnimJoint DEF="templ_joint" name="templ_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                          <HAnimSegment DEF="templ_seg" name="templ_seg">
+                                                                                                            <Inline url="&quot;templ.x3d&quot;" /></HAnimSegment>
+                                                                                                          <HAnimJoint DEF="mand_joint" name="mand_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                            <HAnimSegment DEF="mand_seg" name="mand_seg">
+                                                                                                              <Inline url="&quot;mand.x3d&quot;" /></HAnimSegment>
+                                                                                                            <HAnimJoint DEF="lcaninlc_joint" name="lcaninlc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="lcaninlc_seg" name="lcaninlc_seg">
+                                                                                                                <Inline url="&quot;lcaninlc.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="lcaninlr_joint" name="lcaninlr_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="lcaninlr_seg" name="lcaninlr_seg">
+                                                                                                                <Inline url="&quot;lcaninlr.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="lceninlc_joint" name="lceninlc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="lceninlc_seg" name="lceninlc_seg">
+                                                                                                                <Inline url="&quot;lceninlc.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="lceninlr_joint" name="lceninlr_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="lceninlr_seg" name="lceninlr_seg">
+                                                                                                                <Inline url="&quot;lceninlr.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="llatinlc_joint" name="llatinlc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="llatinlc_seg" name="llatinlc_seg">
+                                                                                                                <Inline url="&quot;llatinlc.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="llatinlr_joint" name="llatinlr_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="llatinlr_seg" name="llatinlr_seg">
+                                                                                                                <Inline url="&quot;llatinlr.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="lmolr1lc_joint" name="lmolr1lc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="lmolr1lc_seg" name="lmolr1lc_seg">
+                                                                                                                <Inline url="&quot;lmolr1lc.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="lmolr1lr_joint" name="lmolr1lr_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="lmolr1lr_seg" name="lmolr1lr_seg">
+                                                                                                                <Inline url="&quot;lmolr1lr.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="lmolr2lc_joint" name="lmolr2lc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="lmolr2lc_seg" name="lmolr2lc_seg">
+                                                                                                                <Inline url="&quot;lmolr2lc.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="lmolr2lr_joint" name="lmolr2lr_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="lmolr2lr_seg" name="lmolr2lr_seg">
+                                                                                                                <Inline url="&quot;lmolr2lr.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="lmolr3lc_joint" name="lmolr3lc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="lmolr3lc_seg" name="lmolr3lc_seg">
+                                                                                                                <Inline url="&quot;lmolr3lc.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="lmolr3lr_joint" name="lmolr3lr_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="lmolr3lr_seg" name="lmolr3lr_seg">
+                                                                                                                <Inline url="&quot;lmolr3lr.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="lprem1lc_joint" name="lprem1lc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="lprem1lc_seg" name="lprem1lc_seg">
+                                                                                                                <Inline url="&quot;lprem1lc.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="lprem1lr_joint" name="lprem1lr_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="lprem1lr_seg" name="lprem1lr_seg">
+                                                                                                                <Inline url="&quot;lprem1lr.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="lprem2lc_joint" name="lprem2lc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="lprem2lc_seg" name="lprem2lc_seg">
+                                                                                                                <Inline url="&quot;lprem2lc.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="lprem2lr_joint" name="lprem2lr_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="lprem2lr_seg" name="lprem2lr_seg">
+                                                                                                                <Inline url="&quot;lprem2lr.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="rcaninlc_joint" name="rcaninlc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="rcaninlc_seg" name="rcaninlc_seg">
+                                                                                                                <Inline url="&quot;rcaninlc.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="rcaninlr_joint" name="rcaninlr_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="rcaninlr_seg" name="rcaninlr_seg">
+                                                                                                                <Inline url="&quot;rcaninlr.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="rceninlc_joint" name="rceninlc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="rceninlc_seg" name="rceninlc_seg">
+                                                                                                                <Inline url="&quot;rceninlc.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="rceninlr_joint" name="rceninlr_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="rceninlr_seg" name="rceninlr_seg">
+                                                                                                                <Inline url="&quot;rceninlr.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="rlatinlc_joint" name="rlatinlc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="rlatinlc_seg" name="rlatinlc_seg">
+                                                                                                                <Inline url="&quot;rlatinlc.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="rlatinlr_joint" name="rlatinlr_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="rlatinlr_seg" name="rlatinlr_seg">
+                                                                                                                <Inline url="&quot;rlatinlr.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="rmolr1lc_joint" name="rmolr1lc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="rmolr1lc_seg" name="rmolr1lc_seg">
+                                                                                                                <Inline url="&quot;rmolr1lc.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="rmolr1lr_joint" name="rmolr1lr_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="rmolr1lr_seg" name="rmolr1lr_seg">
+                                                                                                                <Inline url="&quot;rmolr1lr.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="rmolr2lc_joint" name="rmolr2lc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="rmolr2lc_seg" name="rmolr2lc_seg">
+                                                                                                                <Inline url="&quot;rmolr2lc.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="rmolr2lr_joint" name="rmolr2lr_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="rmolr2lr_seg" name="rmolr2lr_seg">
+                                                                                                                <Inline url="&quot;rmolr2lr.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="rmolr3lc_joint" name="rmolr3lc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="rmolr3lc_seg" name="rmolr3lc_seg">
+                                                                                                                <Inline url="&quot;rmolr3lc.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="rmolr3lr_joint" name="rmolr3lr_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="rmolr3lr_seg" name="rmolr3lr_seg">
+                                                                                                                <Inline url="&quot;rmolr3lr.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="rprem1lc_joint" name="rprem1lc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="rprem1lc_seg" name="rprem1lc_seg">
+                                                                                                                <Inline url="&quot;rprem1lc.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="rprem1lr_joint" name="rprem1lr_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="rprem1lr_seg" name="rprem1lr_seg">
+                                                                                                                <Inline url="&quot;rprem1lr.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="rprem2lc_joint" name="rprem2lc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="rprem2lc_seg" name="rprem2lc_seg">
+                                                                                                                <Inline url="&quot;rprem2lc.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                            <HAnimJoint DEF="rprem2lr_joint" name="rprem2lr_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="rprem2lr_seg" name="rprem2lr_seg">
+                                                                                                                <Inline url="&quot;rprem2lr.x3d&quot;" /></HAnimSegment>
+                                                                                                            </HAnimJoint>
+                                                                                                          </HAnimJoint>
+                                                                                                          <HAnimJoint DEF="zygol_joint" name="zygol_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                            <HAnimSegment DEF="zygol_seg" name="zygol_seg">
+                                                                                                              <Inline url="&quot;zygol.x3d&quot;" /></HAnimSegment>
+                                                                                                            <HAnimJoint DEF="maxl_joint" name="maxl_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="maxl_seg" name="maxl_seg">
+                                                                                                                <Inline url="&quot;maxl.x3d&quot;" /></HAnimSegment>
+                                                                                                              <HAnimJoint DEF="inconl_joint" name="inconl_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="inconl_seg" name="inconl_seg">
+                                                                                                                  <Inline url="&quot;inconl.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="lcaninec_joint" name="lcaninec_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="lcaninec_seg" name="lcaninec_seg">
+                                                                                                                  <Inline url="&quot;lcaninec.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="lcaniner_joint" name="lcaniner_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="lcaniner_seg" name="lcaniner_seg">
+                                                                                                                  <Inline url="&quot;lcaniner.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="llatincc_joint" name="llatincc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="llatincc_seg" name="llatincc_seg">
+                                                                                                                  <Inline url="&quot;llatincc.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="llatincr_joint" name="llatincr_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="llatincr_seg" name="llatincr_seg">
+                                                                                                                  <Inline url="&quot;llatincr.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="lmolar1c_joint" name="lmolar1c_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="lmolar1c_seg" name="lmolar1c_seg">
+                                                                                                                  <Inline url="&quot;lmolar1c.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="lmolar1r_joint" name="lmolar1r_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="lmolar1r_seg" name="lmolar1r_seg">
+                                                                                                                  <Inline url="&quot;lmolar1r.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="lmolar2c_joint" name="lmolar2c_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="lmolar2c_seg" name="lmolar2c_seg">
+                                                                                                                  <Inline url="&quot;lmolar2c.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="lmolar2r_joint" name="lmolar2r_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="lmolar2r_seg" name="lmolar2r_seg">
+                                                                                                                  <Inline url="&quot;lmolar2r.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="lmolar3c_joint" name="lmolar3c_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="lmolar3c_seg" name="lmolar3c_seg">
+                                                                                                                  <Inline url="&quot;lmolar3c.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="lmolar3r_joint" name="lmolar3r_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="lmolar3r_seg" name="lmolar3r_seg">
+                                                                                                                  <Inline url="&quot;lmolar3r.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="lpreo1lc_joint" name="lpreo1lc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="lpreo1lc_seg" name="lpreo1lc_seg">
+                                                                                                                  <Inline url="&quot;lpreo1lc.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="lpreol1r_joint" name="lpreol1r_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="lpreol1r_seg" name="lpreol1r_seg">
+                                                                                                                  <Inline url="&quot;lpreol1r.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="lpreol2c_joint" name="lpreol2c_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="lpreol2c_seg" name="lpreol2c_seg">
+                                                                                                                  <Inline url="&quot;lpreol2c.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="lpreol2r_joint" name="lpreol2r_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="lpreol2r_seg" name="lpreol2r_seg">
+                                                                                                                  <Inline url="&quot;lpreol2r.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="palatl_joint" name="palatl_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="palatl_seg" name="palatl_seg">
+                                                                                                                  <Inline url="&quot;palatl.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                            </HAnimJoint>
+                                                                                                          </HAnimJoint>
+                                                                                                        </HAnimJoint>
+                                                                                                        <HAnimJoint DEF="tempr_joint" name="tempr_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                          <HAnimSegment DEF="tempr_seg" name="tempr_seg">
+                                                                                                            <Inline url="&quot;tempr.x3d&quot;" /></HAnimSegment>
+                                                                                                          <HAnimJoint DEF="zygor_joint" name="zygor_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                            <HAnimSegment DEF="zygor_seg" name="zygor_seg">
+                                                                                                              <Inline url="&quot;zygor.x3d&quot;" /></HAnimSegment>
+                                                                                                            <HAnimJoint DEF="maxr_joint" name="maxr_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                              <HAnimSegment DEF="maxr_seg" name="maxr_seg">
+                                                                                                                <Inline url="&quot;maxr.x3d&quot;" /></HAnimSegment>
+                                                                                                              <HAnimJoint DEF="inconr_joint" name="inconr_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="inconr_seg" name="inconr_seg">
+                                                                                                                  <Inline url="&quot;inconr.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="palatr_joint" name="palatr_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="palatr_seg" name="palatr_seg">
+                                                                                                                  <Inline url="&quot;palatr.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="rcaninec_joint" name="rcaninec_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="rcaninec_seg" name="rcaninec_seg">
+                                                                                                                  <Inline url="&quot;rcaninec.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="rcaniner_joint" name="rcaniner_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="rcaniner_seg" name="rcaniner_seg">
+                                                                                                                  <Inline url="&quot;rcaniner.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="rlatincc_joint" name="rlatincc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="rlatincc_seg" name="rlatincc_seg">
+                                                                                                                  <Inline url="&quot;rlatincc.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="rlatincr_joint" name="rlatincr_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="rlatincr_seg" name="rlatincr_seg">
+                                                                                                                  <Inline url="&quot;rlatincr.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="rmolar1c_joint" name="rmolar1c_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="rmolar1c_seg" name="rmolar1c_seg">
+                                                                                                                  <Inline url="&quot;rmolar1c.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="rmolar1r_joint" name="rmolar1r_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="rmolar1r_seg" name="rmolar1r_seg">
+                                                                                                                  <Inline url="&quot;rmolar1r.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="rmolar2c_joint" name="rmolar2c_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="rmolar2c_seg" name="rmolar2c_seg">
+                                                                                                                  <Inline url="&quot;rmolar2c.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="rmolar2r_joint" name="rmolar2r_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="rmolar2r_seg" name="rmolar2r_seg">
+                                                                                                                  <Inline url="&quot;rmolar2r.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="rmolar3c_joint" name="rmolar3c_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="rmolar3c_seg" name="rmolar3c_seg">
+                                                                                                                  <Inline url="&quot;rmolar3c.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="rmolar3r_joint" name="rmolar3r_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="rmolar3r_seg" name="rmolar3r_seg">
+                                                                                                                  <Inline url="&quot;rmolar3r.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="rpreol1c_joint" name="rpreol1c_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="rpreol1c_seg" name="rpreol1c_seg">
+                                                                                                                  <Inline url="&quot;rpreol1c.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="rpreol1r_joint" name="rpreol1r_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="rpreol1r_seg" name="rpreol1r_seg">
+                                                                                                                  <Inline url="&quot;rpreol1r.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="rpreol2c_joint" name="rpreol2c_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="rpreol2c_seg" name="rpreol2c_seg">
+                                                                                                                  <Inline url="&quot;rpreol2c.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                              <HAnimJoint DEF="rpreol2r_joint" name="rpreol2r_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                                <HAnimSegment DEF="rpreol2r_seg" name="rpreol2r_seg">
+                                                                                                                  <Inline url="&quot;rpreol2r.x3d&quot;" /></HAnimSegment>
+                                                                                                              </HAnimJoint>
+                                                                                                            </HAnimJoint>
+                                                                                                          </HAnimJoint>
+                                                                                                        </HAnimJoint>
+                                                                                                      </HAnimJoint>
+                                                                                                    </HAnimJoint>
+                                                                                                  </HAnimJoint>
+                                                                                                </HAnimJoint>
+                                                                                              </HAnimJoint>
+                                                                                            </HAnimJoint>
+                                                                                          </HAnimJoint>
+                                                                                        </HAnimJoint>
+                                                                                      </HAnimJoint>
+                                                                                    </HAnimJoint>
+                                                                                  </HAnimJoint>
+                                                                                </HAnimJoint>
+                                                                              </HAnimJoint>
+                                                                            </HAnimJoint>
+                                                                            <HAnimJoint DEF="lrrib_joint" name="lrrib_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                              <HAnimSegment DEF="lrrib_seg" name="lrrib_seg">
+                                                                                <Inline url="&quot;lrrib.x3d&quot;" /></HAnimSegment>
+                                                                            </HAnimJoint>
+                                                                            <HAnimJoint DEF="rrrib_joint" name="rrrib_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                              <HAnimSegment DEF="rrrib_seg" name="rrrib_seg">
+                                                                                <Inline url="&quot;rrrib.x3d&quot;" /></HAnimSegment>
+                                                                            </HAnimJoint>
+                                                                            <HAnimJoint DEF="sternum_joint" name="sternum_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                              <HAnimSegment DEF="sternum_seg" name="sternum_seg">
+                                                                                <Inline url="&quot;sternum.x3d&quot;" /></HAnimSegment>
+                                                                              <HAnimJoint DEF="lccart_joint" name="lccart_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                <HAnimSegment DEF="lccart_seg" name="lccart_seg">
+                                                                                  <Inline url="&quot;lccart.x3d&quot;" /></HAnimSegment>
+                                                                                <HAnimJoint DEF="lcartend_joint" name="lcartend_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                  <HAnimSegment DEF="lcartend_seg" name="lcartend_seg">
+                                                                                    <Inline url="&quot;lcartend.x3d&quot;" /></HAnimSegment>
+                                                                                </HAnimJoint>
+                                                                              </HAnimJoint>
+                                                                              <HAnimJoint DEF="lccart2_joint" name="lccart2_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                <HAnimSegment DEF="lccart2_seg" name="lccart2_seg">
+                                                                                  <Inline url="&quot;lccart2.x3d&quot;" /></HAnimSegment>
+                                                                              </HAnimJoint>
+                                                                              <HAnimJoint DEF="lclavcle_joint" name="lclavcle_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                <HAnimSegment DEF="lclavcle_seg" name="lclavcle_seg">
+                                                                                  <Inline url="&quot;lclavcle.x3d&quot;" /></HAnimSegment>
+                                                                                <HAnimJoint DEF="lscapula_joint" name="lscapula_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                  <HAnimSegment DEF="lscapula_seg" name="lscapula_seg">
+                                                                                    <Inline url="&quot;lscapula.x3d&quot;" /></HAnimSegment>
+                                                                                  <HAnimJoint DEF="lhumrus_joint" name="lhumrus_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                    <HAnimSegment DEF="lhumrus_seg" name="lhumrus_seg">
+                                                                                      <Inline url="&quot;lhumrus.x3d&quot;" /></HAnimSegment>
+                                                                                    <HAnimJoint DEF="lradius_joint" name="lradius_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                      <HAnimSegment DEF="lradius_seg" name="lradius_seg">
+                                                                                        <Inline url="&quot;lradius.x3d&quot;" /></HAnimSegment>
+                                                                                      <HAnimJoint DEF="llunate_joint" name="llunate_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                        <HAnimSegment DEF="llunate_seg" name="llunate_seg">
+                                                                                          <Inline url="&quot;llunate.x3d&quot;" /></HAnimSegment>
+                                                                                      </HAnimJoint>
+                                                                                      <HAnimJoint DEF="lscphoid_joint" name="lscphoid_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                        <HAnimSegment DEF="lscphoid_seg" name="lscphoid_seg">
+                                                                                          <Inline url="&quot;lscphoid.x3d&quot;" /></HAnimSegment>
+                                                                                        <HAnimJoint DEF="lcaptate_joint" name="lcaptate_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                          <HAnimSegment DEF="lcaptate_seg" name="lcaptate_seg">
+                                                                                            <Inline url="&quot;lcaptate.x3d&quot;" /></HAnimSegment>
+                                                                                          <HAnimJoint DEF="lmc3_joint" name="lmc3_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                            <HAnimSegment DEF="lmc3_seg" name="lmc3_seg">
+                                                                                              <Inline url="&quot;lmc3.x3d&quot;" /></HAnimSegment>
+                                                                                            <HAnimJoint DEF="lpphal3_joint" name="lpphal3_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                              <HAnimSegment DEF="lpphal3_seg" name="lpphal3_seg">
+                                                                                                <Inline url="&quot;lpphal3.x3d&quot;" /></HAnimSegment>
+                                                                                              <HAnimJoint DEF="lmphal3_joint" name="lmphal3_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                <HAnimSegment DEF="lmphal3_seg" name="lmphal3_seg">
+                                                                                                  <Inline url="&quot;lmphal3.x3d&quot;" /></HAnimSegment>
+                                                                                                <HAnimJoint DEF="ldphal3_joint" name="ldphal3_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                  <HAnimSegment DEF="ldphal3_seg" name="ldphal3_seg">
+                                                                                                    <Inline url="&quot;ldphal3.x3d&quot;" /></HAnimSegment>
+                                                                                                </HAnimJoint>
+                                                                                              </HAnimJoint>
+                                                                                            </HAnimJoint>
+                                                                                          </HAnimJoint>
+                                                                                          <HAnimJoint DEF="ltrpzium_joint" name="ltrpzium_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                            <HAnimSegment DEF="ltrpzium_seg" name="ltrpzium_seg">
+                                                                                              <Inline url="&quot;ltrpzium.x3d&quot;" /></HAnimSegment>
+                                                                                            <HAnimJoint DEF="lmc_joint" name="lmc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                              <HAnimSegment DEF="lmc_seg" name="lmc_seg">
+                                                                                                <Inline url="&quot;lmc.x3d&quot;" /></HAnimSegment>
+                                                                                              <HAnimJoint DEF="lpphal_joint" name="lpphal_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                <HAnimSegment DEF="lpphal_seg" name="lpphal_seg">
+                                                                                                  <Inline url="&quot;lpphal.x3d&quot;" /></HAnimSegment>
+                                                                                                <HAnimJoint DEF="ldphal_joint" name="ldphal_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                  <HAnimSegment DEF="ldphal_seg" name="ldphal_seg">
+                                                                                                    <Inline url="&quot;ldphal.x3d&quot;" /></HAnimSegment>
+                                                                                                </HAnimJoint>
+                                                                                              </HAnimJoint>
+                                                                                            </HAnimJoint>
+                                                                                          </HAnimJoint>
+                                                                                          <HAnimJoint DEF="ltrpzoid_joint" name="ltrpzoid_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                            <HAnimSegment DEF="ltrpzoid_seg" name="ltrpzoid_seg">
+                                                                                              <Inline url="&quot;ltrpzoid.x3d&quot;" /></HAnimSegment>
+                                                                                            <HAnimJoint DEF="lmc2_joint" name="lmc2_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                              <HAnimSegment DEF="lmc2_seg" name="lmc2_seg">
+                                                                                                <Inline url="&quot;lmc2.x3d&quot;" /></HAnimSegment>
+                                                                                              <HAnimJoint DEF="lpphal2_joint" name="lpphal2_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                <HAnimSegment DEF="lpphal2_seg" name="lpphal2_seg">
+                                                                                                  <Inline url="&quot;lpphal2.x3d&quot;" /></HAnimSegment>
+                                                                                                <HAnimJoint DEF="lmphal2_joint" name="lmphal2_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                  <HAnimSegment DEF="lmphal2_seg" name="lmphal2_seg">
+                                                                                                    <Inline url="&quot;lmphal2.x3d&quot;" /></HAnimSegment>
+                                                                                                  <HAnimJoint DEF="ldphal2_joint" name="ldphal2_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                    <HAnimSegment DEF="ldphal2_seg" name="ldphal2_seg">
+                                                                                                      <Inline url="&quot;ldphal2.x3d&quot;" /></HAnimSegment>
+                                                                                                  </HAnimJoint>
+                                                                                                </HAnimJoint>
+                                                                                              </HAnimJoint>
+                                                                                            </HAnimJoint>
+                                                                                          </HAnimJoint>
+                                                                                        </HAnimJoint>
+                                                                                        <HAnimJoint DEF="lhamate_joint" name="lhamate_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                          <HAnimSegment DEF="lhamate_seg" name="lhamate_seg">
+                                                                                            <Inline url="&quot;lhamate.x3d&quot;" /></HAnimSegment>
+                                                                                          <HAnimJoint DEF="lmc4_joint" name="lmc4_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                            <HAnimSegment DEF="lmc4_seg" name="lmc4_seg">
+                                                                                              <Inline url="&quot;lmc4.x3d&quot;" /></HAnimSegment>
+                                                                                            <HAnimJoint DEF="lpphal4_joint" name="lpphal4_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                              <HAnimSegment DEF="lpphal4_seg" name="lpphal4_seg">
+                                                                                                <Inline url="&quot;lpphal4.x3d&quot;" /></HAnimSegment>
+                                                                                              <HAnimJoint DEF="lmphal4_joint" name="lmphal4_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                <HAnimSegment DEF="lmphal4_seg" name="lmphal4_seg">
+                                                                                                  <Inline url="&quot;lmphal4.x3d&quot;" /></HAnimSegment>
+                                                                                                <HAnimJoint DEF="ldphal4_joint" name="ldphal4_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                  <HAnimSegment DEF="ldphal4_seg" name="ldphal4_seg">
+                                                                                                    <Inline url="&quot;ldphal4.x3d&quot;" /></HAnimSegment>
+                                                                                                </HAnimJoint>
+                                                                                              </HAnimJoint>
+                                                                                            </HAnimJoint>
+                                                                                          </HAnimJoint>
+                                                                                          <HAnimJoint DEF="lmc5_joint" name="lmc5_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                            <HAnimSegment DEF="lmc5_seg" name="lmc5_seg">
+                                                                                              <Inline url="&quot;lmc5.x3d&quot;" /></HAnimSegment>
+                                                                                            <HAnimJoint DEF="lpphal5_joint" name="lpphal5_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                              <HAnimSegment DEF="lpphal5_seg" name="lpphal5_seg">
+                                                                                                <Inline url="&quot;lpphal5.x3d&quot;" /></HAnimSegment>
+                                                                                              <HAnimJoint DEF="lmphal5_joint" name="lmphal5_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                <HAnimSegment DEF="lmphal5_seg" name="lmphal5_seg">
+                                                                                                  <Inline url="&quot;lmphal5.x3d&quot;" /></HAnimSegment>
+                                                                                                <HAnimJoint DEF="ldphal5_joint" name="ldphal5_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                  <HAnimSegment DEF="ldphal5_seg" name="ldphal5_seg">
+                                                                                                    <Inline url="&quot;ldphal5.x3d&quot;" /></HAnimSegment>
+                                                                                                </HAnimJoint>
+                                                                                              </HAnimJoint>
+                                                                                            </HAnimJoint>
+                                                                                          </HAnimJoint>
+                                                                                        </HAnimJoint>
+                                                                                      </HAnimJoint>
+                                                                                    </HAnimJoint>
+                                                                                    <HAnimJoint DEF="lulna_joint" name="lulna_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                      <HAnimSegment DEF="lulna_seg" name="lulna_seg">
+                                                                                        <Inline url="&quot;lulna.x3d&quot;" /></HAnimSegment>
+                                                                                      <HAnimJoint DEF="ltrqtral_joint" name="ltrqtral_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                        <HAnimSegment DEF="ltrqtral_seg" name="ltrqtral_seg">
+                                                                                          <Inline url="&quot;ltrqtral.x3d&quot;" /></HAnimSegment>
+                                                                                        <HAnimJoint DEF="lpisform_joint" name="lpisform_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                          <HAnimSegment DEF="lpisform_seg" name="lpisform_seg">
+                                                                                            <Inline url="&quot;lpisform.x3d&quot;" /></HAnimSegment>
+                                                                                        </HAnimJoint>
+                                                                                      </HAnimJoint>
+                                                                                    </HAnimJoint>
+                                                                                  </HAnimJoint>
+                                                                                </HAnimJoint>
+                                                                              </HAnimJoint>
+                                                                              <HAnimJoint DEF="rccart_joint" name="rccart_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                <HAnimSegment DEF="rccart_seg" name="rccart_seg">
+                                                                                  <Inline url="&quot;rccart.x3d&quot;" /></HAnimSegment>
+                                                                                <HAnimJoint DEF="rcartend_joint" name="rcartend_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                  <HAnimSegment DEF="rcartend_seg" name="rcartend_seg">
+                                                                                    <Inline url="&quot;rcartend.x3d&quot;" /></HAnimSegment>
+                                                                                </HAnimJoint>
+                                                                              </HAnimJoint>
+                                                                              <HAnimJoint DEF="rccart2_joint" name="rccart2_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                <HAnimSegment DEF="rccart2_seg" name="rccart2_seg">
+                                                                                  <Inline url="&quot;rccart2.x3d&quot;" /></HAnimSegment>
+                                                                              </HAnimJoint>
+                                                                              <HAnimJoint DEF="rclavcle_joint" name="rclavcle_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                <HAnimSegment DEF="rclavcle_seg" name="rclavcle_seg">
+                                                                                  <Inline url="&quot;rclavcle.x3d&quot;" /></HAnimSegment>
+                                                                                <HAnimJoint DEF="rscapula_joint" name="rscapula_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                  <HAnimSegment DEF="rscapula_seg" name="rscapula_seg">
+                                                                                    <Inline url="&quot;rscapula.x3d&quot;" /></HAnimSegment>
+                                                                                  <HAnimJoint DEF="rhumerus_joint" name="rhumerus_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                    <HAnimSegment DEF="rhumerus_seg" name="rhumerus_seg">
+                                                                                      <Inline url="&quot;rhumerus.x3d&quot;" /></HAnimSegment>
+                                                                                    <HAnimJoint DEF="rradius_joint" name="rradius_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                      <HAnimSegment DEF="rradius_seg" name="rradius_seg">
+                                                                                        <Inline url="&quot;rradius.x3d&quot;" /></HAnimSegment>
+                                                                                      <HAnimJoint DEF="rlunate_joint" name="rlunate_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                        <HAnimSegment DEF="rlunate_seg" name="rlunate_seg">
+                                                                                          <Inline url="&quot;rlunate.x3d&quot;" /></HAnimSegment>
+                                                                                      </HAnimJoint>
+                                                                                      <HAnimJoint DEF="rscphoid_joint" name="rscphoid_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                        <HAnimSegment DEF="rscphoid_seg" name="rscphoid_seg">
+                                                                                          <Inline url="&quot;rscphoid.x3d&quot;" /></HAnimSegment>
+                                                                                        <HAnimJoint DEF="rcaptate_joint" name="rcaptate_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                          <HAnimSegment DEF="rcaptate_seg" name="rcaptate_seg">
+                                                                                            <Inline url="&quot;rcaptate.x3d&quot;" /></HAnimSegment>
+                                                                                          <HAnimJoint DEF="rmc3_joint" name="rmc3_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                            <HAnimSegment DEF="rmc3_seg" name="rmc3_seg">
+                                                                                              <Inline url="&quot;rmc3.x3d&quot;" /></HAnimSegment>
+                                                                                            <HAnimJoint DEF="rpphal3_joint" name="rpphal3_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                              <HAnimSegment DEF="rpphal3_seg" name="rpphal3_seg">
+                                                                                                <Inline url="&quot;rpphal3.x3d&quot;" /></HAnimSegment>
+                                                                                              <HAnimJoint DEF="rmphal3_joint" name="rmphal3_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                <HAnimSegment DEF="rmphal3_seg" name="rmphal3_seg">
+                                                                                                  <Inline url="&quot;rmphal3.x3d&quot;" /></HAnimSegment>
+                                                                                                <HAnimJoint DEF="rdphal3_joint" name="rdphal3_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                  <HAnimSegment DEF="rdphal3_seg" name="rdphal3_seg">
+                                                                                                    <Inline url="&quot;rdphal3.x3d&quot;" /></HAnimSegment>
+                                                                                                </HAnimJoint>
+                                                                                              </HAnimJoint>
+                                                                                            </HAnimJoint>
+                                                                                          </HAnimJoint>
+                                                                                          <HAnimJoint DEF="rtrpzium_joint" name="rtrpzium_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                            <HAnimSegment DEF="rtrpzium_seg" name="rtrpzium_seg">
+                                                                                              <Inline url="&quot;rtrpzium.x3d&quot;" /></HAnimSegment>
+                                                                                            <HAnimJoint DEF="rmc_joint" name="rmc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                              <HAnimSegment DEF="rmc_seg" name="rmc_seg">
+                                                                                                <Inline url="&quot;rmc.x3d&quot;" /></HAnimSegment>
+                                                                                              <HAnimJoint DEF="rpphal_joint" name="rpphal_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                <HAnimSegment DEF="rpphal_seg" name="rpphal_seg">
+                                                                                                  <Inline url="&quot;rpphal.x3d&quot;" /></HAnimSegment>
+                                                                                                <HAnimJoint DEF="rdphal_joint" name="rdphal_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                  <HAnimSegment DEF="rdphal_seg" name="rdphal_seg">
+                                                                                                    <Inline url="&quot;rdphal.x3d&quot;" /></HAnimSegment>
+                                                                                                </HAnimJoint>
+                                                                                              </HAnimJoint>
+                                                                                            </HAnimJoint>
+                                                                                          </HAnimJoint>
+                                                                                          <HAnimJoint DEF="rtrpzoid_joint" name="rtrpzoid_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                            <HAnimSegment DEF="rtrpzoid_seg" name="rtrpzoid_seg">
+                                                                                              <Inline url="&quot;rtrpzoid.x3d&quot;" /></HAnimSegment>
+                                                                                            <HAnimJoint DEF="rmc2_joint" name="rmc2_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                              <HAnimSegment DEF="rmc2_seg" name="rmc2_seg">
+                                                                                                <Inline url="&quot;rmc2.x3d&quot;" /></HAnimSegment>
+                                                                                              <HAnimJoint DEF="rpphal2_joint" name="rpphal2_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                <HAnimSegment DEF="rpphal2_seg" name="rpphal2_seg">
+                                                                                                  <Inline url="&quot;rpphal2.x3d&quot;" /></HAnimSegment>
+                                                                                                <HAnimJoint DEF="rmphal2_joint" name="rmphal2_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                  <HAnimSegment DEF="rmphal2_seg" name="rmphal2_seg">
+                                                                                                    <Inline url="&quot;rmphal2.x3d&quot;" /></HAnimSegment>
+                                                                                                  <HAnimJoint DEF="rdphal2_joint" name="rdphal2_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                    <HAnimSegment DEF="rdphal2_seg" name="rdphal2_seg">
+                                                                                                      <Inline url="&quot;rdphal2.x3d&quot;" /></HAnimSegment>
+                                                                                                  </HAnimJoint>
+                                                                                                </HAnimJoint>
+                                                                                              </HAnimJoint>
+                                                                                            </HAnimJoint>
+                                                                                          </HAnimJoint>
+                                                                                        </HAnimJoint>
+                                                                                        <HAnimJoint DEF="rhamate_joint" name="rhamate_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                          <HAnimSegment DEF="rhamate_seg" name="rhamate_seg">
+                                                                                            <Inline url="&quot;rhamate.x3d&quot;" /></HAnimSegment>
+                                                                                          <HAnimJoint DEF="rmc4_joint" name="rmc4_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                            <HAnimSegment DEF="rmc4_seg" name="rmc4_seg">
+                                                                                              <Inline url="&quot;rmc4.x3d&quot;" /></HAnimSegment>
+                                                                                            <HAnimJoint DEF="rpphal4_joint" name="rpphal4_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                              <HAnimSegment DEF="rpphal4_seg" name="rpphal4_seg">
+                                                                                                <Inline url="&quot;rpphal4.x3d&quot;" /></HAnimSegment>
+                                                                                              <HAnimJoint DEF="rmphal4_joint" name="rmphal4_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                <HAnimSegment DEF="rmphal4_seg" name="rmphal4_seg">
+                                                                                                  <Inline url="&quot;rmphal4.x3d&quot;" /></HAnimSegment>
+                                                                                                <HAnimJoint DEF="rdphal4_joint" name="rdphal4_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                  <HAnimSegment DEF="rdphal4_seg" name="rdphal4_seg">
+                                                                                                    <Inline url="&quot;rdphal4.x3d&quot;" /></HAnimSegment>
+                                                                                                </HAnimJoint>
+                                                                                              </HAnimJoint>
+                                                                                            </HAnimJoint>
+                                                                                          </HAnimJoint>
+                                                                                          <HAnimJoint DEF="rmc5_joint" name="rmc5_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                            <HAnimSegment DEF="rmc5_seg" name="rmc5_seg">
+                                                                                              <Inline url="&quot;rmc5.x3d&quot;" /></HAnimSegment>
+                                                                                            <HAnimJoint DEF="rpphal5_joint" name="rpphal5_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                              <HAnimSegment DEF="rpphal5_seg" name="rpphal5_seg">
+                                                                                                <Inline url="&quot;rpphal5.x3d&quot;" /></HAnimSegment>
+                                                                                              <HAnimJoint DEF="rmphal5_joint" name="rmphal5_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                <HAnimSegment DEF="rmphal5_seg" name="rmphal5_seg">
+                                                                                                  <Inline url="&quot;rmphal5.x3d&quot;" /></HAnimSegment>
+                                                                                                <HAnimJoint DEF="rdphal5_joint" name="rdphal5_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                                  <HAnimSegment DEF="rdphal5_seg" name="rdphal5_seg">
+                                                                                                    <Inline url="&quot;rdphal5.x3d&quot;" /></HAnimSegment>
+                                                                                                </HAnimJoint>
+                                                                                              </HAnimJoint>
+                                                                                            </HAnimJoint>
+                                                                                          </HAnimJoint>
+                                                                                        </HAnimJoint>
+                                                                                      </HAnimJoint>
+                                                                                    </HAnimJoint>
+                                                                                    <HAnimJoint DEF="rulna_joint" name="rulna_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                      <HAnimSegment DEF="rulna_seg" name="rulna_seg">
+                                                                                        <Inline url="&quot;rulna.x3d&quot;" /></HAnimSegment>
+                                                                                      <HAnimJoint DEF="rtrqtral_joint" name="rtrqtral_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                        <HAnimSegment DEF="rtrqtral_seg" name="rtrqtral_seg">
+                                                                                          <Inline url="&quot;rtrqtral.x3d&quot;" /></HAnimSegment>
+                                                                                        <HAnimJoint DEF="rpisform_joint" name="rpisform_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                                                                                          <HAnimSegment DEF="rpisform_seg" name="rpisform_seg">
+                                                                                            <Inline url="&quot;rpisform.x3d&quot;" /></HAnimSegment>
+                                                                                        </HAnimJoint>
+                                                                                      </HAnimJoint>
+                                                                                    </HAnimJoint>
+                                                                                  </HAnimJoint>
+                                                                                </HAnimJoint>
+                                                                              </HAnimJoint>
+                                                                            </HAnimJoint>
+                                                                          </HAnimJoint>
+                                                                        </HAnimJoint>
+                                                                      </HAnimJoint>
+                                                                    </HAnimJoint>
+                                                                  </HAnimJoint>
+                                                                </HAnimJoint>
+                                                              </HAnimJoint>
+                                                            </HAnimJoint>
+                                                          </HAnimJoint>
+                                                        </HAnimJoint>
+                                                      </HAnimJoint>
+                                                    </HAnimJoint>
+                                                  </HAnimJoint>
+                                                </HAnimJoint>
+                                              </HAnimJoint>
+                                            </HAnimJoint>
+                                          </HAnimJoint>
+                                        </HAnimJoint>
+                                      </HAnimJoint>
+                                    </HAnimJoint>
+                                  </HAnimJoint>
+                                </HAnimJoint>
+                              </HAnimJoint>
+                            </HAnimJoint>
+                          </HAnimJoint>
+                        </HAnimJoint>
+                      </HAnimJoint>
+                    </HAnimJoint>
+                  </HAnimJoint>
+                </HAnimJoint>
+              </HAnimJoint>
+            </HAnimJoint>
+          </HAnimJoint>
+        </HAnimJoint>
+        <HAnimJoint DEF="loscoxae_joint" name="loscoxae_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+          <HAnimSegment DEF="loscoxae_seg" name="loscoxae_seg">
+            <Inline url="&quot;loscoxae.x3d&quot;" /></HAnimSegment>
+          <HAnimJoint DEF="lfemur_joint" name="lfemur_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+            <HAnimSegment DEF="lfemur_seg" name="lfemur_seg">
+              <Inline url="&quot;lfemur.x3d&quot;" /></HAnimSegment>
+            <HAnimJoint DEF="lfibula_joint" name="lfibula_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+              <HAnimSegment DEF="lfibula_seg" name="lfibula_seg">
+                <Inline url="&quot;lfibula.x3d&quot;" /></HAnimSegment>
+            </HAnimJoint>
+            <HAnimJoint DEF="lowleg_joint" name="lowleg_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+              <HAnimSegment DEF="lowleg_seg" name="lowleg_seg">
+                <Inline url="&quot;lowleg.x3d&quot;" /></HAnimSegment>
+            </HAnimJoint>
+            <HAnimJoint DEF="ltibia_joint" name="ltibia_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+              <HAnimSegment DEF="ltibia_seg" name="ltibia_seg">
+                <Inline url="&quot;ltibia.x3d&quot;" /></HAnimSegment>
+              <HAnimJoint DEF="ltalus_joint" name="ltalus_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                <HAnimSegment DEF="ltalus_seg" name="ltalus_seg">
+                  <Inline url="&quot;ltalus.x3d&quot;" /></HAnimSegment>
+                <HAnimJoint DEF="lcalc_joint" name="lcalc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                  <HAnimSegment DEF="lcalc_seg" name="lcalc_seg">
+                    <Inline url="&quot;lcalc.x3d&quot;" /></HAnimSegment>
+                  <HAnimJoint DEF="lcuboid_joint" name="lcuboid_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                    <HAnimSegment DEF="lcuboid_seg" name="lcuboid_seg">
+                      <Inline url="&quot;lcuboid.x3d&quot;" /></HAnimSegment>
+                    <HAnimJoint DEF="lmet4_joint" name="lmet4_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                      <HAnimSegment DEF="lmet4_seg" name="lmet4_seg">
+                        <Inline url="&quot;lmet4.x3d&quot;" /></HAnimSegment>
+                      <HAnimJoint DEF="lfpprox4_joint" name="lfpprox4_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                        <HAnimSegment DEF="lfpprox4_seg" name="lfpprox4_seg">
+                          <Inline url="&quot;lfpprox4.x3d&quot;" /></HAnimSegment>
+                        <HAnimJoint DEF="lfmphal4_joint" name="lfmphal4_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                          <HAnimSegment DEF="lfmphal4_seg" name="lfmphal4_seg">
+                            <Inline url="&quot;lfmphal4.x3d&quot;" /></HAnimSegment>
+                          <HAnimJoint DEF="lfdphal4_joint" name="lfdphal4_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                            <HAnimSegment DEF="lfdphal4_seg" name="lfdphal4_seg">
+                              <Inline url="&quot;lfdphal4.x3d&quot;" /></HAnimSegment>
+                          </HAnimJoint>
+                        </HAnimJoint>
+                      </HAnimJoint>
+                    </HAnimJoint>
+                    <HAnimJoint DEF="lmet5_joint" name="lmet5_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                      <HAnimSegment DEF="lmet5_seg" name="lmet5_seg">
+                        <Inline url="&quot;lmet5.x3d&quot;" /></HAnimSegment>
+                      <HAnimJoint DEF="lfpprox5_joint" name="lfpprox5_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                        <HAnimSegment DEF="lfpprox5_seg" name="lfpprox5_seg">
+                          <Inline url="&quot;lfpprox5.x3d&quot;" /></HAnimSegment>
+                      </HAnimJoint>
+                    </HAnimJoint>
+                  </HAnimJoint>
+                </HAnimJoint>
+                <HAnimJoint DEF="lnaviclr_joint" name="lnaviclr_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                  <HAnimSegment DEF="lnaviclr_seg" name="lnaviclr_seg">
+                    <Inline url="&quot;lnaviclr.x3d&quot;" /></HAnimSegment>
+                  <HAnimJoint DEF="licun_joint" name="licun_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                    <HAnimSegment DEF="licun_seg" name="licun_seg">
+                      <Inline url="&quot;licun.x3d&quot;" /></HAnimSegment>
+                    <HAnimJoint DEF="lmet2_joint" name="lmet2_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                      <HAnimSegment DEF="lmet2_seg" name="lmet2_seg">
+                        <Inline url="&quot;lmet2.x3d&quot;" /></HAnimSegment>
+                      <HAnimJoint DEF="lfpprox2_joint" name="lfpprox2_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                        <HAnimSegment DEF="lfpprox2_seg" name="lfpprox2_seg">
+                          <Inline url="&quot;lfpprox2.x3d&quot;" /></HAnimSegment>
+                        <HAnimJoint DEF="lfmphal2_joint" name="lfmphal2_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                          <HAnimSegment DEF="lfmphal2_seg" name="lfmphal2_seg">
+                            <Inline url="&quot;lfmphal2.x3d&quot;" /></HAnimSegment>
+                          <HAnimJoint DEF="lfdphal2_joint" name="lfdphal2_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                            <HAnimSegment DEF="lfdphal2_seg" name="lfdphal2_seg">
+                              <Inline url="&quot;lfdphal2.x3d&quot;" /></HAnimSegment>
+                          </HAnimJoint>
+                        </HAnimJoint>
+                      </HAnimJoint>
+                    </HAnimJoint>
+                  </HAnimJoint>
+                  <HAnimJoint DEF="llcun_joint" name="llcun_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                    <HAnimSegment DEF="llcun_seg" name="llcun_seg">
+                      <Inline url="&quot;llcun.x3d&quot;" /></HAnimSegment>
+                    <HAnimJoint DEF="lmet3_joint" name="lmet3_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                      <HAnimSegment DEF="lmet3_seg" name="lmet3_seg">
+                        <Inline url="&quot;lmet3.x3d&quot;" /></HAnimSegment>
+                      <HAnimJoint DEF="lfpprox3_joint" name="lfpprox3_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                        <HAnimSegment DEF="lfpprox3_seg" name="lfpprox3_seg">
+                          <Inline url="&quot;lfpprox3.x3d&quot;" /></HAnimSegment>
+                        <HAnimJoint DEF="lfmphal3_joint" name="lfmphal3_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                          <HAnimSegment DEF="lfmphal3_seg" name="lfmphal3_seg">
+                            <Inline url="&quot;lfmphal3.x3d&quot;" /></HAnimSegment>
+                          <HAnimJoint DEF="lfdphal3_joint" name="lfdphal3_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                            <HAnimSegment DEF="lfdphal3_seg" name="lfdphal3_seg">
+                              <Inline url="&quot;lfdphal3.x3d&quot;" /></HAnimSegment>
+                          </HAnimJoint>
+                        </HAnimJoint>
+                      </HAnimJoint>
+                    </HAnimJoint>
+                  </HAnimJoint>
+                  <HAnimJoint DEF="lmcun_joint" name="lmcun_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                    <HAnimSegment DEF="lmcun_seg" name="lmcun_seg">
+                      <Inline url="&quot;lmcun.x3d&quot;" /></HAnimSegment>
+                    <HAnimJoint DEF="lfmet_joint" name="lfmet_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                      <HAnimSegment DEF="lfmet_seg" name="lfmet_seg">
+                        <Inline url="&quot;lfmet.x3d&quot;" /></HAnimSegment>
+                      <HAnimJoint DEF="lfpprox_joint" name="lfpprox_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                        <HAnimSegment DEF="lfpprox_seg" name="lfpprox_seg">
+                          <Inline url="&quot;lfpprox.x3d&quot;" /></HAnimSegment>
+                        <HAnimJoint DEF="lfmphal_joint" name="lfmphal_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                          <HAnimSegment DEF="lfmphal_seg" name="lfmphal_seg">
+                            <Inline url="&quot;lfmphal.x3d&quot;" /></HAnimSegment>
+                          <HAnimJoint DEF="lfdphal_joint" name="lfdphal_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                            <HAnimSegment DEF="lfdphal_seg" name="lfdphal_seg">
+                              <Inline url="&quot;lfdphal.x3d&quot;" /></HAnimSegment>
+                          </HAnimJoint>
+                        </HAnimJoint>
+                      </HAnimJoint>
+                    </HAnimJoint>
+                  </HAnimJoint>
+                </HAnimJoint>
+              </HAnimJoint>
+            </HAnimJoint>
+          </HAnimJoint>
+        </HAnimJoint>
+        <HAnimJoint DEF="roscoxae_joint" name="roscoxae_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+          <HAnimSegment DEF="roscoxae_seg" name="roscoxae_seg">
+            <Inline url="&quot;roscoxae.x3d&quot;" /></HAnimSegment>
+          <HAnimJoint DEF="rfemur_joint" name="rfemur_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+            <HAnimSegment DEF="rfemur_seg" name="rfemur_seg">
+              <Inline url="&quot;rfemur.x3d&quot;" /></HAnimSegment>
+            <HAnimJoint DEF="rtibia_joint" name="rtibia_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+              <HAnimSegment DEF="rtibia_seg" name="rtibia_seg">
+                <Inline url="&quot;rtibia.x3d&quot;" /></HAnimSegment>
+              <HAnimJoint DEF="rtalus_joint" name="rtalus_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                <HAnimSegment DEF="rtalus_seg" name="rtalus_seg">
+                  <Inline url="&quot;rtalus.x3d&quot;" /></HAnimSegment>
+                <HAnimJoint DEF="rcalc_joint" name="rcalc_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                  <HAnimSegment DEF="rcalc_seg" name="rcalc_seg">
+                    <Inline url="&quot;rcalc.x3d&quot;" /></HAnimSegment>
+                  <HAnimJoint DEF="rcuboid_joint" name="rcuboid_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                    <HAnimSegment DEF="rcuboid_seg" name="rcuboid_seg">
+                      <Inline url="&quot;rcuboid.x3d&quot;" /></HAnimSegment>
+                    <HAnimJoint DEF="rmet4_joint" name="rmet4_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                      <HAnimSegment DEF="rmet4_seg" name="rmet4_seg">
+                        <Inline url="&quot;rmet4.x3d&quot;" /></HAnimSegment>
+                      <HAnimJoint DEF="rfpprox4_joint" name="rfpprox4_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                        <HAnimSegment DEF="rfpprox4_seg" name="rfpprox4_seg">
+                          <Inline url="&quot;rfpprox4.x3d&quot;" /></HAnimSegment>
+                        <HAnimJoint DEF="rfmphal4_joint" name="rfmphal4_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                          <HAnimSegment DEF="rfmphal4_seg" name="rfmphal4_seg">
+                            <Inline url="&quot;rfmphal4.x3d&quot;" /></HAnimSegment>
+                          <HAnimJoint DEF="rfdphal4_joint" name="rfdphal4_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                            <HAnimSegment DEF="rfdphal4_seg" name="rfdphal4_seg">
+                              <Inline url="&quot;rfdphal4.x3d&quot;" /></HAnimSegment>
+                          </HAnimJoint>
+                        </HAnimJoint>
+                      </HAnimJoint>
+                    </HAnimJoint>
+                    <HAnimJoint DEF="rmet5_joint" name="rmet5_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                      <HAnimSegment DEF="rmet5_seg" name="rmet5_seg">
+                        <Inline url="&quot;rmet5.x3d&quot;" /></HAnimSegment>
+                      <HAnimJoint DEF="rfpprox5_joint" name="rfpprox5_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                        <HAnimSegment DEF="rfpprox5_seg" name="rfpprox5_seg">
+                          <Inline url="&quot;rfpprox5.x3d&quot;" /></HAnimSegment>
+                        <HAnimJoint DEF="rfdphal5_joint" name="rfdphal5_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                          <HAnimSegment DEF="rfdphal5_seg" name="rfdphal5_seg">
+                            <Inline url="&quot;rfdphal5.x3d&quot;" /></HAnimSegment>
+                        </HAnimJoint>
+                      </HAnimJoint>
+                    </HAnimJoint>
+                  </HAnimJoint>
+                </HAnimJoint>
+                <HAnimJoint DEF="rnaviclr_joint" name="rnaviclr_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                  <HAnimSegment DEF="rnaviclr_seg" name="rnaviclr_seg">
+                    <Inline url="&quot;rnaviclr.x3d&quot;" /></HAnimSegment>
+                  <HAnimJoint DEF="ricun_joint" name="ricun_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                    <HAnimSegment DEF="ricun_seg" name="ricun_seg">
+                      <Inline url="&quot;ricun.x3d&quot;" /></HAnimSegment>
+                    <HAnimJoint DEF="rmet2_joint" name="rmet2_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                      <HAnimSegment DEF="rmet2_seg" name="rmet2_seg">
+                        <Inline url="&quot;rmet2.x3d&quot;" /></HAnimSegment>
+                      <HAnimJoint DEF="rfpprox2_joint" name="rfpprox2_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                        <HAnimSegment DEF="rfpprox2_seg" name="rfpprox2_seg">
+                          <Inline url="&quot;rfpprox2.x3d&quot;" /></HAnimSegment>
+                        <HAnimJoint DEF="rfmphal2_joint" name="rfmphal2_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                          <HAnimSegment DEF="rfmphal2_seg" name="rfmphal2_seg">
+                            <Inline url="&quot;rfmphal2.x3d&quot;" /></HAnimSegment>
+                          <HAnimJoint DEF="rfdphal2_joint" name="rfdphal2_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                            <HAnimSegment DEF="rfdphal2_seg" name="rfdphal2_seg">
+                              <Inline url="&quot;rfdphal2.x3d&quot;" /></HAnimSegment>
+                          </HAnimJoint>
+                        </HAnimJoint>
+                      </HAnimJoint>
+                    </HAnimJoint>
+                  </HAnimJoint>
+                  <HAnimJoint DEF="rlcun_joint" name="rlcun_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                    <HAnimSegment DEF="rlcun_seg" name="rlcun_seg">
+                      <Inline url="&quot;rlcun.x3d&quot;" /></HAnimSegment>
+                    <HAnimJoint DEF="rmet3_joint" name="rmet3_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                      <HAnimSegment DEF="rmet3_seg" name="rmet3_seg">
+                        <Inline url="&quot;rmet3.x3d&quot;" /></HAnimSegment>
+                      <HAnimJoint DEF="rfpprox3_joint" name="rfpprox3_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                        <HAnimSegment DEF="rfpprox3_seg" name="rfpprox3_seg">
+                          <Inline url="&quot;rfpprox3.x3d&quot;" /></HAnimSegment>
+                        <HAnimJoint DEF="rfmphal3_joint" name="rfmphal3_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                          <HAnimSegment DEF="rfmphal3_seg" name="rfmphal3_seg">
+                            <Inline url="&quot;rfmphal3.x3d&quot;" /></HAnimSegment>
+                          <HAnimJoint DEF="rfdphal3_joint" name="rfdphal3_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                            <HAnimSegment DEF="rfdphal3_seg" name="rfdphal3_seg">
+                              <Inline url="&quot;rfdphal3.x3d&quot;" /></HAnimSegment>
+                          </HAnimJoint>
+                        </HAnimJoint>
+                      </HAnimJoint>
+                    </HAnimJoint>
+                  </HAnimJoint>
+                  <HAnimJoint DEF="rmcun_joint" name="rmcun_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                    <HAnimSegment DEF="rmcun_seg" name="rmcun_seg">
+                      <Inline url="&quot;rmcun.x3d&quot;" /></HAnimSegment>
+                    <HAnimJoint DEF="rfmet_joint" name="rfmet_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                      <HAnimSegment DEF="rfmet_seg" name="rfmet_seg">
+                        <Inline url="&quot;rfmet.x3d&quot;" /></HAnimSegment>
+                      <HAnimJoint DEF="rfprox_joint" name="rfprox_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                        <HAnimSegment DEF="rfprox_seg" name="rfprox_seg">
+                          <Inline url="&quot;rfprox.x3d&quot;" /></HAnimSegment>
+                        <HAnimJoint DEF="rfmphal_joint" name="rfmphal_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                          <HAnimSegment DEF="rfmphal_seg" name="rfmphal_seg">
+                            <Inline url="&quot;rfmphal.x3d&quot;" /></HAnimSegment>
+                          <HAnimJoint DEF="rfdphal_joint" name="rfdphal_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+                            <HAnimSegment DEF="rfdphal_seg" name="rfdphal_seg">
+                              <Inline url="&quot;rfdphal.x3d&quot;" /></HAnimSegment>
+                          </HAnimJoint>
+                        </HAnimJoint>
+                      </HAnimJoint>
+                    </HAnimJoint>
+                  </HAnimJoint>
+                </HAnimJoint>
+              </HAnimJoint>
+            </HAnimJoint>
+          </HAnimJoint>
+        </HAnimJoint>
+        <HAnimJoint DEF="sympubis_joint" name="sympubis_joint" center="0 0 0" rotation="0 0 1 0" scale="1 1 1" translation="0 0 0">
+          <HAnimSegment DEF="sympubis_seg" name="sympubis_seg">
+            <Inline url="&quot;sympubis.x3d&quot;" /></HAnimSegment>
+        </HAnimJoint>
+      </HAnimJoint>
+
+  </HAnimHumanoid>
+
+  
+  <Group DEF="UserInterface">
+      
+      <Transform DEF="CoordinateAxesAdjustedScale" scale="0.175 0.175 0.175">
+        <Inline DEF="CoordinateAxes" url="&quot;JointCoordinateAxes.x3dv&quot; &quot;../../X3dForWebAuthors/Chapter03-Grouping/CoordinateAxes.x3d&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03-Grouping/CoordinateAxes.x3d&quot; &quot;../../X3dForWebAuthors/Chapter03-Grouping/CoordinateAxes.wrl&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03-Grouping/CoordinateAxes.wrl&quot;" />
+      </Transform>
+    </Group>
+
+</Scene>
+</X3D>

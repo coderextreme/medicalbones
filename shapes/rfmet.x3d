@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 4.1//EN" "https://www.web3d.org/specifications/x3d-4.1.dtd"><X3D version="4.1"><Scene><Shape DEF="rfmet">
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 4.1//EN" "https://www.web3d.org/specifications/x3d-4.1.dtd"><X3D version="4.1" profile="Immersive"><Scene><Shape DEF="rfmet">
  <Appearance>
  <Material ambientIntensity="0.098" emissiveColor="0 0 0" shininess="0.050" diffuseColor="1 .9765 .8667" specularColor=".349 .349 .349" />
  </Appearance>
