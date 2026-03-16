@@ -105,6 +105,7 @@ class Explode:
                 out_joint = xml.etree.ElementTree.Element('HAnimJoint')
                 out_joint.text = "\n"
                 out_joint.tail = "\n"
+                # TODO only top-level Joint
                 out_joint.set("containerField", "skeleton")
                 out_joint.set("DEF", "hanim_joint_"+shapeDEF)
                 out_joint.set("name", "joint_"+shapeDEF)
