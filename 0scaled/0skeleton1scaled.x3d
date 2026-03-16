@@ -1,0 +1,4174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 4.1//EN" "https://www.web3d.org/specifications/x3d-4.1.dtd"><X3D xmlns:ns0="https://www.w3.org/2001/XMLSchema-instance" profile="Full" version="4.1" ns0:noNamespaceSchemaLocation="https://www.web3d.org/specifications/x3d-4.1.xsd">
+<head>
+ <component level="3" name="HAnim" />
+ <component level="4" name="Networking" />
+ <meta name="title" content="0skeleton1.x3d" />
+ <meta name="identifier" content="https://coderextreme.net/X3DJSONLD/src/main/data/0skeleton1.x3d" />
+ <meta name="generator" content="medicalbones/Explode.py" />
+</head>
+<Scene>
+<NavigationInfo avatarSize="0.25 1.6 0.75" visibilityLimit="0" speed="1" headlight="false" type="&quot;EXAMINE&quot; &quot;ANY&quot;" />
+
+<DirectionalLight direction="0 1 1" />
+
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 Front" position="0 0.4 4" />
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 FrontClose" position="0 0.8 2" />
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 FrontCloser" position="0 1.2 1" />
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 Right Side" orientation="0 1 0 1.5708" position="2.6 0.8 0" />
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 Right Side Close" orientation="0 1 0 1.2" position="1 0.8 0.5" />
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 Left Side Close" orientation="0 1 0 -1.2" position="-1 0.8 0.5" />
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 Left Side" orientation="0 1 0 -1.5708" position="-2.6 0.8 0" />
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 Top" orientation="1 0 0 -1.5708" position="0 3.5 0" />
+
+
+<Transform translation="0 0 0">   
+ 
+ <Transform scale="0.029 0.029 0.029">   
+  <Transform rotation="0 0 1 0">  
+   <Transform rotation="0 0 1 0"> 
+
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_atlas" name="joint_atlas">
+<HAnimJoint DEF="hanim_joint_atlas_center" name="joint_atlas_center">
+<HAnimSegment DEF="hanim_segment_atlas" name="segment_atlas">
+<Inline url="&quot;atlas.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_atlas">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_atlas_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_axis" name="joint_axis">
+<HAnimJoint DEF="hanim_joint_axis_center" name="joint_axis_center">
+<HAnimSegment DEF="hanim_segment_axis" name="segment_axis">
+<Inline url="&quot;axis.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_axis">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_axis_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_c2disc" name="joint_c2disc">
+<HAnimJoint DEF="hanim_joint_c2disc_center" name="joint_c2disc_center">
+<HAnimSegment DEF="hanim_segment_c2disc" name="segment_c2disc">
+<Inline url="&quot;c2disc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_c2disc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_c2disc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_c3" name="joint_c3">
+<HAnimJoint DEF="hanim_joint_c3_center" name="joint_c3_center">
+<HAnimSegment DEF="hanim_segment_c3" name="segment_c3">
+<Inline url="&quot;c3.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_c3">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_c3_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_c3disc" name="joint_c3disc">
+<HAnimJoint DEF="hanim_joint_c3disc_center" name="joint_c3disc_center">
+<HAnimSegment DEF="hanim_segment_c3disc" name="segment_c3disc">
+<Inline url="&quot;c3disc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_c3disc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_c3disc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_c4" name="joint_c4">
+<HAnimJoint DEF="hanim_joint_c4_center" name="joint_c4_center">
+<HAnimSegment DEF="hanim_segment_c4" name="segment_c4">
+<Inline url="&quot;c4.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_c4">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_c4_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_c4disc" name="joint_c4disc">
+<HAnimJoint DEF="hanim_joint_c4disc_center" name="joint_c4disc_center">
+<HAnimSegment DEF="hanim_segment_c4disc" name="segment_c4disc">
+<Inline url="&quot;c4disc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_c4disc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_c4disc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_c5" name="joint_c5">
+<HAnimJoint DEF="hanim_joint_c5_center" name="joint_c5_center">
+<HAnimSegment DEF="hanim_segment_c5" name="segment_c5">
+<Inline url="&quot;c5.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_c5">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_c5_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_c5disc" name="joint_c5disc">
+<HAnimJoint DEF="hanim_joint_c5disc_center" name="joint_c5disc_center">
+<HAnimSegment DEF="hanim_segment_c5disc" name="segment_c5disc">
+<Inline url="&quot;c5disc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_c5disc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_c5disc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_c6" name="joint_c6">
+<HAnimJoint DEF="hanim_joint_c6_center" name="joint_c6_center">
+<HAnimSegment DEF="hanim_segment_c6" name="segment_c6">
+<Inline url="&quot;c6.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_c6">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_c6_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_c6disc" name="joint_c6disc">
+<HAnimJoint DEF="hanim_joint_c6disc_center" name="joint_c6disc_center">
+<HAnimSegment DEF="hanim_segment_c6disc" name="segment_c6disc">
+<Inline url="&quot;c6disc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_c6disc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_c6disc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_c7" name="joint_c7">
+<HAnimJoint DEF="hanim_joint_c7_center" name="joint_c7_center">
+<HAnimSegment DEF="hanim_segment_c7" name="segment_c7">
+<Inline url="&quot;c7.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_c7">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_c7_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_c7disc" name="joint_c7disc">
+<HAnimJoint DEF="hanim_joint_c7disc_center" name="joint_c7disc_center">
+<HAnimSegment DEF="hanim_segment_c7disc" name="segment_c7disc">
+<Inline url="&quot;c7disc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_c7disc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_c7disc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_coccyx" name="joint_coccyx">
+<HAnimJoint DEF="hanim_joint_coccyx_center" name="joint_coccyx_center">
+<HAnimSegment DEF="hanim_segment_coccyx" name="segment_coccyx">
+<Inline url="&quot;coccyx.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_coccyx">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_coccyx_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_ethmoid" name="joint_ethmoid">
+<HAnimJoint DEF="hanim_joint_ethmoid_center" name="joint_ethmoid_center">
+<HAnimSegment DEF="hanim_segment_ethmoid" name="segment_ethmoid">
+<Inline url="&quot;ethmoid.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_ethmoid">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_ethmoid_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_ethmoid2" name="joint_ethmoid2">
+<HAnimJoint DEF="hanim_joint_ethmoid2_center" name="joint_ethmoid2_center">
+<HAnimSegment DEF="hanim_segment_ethmoid2" name="segment_ethmoid2">
+<Inline url="&quot;ethmoid2.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_ethmoid2">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_ethmoid2_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_frontal" name="joint_frontal">
+<HAnimJoint DEF="hanim_joint_frontal_center" name="joint_frontal_center">
+<HAnimSegment DEF="hanim_segment_frontal" name="segment_frontal">
+<Inline url="&quot;frontal.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_frontal">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_frontal_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_inconl" name="joint_inconl">
+<HAnimJoint DEF="hanim_joint_inconl_center" name="joint_inconl_center">
+<HAnimSegment DEF="hanim_segment_inconl" name="segment_inconl">
+<Inline url="&quot;inconl.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_inconl">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_inconl_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_inconr" name="joint_inconr">
+<HAnimJoint DEF="hanim_joint_inconr_center" name="joint_inconr_center">
+<HAnimSegment DEF="hanim_segment_inconr" name="segment_inconr">
+<Inline url="&quot;inconr.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_inconr">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_inconr_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_l1disk" name="joint_l1disk">
+<HAnimJoint DEF="hanim_joint_l1disk_center" name="joint_l1disk_center">
+<HAnimSegment DEF="hanim_segment_l1disk" name="segment_l1disk">
+<Inline url="&quot;l1disk.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_l1disk">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_l1disk_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_l2" name="joint_l2">
+<HAnimJoint DEF="hanim_joint_l2_center" name="joint_l2_center">
+<HAnimSegment DEF="hanim_segment_l2" name="segment_l2">
+<Inline url="&quot;l2.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_l2">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_l2_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_l2disk" name="joint_l2disk">
+<HAnimJoint DEF="hanim_joint_l2disk_center" name="joint_l2disk_center">
+<HAnimSegment DEF="hanim_segment_l2disk" name="segment_l2disk">
+<Inline url="&quot;l2disk.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_l2disk">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_l2disk_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_l3" name="joint_l3">
+<HAnimJoint DEF="hanim_joint_l3_center" name="joint_l3_center">
+<HAnimSegment DEF="hanim_segment_l3" name="segment_l3">
+<Inline url="&quot;l3.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_l3">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_l3_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_l3disk" name="joint_l3disk">
+<HAnimJoint DEF="hanim_joint_l3disk_center" name="joint_l3disk_center">
+<HAnimSegment DEF="hanim_segment_l3disk" name="segment_l3disk">
+<Inline url="&quot;l3disk.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_l3disk">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_l3disk_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_l4" name="joint_l4">
+<HAnimJoint DEF="hanim_joint_l4_center" name="joint_l4_center">
+<HAnimSegment DEF="hanim_segment_l4" name="segment_l4">
+<Inline url="&quot;l4.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_l4">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_l4_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_l4disk" name="joint_l4disk">
+<HAnimJoint DEF="hanim_joint_l4disk_center" name="joint_l4disk_center">
+<HAnimSegment DEF="hanim_segment_l4disk" name="segment_l4disk">
+<Inline url="&quot;l4disk.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_l4disk">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_l4disk_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_l5" name="joint_l5">
+<HAnimJoint DEF="hanim_joint_l5_center" name="joint_l5_center">
+<HAnimSegment DEF="hanim_segment_l5" name="segment_l5">
+<Inline url="&quot;l5.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_l5">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_l5_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_l5disc" name="joint_l5disc">
+<HAnimJoint DEF="hanim_joint_l5disc_center" name="joint_l5disc_center">
+<HAnimSegment DEF="hanim_segment_l5disc" name="segment_l5disc">
+<Inline url="&quot;l5disc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_l5disc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_l5disc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lacl" name="joint_lacl">
+<HAnimJoint DEF="hanim_joint_lacl_center" name="joint_lacl_center">
+<HAnimSegment DEF="hanim_segment_lacl" name="segment_lacl">
+<Inline url="&quot;lacl.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lacl">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lacl_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lacr" name="joint_lacr">
+<HAnimJoint DEF="hanim_joint_lacr_center" name="joint_lacr_center">
+<HAnimSegment DEF="hanim_segment_lacr" name="segment_lacr">
+<Inline url="&quot;lacr.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lacr">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lacr_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lcalc" name="joint_lcalc">
+<HAnimJoint DEF="hanim_joint_lcalc_center" name="joint_lcalc_center">
+<HAnimSegment DEF="hanim_segment_lcalc" name="segment_lcalc">
+<Inline url="&quot;lcalc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lcalc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lcalc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lcaninec" name="joint_lcaninec">
+<HAnimJoint DEF="hanim_joint_lcaninec_center" name="joint_lcaninec_center">
+<HAnimSegment DEF="hanim_segment_lcaninec" name="segment_lcaninec">
+<Inline url="&quot;lcaninec.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lcaninec">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lcaninec_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lcaniner" name="joint_lcaniner">
+<HAnimJoint DEF="hanim_joint_lcaniner_center" name="joint_lcaniner_center">
+<HAnimSegment DEF="hanim_segment_lcaniner" name="segment_lcaniner">
+<Inline url="&quot;lcaniner.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lcaniner">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lcaniner_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lcaninlc" name="joint_lcaninlc">
+<HAnimJoint DEF="hanim_joint_lcaninlc_center" name="joint_lcaninlc_center">
+<HAnimSegment DEF="hanim_segment_lcaninlc" name="segment_lcaninlc">
+<Inline url="&quot;lcaninlc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lcaninlc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lcaninlc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lcaninlr" name="joint_lcaninlr">
+<HAnimJoint DEF="hanim_joint_lcaninlr_center" name="joint_lcaninlr_center">
+<HAnimSegment DEF="hanim_segment_lcaninlr" name="segment_lcaninlr">
+<Inline url="&quot;lcaninlr.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lcaninlr">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lcaninlr_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lcaptate" name="joint_lcaptate">
+<HAnimJoint DEF="hanim_joint_lcaptate_center" name="joint_lcaptate_center">
+<HAnimSegment DEF="hanim_segment_lcaptate" name="segment_lcaptate">
+<Inline url="&quot;lcaptate.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lcaptate">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lcaptate_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lcartend" name="joint_lcartend">
+<HAnimJoint DEF="hanim_joint_lcartend_center" name="joint_lcartend_center">
+<HAnimSegment DEF="hanim_segment_lcartend" name="segment_lcartend">
+<Inline url="&quot;lcartend.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lcartend">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lcartend_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lccart" name="joint_lccart">
+<HAnimJoint DEF="hanim_joint_lccart_center" name="joint_lccart_center">
+<HAnimSegment DEF="hanim_segment_lccart" name="segment_lccart">
+<Inline url="&quot;lccart.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lccart">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lccart_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lccart2" name="joint_lccart2">
+<HAnimJoint DEF="hanim_joint_lccart2_center" name="joint_lccart2_center">
+<HAnimSegment DEF="hanim_segment_lccart2" name="segment_lccart2">
+<Inline url="&quot;lccart2.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lccart2">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lccart2_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lcenincc" name="joint_lcenincc">
+<HAnimJoint DEF="hanim_joint_lcenincc_center" name="joint_lcenincc_center">
+<HAnimSegment DEF="hanim_segment_lcenincc" name="segment_lcenincc">
+<Inline url="&quot;lcenincc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lcenincc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lcenincc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lcenincr" name="joint_lcenincr">
+<HAnimJoint DEF="hanim_joint_lcenincr_center" name="joint_lcenincr_center">
+<HAnimSegment DEF="hanim_segment_lcenincr" name="segment_lcenincr">
+<Inline url="&quot;lcenincr.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lcenincr">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lcenincr_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lceninlc" name="joint_lceninlc">
+<HAnimJoint DEF="hanim_joint_lceninlc_center" name="joint_lceninlc_center">
+<HAnimSegment DEF="hanim_segment_lceninlc" name="segment_lceninlc">
+<Inline url="&quot;lceninlc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lceninlc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lceninlc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lceninlr" name="joint_lceninlr">
+<HAnimJoint DEF="hanim_joint_lceninlr_center" name="joint_lceninlr_center">
+<HAnimSegment DEF="hanim_segment_lceninlr" name="segment_lceninlr">
+<Inline url="&quot;lceninlr.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lceninlr">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lceninlr_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lclavcle" name="joint_lclavcle">
+<HAnimJoint DEF="hanim_joint_lclavcle_center" name="joint_lclavcle_center">
+<HAnimSegment DEF="hanim_segment_lclavcle" name="segment_lclavcle">
+<Inline url="&quot;lclavcle.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lclavcle">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lclavcle_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lcoscart" name="joint_lcoscart">
+<HAnimJoint DEF="hanim_joint_lcoscart_center" name="joint_lcoscart_center">
+<HAnimSegment DEF="hanim_segment_lcoscart" name="segment_lcoscart">
+<Inline url="&quot;lcoscart.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lcoscart">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lcoscart_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lcuboid" name="joint_lcuboid">
+<HAnimJoint DEF="hanim_joint_lcuboid_center" name="joint_lcuboid_center">
+<HAnimSegment DEF="hanim_segment_lcuboid" name="segment_lcuboid">
+<Inline url="&quot;lcuboid.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lcuboid">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lcuboid_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_ldphal" name="joint_ldphal">
+<HAnimJoint DEF="hanim_joint_ldphal_center" name="joint_ldphal_center">
+<HAnimSegment DEF="hanim_segment_ldphal" name="segment_ldphal">
+<Inline url="&quot;ldphal.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_ldphal">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_ldphal_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_ldphal2" name="joint_ldphal2">
+<HAnimJoint DEF="hanim_joint_ldphal2_center" name="joint_ldphal2_center">
+<HAnimSegment DEF="hanim_segment_ldphal2" name="segment_ldphal2">
+<Inline url="&quot;ldphal2.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_ldphal2">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_ldphal2_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_ldphal3" name="joint_ldphal3">
+<HAnimJoint DEF="hanim_joint_ldphal3_center" name="joint_ldphal3_center">
+<HAnimSegment DEF="hanim_segment_ldphal3" name="segment_ldphal3">
+<Inline url="&quot;ldphal3.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_ldphal3">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_ldphal3_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_ldphal4" name="joint_ldphal4">
+<HAnimJoint DEF="hanim_joint_ldphal4_center" name="joint_ldphal4_center">
+<HAnimSegment DEF="hanim_segment_ldphal4" name="segment_ldphal4">
+<Inline url="&quot;ldphal4.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_ldphal4">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_ldphal4_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_ldphal5" name="joint_ldphal5">
+<HAnimJoint DEF="hanim_joint_ldphal5_center" name="joint_ldphal5_center">
+<HAnimSegment DEF="hanim_segment_ldphal5" name="segment_ldphal5">
+<Inline url="&quot;ldphal5.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_ldphal5">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_ldphal5_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lfdphal" name="joint_lfdphal">
+<HAnimJoint DEF="hanim_joint_lfdphal_center" name="joint_lfdphal_center">
+<HAnimSegment DEF="hanim_segment_lfdphal" name="segment_lfdphal">
+<Inline url="&quot;lfdphal.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfdphal">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfdphal_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lfdphal2" name="joint_lfdphal2">
+<HAnimJoint DEF="hanim_joint_lfdphal2_center" name="joint_lfdphal2_center">
+<HAnimSegment DEF="hanim_segment_lfdphal2" name="segment_lfdphal2">
+<Inline url="&quot;lfdphal2.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfdphal2">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfdphal2_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lfdphal3" name="joint_lfdphal3">
+<HAnimJoint DEF="hanim_joint_lfdphal3_center" name="joint_lfdphal3_center">
+<HAnimSegment DEF="hanim_segment_lfdphal3" name="segment_lfdphal3">
+<Inline url="&quot;lfdphal3.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfdphal3">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfdphal3_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lfdphal4" name="joint_lfdphal4">
+<HAnimJoint DEF="hanim_joint_lfdphal4_center" name="joint_lfdphal4_center">
+<HAnimSegment DEF="hanim_segment_lfdphal4" name="segment_lfdphal4">
+<Inline url="&quot;lfdphal4.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfdphal4">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfdphal4_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lfemur" name="joint_lfemur">
+<HAnimJoint DEF="hanim_joint_lfemur_center" name="joint_lfemur_center">
+<HAnimSegment DEF="hanim_segment_lfemur" name="segment_lfemur">
+<Inline url="&quot;lfemur.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfemur">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfemur_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lfibula" name="joint_lfibula">
+<HAnimJoint DEF="hanim_joint_lfibula_center" name="joint_lfibula_center">
+<HAnimSegment DEF="hanim_segment_lfibula" name="segment_lfibula">
+<Inline url="&quot;lfibula.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfibula">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfibula_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lfmet" name="joint_lfmet">
+<HAnimJoint DEF="hanim_joint_lfmet_center" name="joint_lfmet_center">
+<HAnimSegment DEF="hanim_segment_lfmet" name="segment_lfmet">
+<Inline url="&quot;lfmet.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfmet">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfmet_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lfmphal" name="joint_lfmphal">
+<HAnimJoint DEF="hanim_joint_lfmphal_center" name="joint_lfmphal_center">
+<HAnimSegment DEF="hanim_segment_lfmphal" name="segment_lfmphal">
+<Inline url="&quot;lfmphal.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfmphal">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfmphal_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lfmphal2" name="joint_lfmphal2">
+<HAnimJoint DEF="hanim_joint_lfmphal2_center" name="joint_lfmphal2_center">
+<HAnimSegment DEF="hanim_segment_lfmphal2" name="segment_lfmphal2">
+<Inline url="&quot;lfmphal2.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfmphal2">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfmphal2_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lfmphal3" name="joint_lfmphal3">
+<HAnimJoint DEF="hanim_joint_lfmphal3_center" name="joint_lfmphal3_center">
+<HAnimSegment DEF="hanim_segment_lfmphal3" name="segment_lfmphal3">
+<Inline url="&quot;lfmphal3.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfmphal3">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfmphal3_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lfmphal4" name="joint_lfmphal4">
+<HAnimJoint DEF="hanim_joint_lfmphal4_center" name="joint_lfmphal4_center">
+<HAnimSegment DEF="hanim_segment_lfmphal4" name="segment_lfmphal4">
+<Inline url="&quot;lfmphal4.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfmphal4">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfmphal4_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lfpprox" name="joint_lfpprox">
+<HAnimJoint DEF="hanim_joint_lfpprox_center" name="joint_lfpprox_center">
+<HAnimSegment DEF="hanim_segment_lfpprox" name="segment_lfpprox">
+<Inline url="&quot;lfpprox.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfpprox">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfpprox_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lfpprox2" name="joint_lfpprox2">
+<HAnimJoint DEF="hanim_joint_lfpprox2_center" name="joint_lfpprox2_center">
+<HAnimSegment DEF="hanim_segment_lfpprox2" name="segment_lfpprox2">
+<Inline url="&quot;lfpprox2.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfpprox2">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfpprox2_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lfpprox3" name="joint_lfpprox3">
+<HAnimJoint DEF="hanim_joint_lfpprox3_center" name="joint_lfpprox3_center">
+<HAnimSegment DEF="hanim_segment_lfpprox3" name="segment_lfpprox3">
+<Inline url="&quot;lfpprox3.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfpprox3">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfpprox3_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lfpprox4" name="joint_lfpprox4">
+<HAnimJoint DEF="hanim_joint_lfpprox4_center" name="joint_lfpprox4_center">
+<HAnimSegment DEF="hanim_segment_lfpprox4" name="segment_lfpprox4">
+<Inline url="&quot;lfpprox4.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfpprox4">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfpprox4_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lfpprox5" name="joint_lfpprox5">
+<HAnimJoint DEF="hanim_joint_lfpprox5_center" name="joint_lfpprox5_center">
+<HAnimSegment DEF="hanim_segment_lfpprox5" name="segment_lfpprox5">
+<Inline url="&quot;lfpprox5.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfpprox5">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfpprox5_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lfreecrt" name="joint_lfreecrt">
+<HAnimJoint DEF="hanim_joint_lfreecrt_center" name="joint_lfreecrt_center">
+<HAnimSegment DEF="hanim_segment_lfreecrt" name="segment_lfreecrt">
+<Inline url="&quot;lfreecrt.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfreecrt">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lfreecrt_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lhamate" name="joint_lhamate">
+<HAnimJoint DEF="hanim_joint_lhamate_center" name="joint_lhamate_center">
+<HAnimSegment DEF="hanim_segment_lhamate" name="segment_lhamate">
+<Inline url="&quot;lhamate.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lhamate">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lhamate_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lhumrus" name="joint_lhumrus">
+<HAnimJoint DEF="hanim_joint_lhumrus_center" name="joint_lhumrus_center">
+<HAnimSegment DEF="hanim_segment_lhumrus" name="segment_lhumrus">
+<Inline url="&quot;lhumrus.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lhumrus">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lhumrus_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_licun" name="joint_licun">
+<HAnimJoint DEF="hanim_joint_licun_center" name="joint_licun_center">
+<HAnimSegment DEF="hanim_segment_licun" name="segment_licun">
+<Inline url="&quot;licun.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_licun">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_licun_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_llatincc" name="joint_llatincc">
+<HAnimJoint DEF="hanim_joint_llatincc_center" name="joint_llatincc_center">
+<HAnimSegment DEF="hanim_segment_llatincc" name="segment_llatincc">
+<Inline url="&quot;llatincc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_llatincc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_llatincc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_llatincr" name="joint_llatincr">
+<HAnimJoint DEF="hanim_joint_llatincr_center" name="joint_llatincr_center">
+<HAnimSegment DEF="hanim_segment_llatincr" name="segment_llatincr">
+<Inline url="&quot;llatincr.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_llatincr">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_llatincr_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_llatinlc" name="joint_llatinlc">
+<HAnimJoint DEF="hanim_joint_llatinlc_center" name="joint_llatinlc_center">
+<HAnimSegment DEF="hanim_segment_llatinlc" name="segment_llatinlc">
+<Inline url="&quot;llatinlc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_llatinlc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_llatinlc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_llatinlr" name="joint_llatinlr">
+<HAnimJoint DEF="hanim_joint_llatinlr_center" name="joint_llatinlr_center">
+<HAnimSegment DEF="hanim_segment_llatinlr" name="segment_llatinlr">
+<Inline url="&quot;llatinlr.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_llatinlr">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_llatinlr_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_llcun" name="joint_llcun">
+<HAnimJoint DEF="hanim_joint_llcun_center" name="joint_llcun_center">
+<HAnimSegment DEF="hanim_segment_llcun" name="segment_llcun">
+<Inline url="&quot;llcun.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_llcun">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_llcun_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_llunate" name="joint_llunate">
+<HAnimJoint DEF="hanim_joint_llunate_center" name="joint_llunate_center">
+<HAnimSegment DEF="hanim_segment_llunate" name="segment_llunate">
+<Inline url="&quot;llunate.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_llunate">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_llunate_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lmc" name="joint_lmc">
+<HAnimJoint DEF="hanim_joint_lmc_center" name="joint_lmc_center">
+<HAnimSegment DEF="hanim_segment_lmc" name="segment_lmc">
+<Inline url="&quot;lmc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lmc2" name="joint_lmc2">
+<HAnimJoint DEF="hanim_joint_lmc2_center" name="joint_lmc2_center">
+<HAnimSegment DEF="hanim_segment_lmc2" name="segment_lmc2">
+<Inline url="&quot;lmc2.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmc2">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmc2_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lmc3" name="joint_lmc3">
+<HAnimJoint DEF="hanim_joint_lmc3_center" name="joint_lmc3_center">
+<HAnimSegment DEF="hanim_segment_lmc3" name="segment_lmc3">
+<Inline url="&quot;lmc3.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmc3">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmc3_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lmc4" name="joint_lmc4">
+<HAnimJoint DEF="hanim_joint_lmc4_center" name="joint_lmc4_center">
+<HAnimSegment DEF="hanim_segment_lmc4" name="segment_lmc4">
+<Inline url="&quot;lmc4.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmc4">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmc4_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lmc5" name="joint_lmc5">
+<HAnimJoint DEF="hanim_joint_lmc5_center" name="joint_lmc5_center">
+<HAnimSegment DEF="hanim_segment_lmc5" name="segment_lmc5">
+<Inline url="&quot;lmc5.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmc5">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmc5_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lmcun" name="joint_lmcun">
+<HAnimJoint DEF="hanim_joint_lmcun_center" name="joint_lmcun_center">
+<HAnimSegment DEF="hanim_segment_lmcun" name="segment_lmcun">
+<Inline url="&quot;lmcun.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmcun">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmcun_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lmet2" name="joint_lmet2">
+<HAnimJoint DEF="hanim_joint_lmet2_center" name="joint_lmet2_center">
+<HAnimSegment DEF="hanim_segment_lmet2" name="segment_lmet2">
+<Inline url="&quot;lmet2.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmet2">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmet2_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lmet3" name="joint_lmet3">
+<HAnimJoint DEF="hanim_joint_lmet3_center" name="joint_lmet3_center">
+<HAnimSegment DEF="hanim_segment_lmet3" name="segment_lmet3">
+<Inline url="&quot;lmet3.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmet3">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmet3_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lmet4" name="joint_lmet4">
+<HAnimJoint DEF="hanim_joint_lmet4_center" name="joint_lmet4_center">
+<HAnimSegment DEF="hanim_segment_lmet4" name="segment_lmet4">
+<Inline url="&quot;lmet4.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmet4">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmet4_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lmet5" name="joint_lmet5">
+<HAnimJoint DEF="hanim_joint_lmet5_center" name="joint_lmet5_center">
+<HAnimSegment DEF="hanim_segment_lmet5" name="segment_lmet5">
+<Inline url="&quot;lmet5.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmet5">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmet5_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lmolar1c" name="joint_lmolar1c">
+<HAnimJoint DEF="hanim_joint_lmolar1c_center" name="joint_lmolar1c_center">
+<HAnimSegment DEF="hanim_segment_lmolar1c" name="segment_lmolar1c">
+<Inline url="&quot;lmolar1c.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmolar1c">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmolar1c_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lmolar1r" name="joint_lmolar1r">
+<HAnimJoint DEF="hanim_joint_lmolar1r_center" name="joint_lmolar1r_center">
+<HAnimSegment DEF="hanim_segment_lmolar1r" name="segment_lmolar1r">
+<Inline url="&quot;lmolar1r.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmolar1r">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmolar1r_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lmolar2c" name="joint_lmolar2c">
+<HAnimJoint DEF="hanim_joint_lmolar2c_center" name="joint_lmolar2c_center">
+<HAnimSegment DEF="hanim_segment_lmolar2c" name="segment_lmolar2c">
+<Inline url="&quot;lmolar2c.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmolar2c">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmolar2c_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lmolar2r" name="joint_lmolar2r">
+<HAnimJoint DEF="hanim_joint_lmolar2r_center" name="joint_lmolar2r_center">
+<HAnimSegment DEF="hanim_segment_lmolar2r" name="segment_lmolar2r">
+<Inline url="&quot;lmolar2r.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmolar2r">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmolar2r_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lmolar3c" name="joint_lmolar3c">
+<HAnimJoint DEF="hanim_joint_lmolar3c_center" name="joint_lmolar3c_center">
+<HAnimSegment DEF="hanim_segment_lmolar3c" name="segment_lmolar3c">
+<Inline url="&quot;lmolar3c.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmolar3c">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmolar3c_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lmolar3r" name="joint_lmolar3r">
+<HAnimJoint DEF="hanim_joint_lmolar3r_center" name="joint_lmolar3r_center">
+<HAnimSegment DEF="hanim_segment_lmolar3r" name="segment_lmolar3r">
+<Inline url="&quot;lmolar3r.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmolar3r">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmolar3r_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lmolr1lc" name="joint_lmolr1lc">
+<HAnimJoint DEF="hanim_joint_lmolr1lc_center" name="joint_lmolr1lc_center">
+<HAnimSegment DEF="hanim_segment_lmolr1lc" name="segment_lmolr1lc">
+<Inline url="&quot;lmolr1lc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmolr1lc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmolr1lc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lmolr1lr" name="joint_lmolr1lr">
+<HAnimJoint DEF="hanim_joint_lmolr1lr_center" name="joint_lmolr1lr_center">
+<HAnimSegment DEF="hanim_segment_lmolr1lr" name="segment_lmolr1lr">
+<Inline url="&quot;lmolr1lr.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmolr1lr">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmolr1lr_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lmolr2lc" name="joint_lmolr2lc">
+<HAnimJoint DEF="hanim_joint_lmolr2lc_center" name="joint_lmolr2lc_center">
+<HAnimSegment DEF="hanim_segment_lmolr2lc" name="segment_lmolr2lc">
+<Inline url="&quot;lmolr2lc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmolr2lc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmolr2lc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lmolr2lr" name="joint_lmolr2lr">
+<HAnimJoint DEF="hanim_joint_lmolr2lr_center" name="joint_lmolr2lr_center">
+<HAnimSegment DEF="hanim_segment_lmolr2lr" name="segment_lmolr2lr">
+<Inline url="&quot;lmolr2lr.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmolr2lr">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmolr2lr_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lmolr3lc" name="joint_lmolr3lc">
+<HAnimJoint DEF="hanim_joint_lmolr3lc_center" name="joint_lmolr3lc_center">
+<HAnimSegment DEF="hanim_segment_lmolr3lc" name="segment_lmolr3lc">
+<Inline url="&quot;lmolr3lc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmolr3lc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmolr3lc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lmolr3lr" name="joint_lmolr3lr">
+<HAnimJoint DEF="hanim_joint_lmolr3lr_center" name="joint_lmolr3lr_center">
+<HAnimSegment DEF="hanim_segment_lmolr3lr" name="segment_lmolr3lr">
+<Inline url="&quot;lmolr3lr.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmolr3lr">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmolr3lr_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lmphal2" name="joint_lmphal2">
+<HAnimJoint DEF="hanim_joint_lmphal2_center" name="joint_lmphal2_center">
+<HAnimSegment DEF="hanim_segment_lmphal2" name="segment_lmphal2">
+<Inline url="&quot;lmphal2.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmphal2">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmphal2_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lmphal3" name="joint_lmphal3">
+<HAnimJoint DEF="hanim_joint_lmphal3_center" name="joint_lmphal3_center">
+<HAnimSegment DEF="hanim_segment_lmphal3" name="segment_lmphal3">
+<Inline url="&quot;lmphal3.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmphal3">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmphal3_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lmphal4" name="joint_lmphal4">
+<HAnimJoint DEF="hanim_joint_lmphal4_center" name="joint_lmphal4_center">
+<HAnimSegment DEF="hanim_segment_lmphal4" name="segment_lmphal4">
+<Inline url="&quot;lmphal4.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmphal4">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmphal4_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lmphal5" name="joint_lmphal5">
+<HAnimJoint DEF="hanim_joint_lmphal5_center" name="joint_lmphal5_center">
+<HAnimSegment DEF="hanim_segment_lmphal5" name="segment_lmphal5">
+<Inline url="&quot;lmphal5.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmphal5">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lmphal5_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lnaviclr" name="joint_lnaviclr">
+<HAnimJoint DEF="hanim_joint_lnaviclr_center" name="joint_lnaviclr_center">
+<HAnimSegment DEF="hanim_segment_lnaviclr" name="segment_lnaviclr">
+<Inline url="&quot;lnaviclr.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lnaviclr">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lnaviclr_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_loscoxae" name="joint_loscoxae">
+<HAnimJoint DEF="hanim_joint_loscoxae_center" name="joint_loscoxae_center">
+<HAnimSegment DEF="hanim_segment_loscoxae" name="segment_loscoxae">
+<Inline url="&quot;loscoxae.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_loscoxae">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_loscoxae_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lowleg" name="joint_lowleg">
+<HAnimJoint DEF="hanim_joint_lowleg_center" name="joint_lowleg_center">
+<HAnimSegment DEF="hanim_segment_lowleg" name="segment_lowleg">
+<Inline url="&quot;lowleg.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lowleg">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lowleg_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lpisform" name="joint_lpisform">
+<HAnimJoint DEF="hanim_joint_lpisform_center" name="joint_lpisform_center">
+<HAnimSegment DEF="hanim_segment_lpisform" name="segment_lpisform">
+<Inline url="&quot;lpisform.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lpisform">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lpisform_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lpphal" name="joint_lpphal">
+<HAnimJoint DEF="hanim_joint_lpphal_center" name="joint_lpphal_center">
+<HAnimSegment DEF="hanim_segment_lpphal" name="segment_lpphal">
+<Inline url="&quot;lpphal.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lpphal">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lpphal_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lpphal2" name="joint_lpphal2">
+<HAnimJoint DEF="hanim_joint_lpphal2_center" name="joint_lpphal2_center">
+<HAnimSegment DEF="hanim_segment_lpphal2" name="segment_lpphal2">
+<Inline url="&quot;lpphal2.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lpphal2">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lpphal2_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lpphal3" name="joint_lpphal3">
+<HAnimJoint DEF="hanim_joint_lpphal3_center" name="joint_lpphal3_center">
+<HAnimSegment DEF="hanim_segment_lpphal3" name="segment_lpphal3">
+<Inline url="&quot;lpphal3.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lpphal3">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lpphal3_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lpphal4" name="joint_lpphal4">
+<HAnimJoint DEF="hanim_joint_lpphal4_center" name="joint_lpphal4_center">
+<HAnimSegment DEF="hanim_segment_lpphal4" name="segment_lpphal4">
+<Inline url="&quot;lpphal4.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lpphal4">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lpphal4_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lpphal5" name="joint_lpphal5">
+<HAnimJoint DEF="hanim_joint_lpphal5_center" name="joint_lpphal5_center">
+<HAnimSegment DEF="hanim_segment_lpphal5" name="segment_lpphal5">
+<Inline url="&quot;lpphal5.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lpphal5">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lpphal5_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lprem1lc" name="joint_lprem1lc">
+<HAnimJoint DEF="hanim_joint_lprem1lc_center" name="joint_lprem1lc_center">
+<HAnimSegment DEF="hanim_segment_lprem1lc" name="segment_lprem1lc">
+<Inline url="&quot;lprem1lc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lprem1lc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lprem1lc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lprem1lr" name="joint_lprem1lr">
+<HAnimJoint DEF="hanim_joint_lprem1lr_center" name="joint_lprem1lr_center">
+<HAnimSegment DEF="hanim_segment_lprem1lr" name="segment_lprem1lr">
+<Inline url="&quot;lprem1lr.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lprem1lr">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lprem1lr_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lprem2lc" name="joint_lprem2lc">
+<HAnimJoint DEF="hanim_joint_lprem2lc_center" name="joint_lprem2lc_center">
+<HAnimSegment DEF="hanim_segment_lprem2lc" name="segment_lprem2lc">
+<Inline url="&quot;lprem2lc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lprem2lc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lprem2lc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lprem2lr" name="joint_lprem2lr">
+<HAnimJoint DEF="hanim_joint_lprem2lr_center" name="joint_lprem2lr_center">
+<HAnimSegment DEF="hanim_segment_lprem2lr" name="segment_lprem2lr">
+<Inline url="&quot;lprem2lr.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lprem2lr">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lprem2lr_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lpreo1lc" name="joint_lpreo1lc">
+<HAnimJoint DEF="hanim_joint_lpreo1lc_center" name="joint_lpreo1lc_center">
+<HAnimSegment DEF="hanim_segment_lpreo1lc" name="segment_lpreo1lc">
+<Inline url="&quot;lpreo1lc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lpreo1lc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lpreo1lc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lpreol1r" name="joint_lpreol1r">
+<HAnimJoint DEF="hanim_joint_lpreol1r_center" name="joint_lpreol1r_center">
+<HAnimSegment DEF="hanim_segment_lpreol1r" name="segment_lpreol1r">
+<Inline url="&quot;lpreol1r.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lpreol1r">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lpreol1r_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lpreol2c" name="joint_lpreol2c">
+<HAnimJoint DEF="hanim_joint_lpreol2c_center" name="joint_lpreol2c_center">
+<HAnimSegment DEF="hanim_segment_lpreol2c" name="segment_lpreol2c">
+<Inline url="&quot;lpreol2c.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lpreol2c">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lpreol2c_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lpreol2r" name="joint_lpreol2r">
+<HAnimJoint DEF="hanim_joint_lpreol2r_center" name="joint_lpreol2r_center">
+<HAnimSegment DEF="hanim_segment_lpreol2r" name="segment_lpreol2r">
+<Inline url="&quot;lpreol2r.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lpreol2r">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lpreol2r_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lradius" name="joint_lradius">
+<HAnimJoint DEF="hanim_joint_lradius_center" name="joint_lradius_center">
+<HAnimSegment DEF="hanim_segment_lradius" name="segment_lradius">
+<Inline url="&quot;lradius.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lradius">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lradius_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lrib10" name="joint_lrib10">
+<HAnimJoint DEF="hanim_joint_lrib10_center" name="joint_lrib10_center">
+<HAnimSegment DEF="hanim_segment_lrib10" name="segment_lrib10">
+<Inline url="&quot;lrib10.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lrib10">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lrib10_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lrib11" name="joint_lrib11">
+<HAnimJoint DEF="hanim_joint_lrib11_center" name="joint_lrib11_center">
+<HAnimSegment DEF="hanim_segment_lrib11" name="segment_lrib11">
+<Inline url="&quot;lrib11.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lrib11">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lrib11_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lrib12" name="joint_lrib12">
+<HAnimJoint DEF="hanim_joint_lrib12_center" name="joint_lrib12_center">
+<HAnimSegment DEF="hanim_segment_lrib12" name="segment_lrib12">
+<Inline url="&quot;lrib12.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lrib12">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lrib12_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lrib2" name="joint_lrib2">
+<HAnimJoint DEF="hanim_joint_lrib2_center" name="joint_lrib2_center">
+<HAnimSegment DEF="hanim_segment_lrib2" name="segment_lrib2">
+<Inline url="&quot;lrib2.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lrib2">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lrib2_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lrib3" name="joint_lrib3">
+<HAnimJoint DEF="hanim_joint_lrib3_center" name="joint_lrib3_center">
+<HAnimSegment DEF="hanim_segment_lrib3" name="segment_lrib3">
+<Inline url="&quot;lrib3.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lrib3">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lrib3_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lrib4" name="joint_lrib4">
+<HAnimJoint DEF="hanim_joint_lrib4_center" name="joint_lrib4_center">
+<HAnimSegment DEF="hanim_segment_lrib4" name="segment_lrib4">
+<Inline url="&quot;lrib4.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lrib4">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lrib4_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lrib5" name="joint_lrib5">
+<HAnimJoint DEF="hanim_joint_lrib5_center" name="joint_lrib5_center">
+<HAnimSegment DEF="hanim_segment_lrib5" name="segment_lrib5">
+<Inline url="&quot;lrib5.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lrib5">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lrib5_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lrib6" name="joint_lrib6">
+<HAnimJoint DEF="hanim_joint_lrib6_center" name="joint_lrib6_center">
+<HAnimSegment DEF="hanim_segment_lrib6" name="segment_lrib6">
+<Inline url="&quot;lrib6.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lrib6">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lrib6_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lrib7" name="joint_lrib7">
+<HAnimJoint DEF="hanim_joint_lrib7_center" name="joint_lrib7_center">
+<HAnimSegment DEF="hanim_segment_lrib7" name="segment_lrib7">
+<Inline url="&quot;lrib7.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lrib7">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lrib7_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lrib8" name="joint_lrib8">
+<HAnimJoint DEF="hanim_joint_lrib8_center" name="joint_lrib8_center">
+<HAnimSegment DEF="hanim_segment_lrib8" name="segment_lrib8">
+<Inline url="&quot;lrib8.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lrib8">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lrib8_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lrib9" name="joint_lrib9">
+<HAnimJoint DEF="hanim_joint_lrib9_center" name="joint_lrib9_center">
+<HAnimSegment DEF="hanim_segment_lrib9" name="segment_lrib9">
+<Inline url="&quot;lrib9.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lrib9">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lrib9_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lrrib" name="joint_lrrib">
+<HAnimJoint DEF="hanim_joint_lrrib_center" name="joint_lrrib_center">
+<HAnimSegment DEF="hanim_segment_lrrib" name="segment_lrrib">
+<Inline url="&quot;lrrib.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lrrib">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lrrib_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lscapula" name="joint_lscapula">
+<HAnimJoint DEF="hanim_joint_lscapula_center" name="joint_lscapula_center">
+<HAnimSegment DEF="hanim_segment_lscapula" name="segment_lscapula">
+<Inline url="&quot;lscapula.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lscapula">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lscapula_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lscphoid" name="joint_lscphoid">
+<HAnimJoint DEF="hanim_joint_lscphoid_center" name="joint_lscphoid_center">
+<HAnimSegment DEF="hanim_segment_lscphoid" name="segment_lscphoid">
+<Inline url="&quot;lscphoid.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lscphoid">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lscphoid_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_ltalus" name="joint_ltalus">
+<HAnimJoint DEF="hanim_joint_ltalus_center" name="joint_ltalus_center">
+<HAnimSegment DEF="hanim_segment_ltalus" name="segment_ltalus">
+<Inline url="&quot;ltalus.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_ltalus">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_ltalus_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_ltibia" name="joint_ltibia">
+<HAnimJoint DEF="hanim_joint_ltibia_center" name="joint_ltibia_center">
+<HAnimSegment DEF="hanim_segment_ltibia" name="segment_ltibia">
+<Inline url="&quot;ltibia.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_ltibia">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_ltibia_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_ltrpzium" name="joint_ltrpzium">
+<HAnimJoint DEF="hanim_joint_ltrpzium_center" name="joint_ltrpzium_center">
+<HAnimSegment DEF="hanim_segment_ltrpzium" name="segment_ltrpzium">
+<Inline url="&quot;ltrpzium.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_ltrpzium">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_ltrpzium_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_ltrpzoid" name="joint_ltrpzoid">
+<HAnimJoint DEF="hanim_joint_ltrpzoid_center" name="joint_ltrpzoid_center">
+<HAnimSegment DEF="hanim_segment_ltrpzoid" name="segment_ltrpzoid">
+<Inline url="&quot;ltrpzoid.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_ltrpzoid">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_ltrpzoid_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_ltrqtral" name="joint_ltrqtral">
+<HAnimJoint DEF="hanim_joint_ltrqtral_center" name="joint_ltrqtral_center">
+<HAnimSegment DEF="hanim_segment_ltrqtral" name="segment_ltrqtral">
+<Inline url="&quot;ltrqtral.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_ltrqtral">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_ltrqtral_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lulna" name="joint_lulna">
+<HAnimJoint DEF="hanim_joint_lulna_center" name="joint_lulna_center">
+<HAnimSegment DEF="hanim_segment_lulna" name="segment_lulna">
+<Inline url="&quot;lulna.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lulna">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lulna_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_lum" name="joint_lum">
+<HAnimJoint DEF="hanim_joint_lum_center" name="joint_lum_center">
+<HAnimSegment DEF="hanim_segment_lum" name="segment_lum">
+<Inline url="&quot;lum.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lum">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_lum_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_mand" name="joint_mand">
+<HAnimJoint DEF="hanim_joint_mand_center" name="joint_mand_center">
+<HAnimSegment DEF="hanim_segment_mand" name="segment_mand">
+<Inline url="&quot;mand.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_mand">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_mand_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_maxl" name="joint_maxl">
+<HAnimJoint DEF="hanim_joint_maxl_center" name="joint_maxl_center">
+<HAnimSegment DEF="hanim_segment_maxl" name="segment_maxl">
+<Inline url="&quot;maxl.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_maxl">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_maxl_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_maxr" name="joint_maxr">
+<HAnimJoint DEF="hanim_joint_maxr_center" name="joint_maxr_center">
+<HAnimSegment DEF="hanim_segment_maxr" name="segment_maxr">
+<Inline url="&quot;maxr.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_maxr">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_maxr_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_nasall" name="joint_nasall">
+<HAnimJoint DEF="hanim_joint_nasall_center" name="joint_nasall_center">
+<HAnimSegment DEF="hanim_segment_nasall" name="segment_nasall">
+<Inline url="&quot;nasall.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_nasall">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_nasall_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_nasalr" name="joint_nasalr">
+<HAnimJoint DEF="hanim_joint_nasalr_center" name="joint_nasalr_center">
+<HAnimSegment DEF="hanim_segment_nasalr" name="segment_nasalr">
+<Inline url="&quot;nasalr.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_nasalr">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_nasalr_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_occip" name="joint_occip">
+<HAnimJoint DEF="hanim_joint_occip_center" name="joint_occip_center">
+<HAnimSegment DEF="hanim_segment_occip" name="segment_occip">
+<Inline url="&quot;occip.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_occip">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_occip_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_palatl" name="joint_palatl">
+<HAnimJoint DEF="hanim_joint_palatl_center" name="joint_palatl_center">
+<HAnimSegment DEF="hanim_segment_palatl" name="segment_palatl">
+<Inline url="&quot;palatl.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_palatl">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_palatl_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_palatr" name="joint_palatr">
+<HAnimJoint DEF="hanim_joint_palatr_center" name="joint_palatr_center">
+<HAnimSegment DEF="hanim_segment_palatr" name="segment_palatr">
+<Inline url="&quot;palatr.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_palatr">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_palatr_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_parietl" name="joint_parietl">
+<HAnimJoint DEF="hanim_joint_parietl_center" name="joint_parietl_center">
+<HAnimSegment DEF="hanim_segment_parietl" name="segment_parietl">
+<Inline url="&quot;parietl.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_parietl">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_parietl_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_parietr" name="joint_parietr">
+<HAnimJoint DEF="hanim_joint_parietr_center" name="joint_parietr_center">
+<HAnimSegment DEF="hanim_segment_parietr" name="segment_parietr">
+<Inline url="&quot;parietr.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_parietr">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_parietr_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rcalc" name="joint_rcalc">
+<HAnimJoint DEF="hanim_joint_rcalc_center" name="joint_rcalc_center">
+<HAnimSegment DEF="hanim_segment_rcalc" name="segment_rcalc">
+<Inline url="&quot;rcalc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rcalc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rcalc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rcaninec" name="joint_rcaninec">
+<HAnimJoint DEF="hanim_joint_rcaninec_center" name="joint_rcaninec_center">
+<HAnimSegment DEF="hanim_segment_rcaninec" name="segment_rcaninec">
+<Inline url="&quot;rcaninec.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rcaninec">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rcaninec_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rcaniner" name="joint_rcaniner">
+<HAnimJoint DEF="hanim_joint_rcaniner_center" name="joint_rcaniner_center">
+<HAnimSegment DEF="hanim_segment_rcaniner" name="segment_rcaniner">
+<Inline url="&quot;rcaniner.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rcaniner">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rcaniner_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rcaninlc" name="joint_rcaninlc">
+<HAnimJoint DEF="hanim_joint_rcaninlc_center" name="joint_rcaninlc_center">
+<HAnimSegment DEF="hanim_segment_rcaninlc" name="segment_rcaninlc">
+<Inline url="&quot;rcaninlc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rcaninlc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rcaninlc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rcaninlr" name="joint_rcaninlr">
+<HAnimJoint DEF="hanim_joint_rcaninlr_center" name="joint_rcaninlr_center">
+<HAnimSegment DEF="hanim_segment_rcaninlr" name="segment_rcaninlr">
+<Inline url="&quot;rcaninlr.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rcaninlr">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rcaninlr_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rcaptate" name="joint_rcaptate">
+<HAnimJoint DEF="hanim_joint_rcaptate_center" name="joint_rcaptate_center">
+<HAnimSegment DEF="hanim_segment_rcaptate" name="segment_rcaptate">
+<Inline url="&quot;rcaptate.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rcaptate">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rcaptate_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rcartend" name="joint_rcartend">
+<HAnimJoint DEF="hanim_joint_rcartend_center" name="joint_rcartend_center">
+<HAnimSegment DEF="hanim_segment_rcartend" name="segment_rcartend">
+<Inline url="&quot;rcartend.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rcartend">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rcartend_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rccart" name="joint_rccart">
+<HAnimJoint DEF="hanim_joint_rccart_center" name="joint_rccart_center">
+<HAnimSegment DEF="hanim_segment_rccart" name="segment_rccart">
+<Inline url="&quot;rccart.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rccart">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rccart_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rccart2" name="joint_rccart2">
+<HAnimJoint DEF="hanim_joint_rccart2_center" name="joint_rccart2_center">
+<HAnimSegment DEF="hanim_segment_rccart2" name="segment_rccart2">
+<Inline url="&quot;rccart2.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rccart2">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rccart2_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rcenincc" name="joint_rcenincc">
+<HAnimJoint DEF="hanim_joint_rcenincc_center" name="joint_rcenincc_center">
+<HAnimSegment DEF="hanim_segment_rcenincc" name="segment_rcenincc">
+<Inline url="&quot;rcenincc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rcenincc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rcenincc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rcenincr" name="joint_rcenincr">
+<HAnimJoint DEF="hanim_joint_rcenincr_center" name="joint_rcenincr_center">
+<HAnimSegment DEF="hanim_segment_rcenincr" name="segment_rcenincr">
+<Inline url="&quot;rcenincr.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rcenincr">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rcenincr_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rceninlc" name="joint_rceninlc">
+<HAnimJoint DEF="hanim_joint_rceninlc_center" name="joint_rceninlc_center">
+<HAnimSegment DEF="hanim_segment_rceninlc" name="segment_rceninlc">
+<Inline url="&quot;rceninlc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rceninlc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rceninlc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rceninlr" name="joint_rceninlr">
+<HAnimJoint DEF="hanim_joint_rceninlr_center" name="joint_rceninlr_center">
+<HAnimSegment DEF="hanim_segment_rceninlr" name="segment_rceninlr">
+<Inline url="&quot;rceninlr.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rceninlr">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rceninlr_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rclavcle" name="joint_rclavcle">
+<HAnimJoint DEF="hanim_joint_rclavcle_center" name="joint_rclavcle_center">
+<HAnimSegment DEF="hanim_segment_rclavcle" name="segment_rclavcle">
+<Inline url="&quot;rclavcle.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rclavcle">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rclavcle_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rcoscart" name="joint_rcoscart">
+<HAnimJoint DEF="hanim_joint_rcoscart_center" name="joint_rcoscart_center">
+<HAnimSegment DEF="hanim_segment_rcoscart" name="segment_rcoscart">
+<Inline url="&quot;rcoscart.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rcoscart">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rcoscart_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rcuboid" name="joint_rcuboid">
+<HAnimJoint DEF="hanim_joint_rcuboid_center" name="joint_rcuboid_center">
+<HAnimSegment DEF="hanim_segment_rcuboid" name="segment_rcuboid">
+<Inline url="&quot;rcuboid.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rcuboid">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rcuboid_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rdphal" name="joint_rdphal">
+<HAnimJoint DEF="hanim_joint_rdphal_center" name="joint_rdphal_center">
+<HAnimSegment DEF="hanim_segment_rdphal" name="segment_rdphal">
+<Inline url="&quot;rdphal.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rdphal">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rdphal_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rdphal2" name="joint_rdphal2">
+<HAnimJoint DEF="hanim_joint_rdphal2_center" name="joint_rdphal2_center">
+<HAnimSegment DEF="hanim_segment_rdphal2" name="segment_rdphal2">
+<Inline url="&quot;rdphal2.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rdphal2">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rdphal2_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rdphal3" name="joint_rdphal3">
+<HAnimJoint DEF="hanim_joint_rdphal3_center" name="joint_rdphal3_center">
+<HAnimSegment DEF="hanim_segment_rdphal3" name="segment_rdphal3">
+<Inline url="&quot;rdphal3.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rdphal3">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rdphal3_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rdphal4" name="joint_rdphal4">
+<HAnimJoint DEF="hanim_joint_rdphal4_center" name="joint_rdphal4_center">
+<HAnimSegment DEF="hanim_segment_rdphal4" name="segment_rdphal4">
+<Inline url="&quot;rdphal4.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rdphal4">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rdphal4_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rdphal5" name="joint_rdphal5">
+<HAnimJoint DEF="hanim_joint_rdphal5_center" name="joint_rdphal5_center">
+<HAnimSegment DEF="hanim_segment_rdphal5" name="segment_rdphal5">
+<Inline url="&quot;rdphal5.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rdphal5">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rdphal5_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rfdphal" name="joint_rfdphal">
+<HAnimJoint DEF="hanim_joint_rfdphal_center" name="joint_rfdphal_center">
+<HAnimSegment DEF="hanim_segment_rfdphal" name="segment_rfdphal">
+<Inline url="&quot;rfdphal.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfdphal">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfdphal_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rfdphal2" name="joint_rfdphal2">
+<HAnimJoint DEF="hanim_joint_rfdphal2_center" name="joint_rfdphal2_center">
+<HAnimSegment DEF="hanim_segment_rfdphal2" name="segment_rfdphal2">
+<Inline url="&quot;rfdphal2.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfdphal2">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfdphal2_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rfdphal3" name="joint_rfdphal3">
+<HAnimJoint DEF="hanim_joint_rfdphal3_center" name="joint_rfdphal3_center">
+<HAnimSegment DEF="hanim_segment_rfdphal3" name="segment_rfdphal3">
+<Inline url="&quot;rfdphal3.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfdphal3">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfdphal3_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rfdphal4" name="joint_rfdphal4">
+<HAnimJoint DEF="hanim_joint_rfdphal4_center" name="joint_rfdphal4_center">
+<HAnimSegment DEF="hanim_segment_rfdphal4" name="segment_rfdphal4">
+<Inline url="&quot;rfdphal4.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfdphal4">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfdphal4_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rfdphal5" name="joint_rfdphal5">
+<HAnimJoint DEF="hanim_joint_rfdphal5_center" name="joint_rfdphal5_center">
+<HAnimSegment DEF="hanim_segment_rfdphal5" name="segment_rfdphal5">
+<Inline url="&quot;rfdphal5.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfdphal5">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfdphal5_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rfemur" name="joint_rfemur">
+<HAnimJoint DEF="hanim_joint_rfemur_center" name="joint_rfemur_center">
+<HAnimSegment DEF="hanim_segment_rfemur" name="segment_rfemur">
+<Inline url="&quot;rfemur.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfemur">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfemur_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rfmet" name="joint_rfmet">
+<HAnimJoint DEF="hanim_joint_rfmet_center" name="joint_rfmet_center">
+<HAnimSegment DEF="hanim_segment_rfmet" name="segment_rfmet">
+<Inline url="&quot;rfmet.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfmet">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfmet_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rfmphal" name="joint_rfmphal">
+<HAnimJoint DEF="hanim_joint_rfmphal_center" name="joint_rfmphal_center">
+<HAnimSegment DEF="hanim_segment_rfmphal" name="segment_rfmphal">
+<Inline url="&quot;rfmphal.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfmphal">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfmphal_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rfmphal2" name="joint_rfmphal2">
+<HAnimJoint DEF="hanim_joint_rfmphal2_center" name="joint_rfmphal2_center">
+<HAnimSegment DEF="hanim_segment_rfmphal2" name="segment_rfmphal2">
+<Inline url="&quot;rfmphal2.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfmphal2">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfmphal2_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rfmphal3" name="joint_rfmphal3">
+<HAnimJoint DEF="hanim_joint_rfmphal3_center" name="joint_rfmphal3_center">
+<HAnimSegment DEF="hanim_segment_rfmphal3" name="segment_rfmphal3">
+<Inline url="&quot;rfmphal3.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfmphal3">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfmphal3_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rfmphal4" name="joint_rfmphal4">
+<HAnimJoint DEF="hanim_joint_rfmphal4_center" name="joint_rfmphal4_center">
+<HAnimSegment DEF="hanim_segment_rfmphal4" name="segment_rfmphal4">
+<Inline url="&quot;rfmphal4.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfmphal4">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfmphal4_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rfpprox2" name="joint_rfpprox2">
+<HAnimJoint DEF="hanim_joint_rfpprox2_center" name="joint_rfpprox2_center">
+<HAnimSegment DEF="hanim_segment_rfpprox2" name="segment_rfpprox2">
+<Inline url="&quot;rfpprox2.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfpprox2">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfpprox2_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rfpprox3" name="joint_rfpprox3">
+<HAnimJoint DEF="hanim_joint_rfpprox3_center" name="joint_rfpprox3_center">
+<HAnimSegment DEF="hanim_segment_rfpprox3" name="segment_rfpprox3">
+<Inline url="&quot;rfpprox3.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfpprox3">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfpprox3_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rfpprox4" name="joint_rfpprox4">
+<HAnimJoint DEF="hanim_joint_rfpprox4_center" name="joint_rfpprox4_center">
+<HAnimSegment DEF="hanim_segment_rfpprox4" name="segment_rfpprox4">
+<Inline url="&quot;rfpprox4.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfpprox4">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfpprox4_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rfpprox5" name="joint_rfpprox5">
+<HAnimJoint DEF="hanim_joint_rfpprox5_center" name="joint_rfpprox5_center">
+<HAnimSegment DEF="hanim_segment_rfpprox5" name="segment_rfpprox5">
+<Inline url="&quot;rfpprox5.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfpprox5">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfpprox5_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rfprox" name="joint_rfprox">
+<HAnimJoint DEF="hanim_joint_rfprox_center" name="joint_rfprox_center">
+<HAnimSegment DEF="hanim_segment_rfprox" name="segment_rfprox">
+<Inline url="&quot;rfprox.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfprox">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfprox_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rfreecrt" name="joint_rfreecrt">
+<HAnimJoint DEF="hanim_joint_rfreecrt_center" name="joint_rfreecrt_center">
+<HAnimSegment DEF="hanim_segment_rfreecrt" name="segment_rfreecrt">
+<Inline url="&quot;rfreecrt.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfreecrt">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rfreecrt_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rhamate" name="joint_rhamate">
+<HAnimJoint DEF="hanim_joint_rhamate_center" name="joint_rhamate_center">
+<HAnimSegment DEF="hanim_segment_rhamate" name="segment_rhamate">
+<Inline url="&quot;rhamate.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rhamate">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rhamate_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rhumerus" name="joint_rhumerus">
+<HAnimJoint DEF="hanim_joint_rhumerus_center" name="joint_rhumerus_center">
+<HAnimSegment DEF="hanim_segment_rhumerus" name="segment_rhumerus">
+<Inline url="&quot;rhumerus.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rhumerus">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rhumerus_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_ricun" name="joint_ricun">
+<HAnimJoint DEF="hanim_joint_ricun_center" name="joint_ricun_center">
+<HAnimSegment DEF="hanim_segment_ricun" name="segment_ricun">
+<Inline url="&quot;ricun.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_ricun">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_ricun_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rlatincc" name="joint_rlatincc">
+<HAnimJoint DEF="hanim_joint_rlatincc_center" name="joint_rlatincc_center">
+<HAnimSegment DEF="hanim_segment_rlatincc" name="segment_rlatincc">
+<Inline url="&quot;rlatincc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rlatincc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rlatincc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rlatincr" name="joint_rlatincr">
+<HAnimJoint DEF="hanim_joint_rlatincr_center" name="joint_rlatincr_center">
+<HAnimSegment DEF="hanim_segment_rlatincr" name="segment_rlatincr">
+<Inline url="&quot;rlatincr.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rlatincr">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rlatincr_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rlatinlc" name="joint_rlatinlc">
+<HAnimJoint DEF="hanim_joint_rlatinlc_center" name="joint_rlatinlc_center">
+<HAnimSegment DEF="hanim_segment_rlatinlc" name="segment_rlatinlc">
+<Inline url="&quot;rlatinlc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rlatinlc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rlatinlc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rlatinlr" name="joint_rlatinlr">
+<HAnimJoint DEF="hanim_joint_rlatinlr_center" name="joint_rlatinlr_center">
+<HAnimSegment DEF="hanim_segment_rlatinlr" name="segment_rlatinlr">
+<Inline url="&quot;rlatinlr.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rlatinlr">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rlatinlr_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rlcun" name="joint_rlcun">
+<HAnimJoint DEF="hanim_joint_rlcun_center" name="joint_rlcun_center">
+<HAnimSegment DEF="hanim_segment_rlcun" name="segment_rlcun">
+<Inline url="&quot;rlcun.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rlcun">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rlcun_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rlunate" name="joint_rlunate">
+<HAnimJoint DEF="hanim_joint_rlunate_center" name="joint_rlunate_center">
+<HAnimSegment DEF="hanim_segment_rlunate" name="segment_rlunate">
+<Inline url="&quot;rlunate.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rlunate">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rlunate_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rmc" name="joint_rmc">
+<HAnimJoint DEF="hanim_joint_rmc_center" name="joint_rmc_center">
+<HAnimSegment DEF="hanim_segment_rmc" name="segment_rmc">
+<Inline url="&quot;rmc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rmc2" name="joint_rmc2">
+<HAnimJoint DEF="hanim_joint_rmc2_center" name="joint_rmc2_center">
+<HAnimSegment DEF="hanim_segment_rmc2" name="segment_rmc2">
+<Inline url="&quot;rmc2.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmc2">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmc2_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rmc3" name="joint_rmc3">
+<HAnimJoint DEF="hanim_joint_rmc3_center" name="joint_rmc3_center">
+<HAnimSegment DEF="hanim_segment_rmc3" name="segment_rmc3">
+<Inline url="&quot;rmc3.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmc3">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmc3_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rmc4" name="joint_rmc4">
+<HAnimJoint DEF="hanim_joint_rmc4_center" name="joint_rmc4_center">
+<HAnimSegment DEF="hanim_segment_rmc4" name="segment_rmc4">
+<Inline url="&quot;rmc4.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmc4">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmc4_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rmc5" name="joint_rmc5">
+<HAnimJoint DEF="hanim_joint_rmc5_center" name="joint_rmc5_center">
+<HAnimSegment DEF="hanim_segment_rmc5" name="segment_rmc5">
+<Inline url="&quot;rmc5.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmc5">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmc5_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rmcun" name="joint_rmcun">
+<HAnimJoint DEF="hanim_joint_rmcun_center" name="joint_rmcun_center">
+<HAnimSegment DEF="hanim_segment_rmcun" name="segment_rmcun">
+<Inline url="&quot;rmcun.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmcun">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmcun_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rmet2" name="joint_rmet2">
+<HAnimJoint DEF="hanim_joint_rmet2_center" name="joint_rmet2_center">
+<HAnimSegment DEF="hanim_segment_rmet2" name="segment_rmet2">
+<Inline url="&quot;rmet2.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmet2">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmet2_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rmet3" name="joint_rmet3">
+<HAnimJoint DEF="hanim_joint_rmet3_center" name="joint_rmet3_center">
+<HAnimSegment DEF="hanim_segment_rmet3" name="segment_rmet3">
+<Inline url="&quot;rmet3.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmet3">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmet3_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rmet4" name="joint_rmet4">
+<HAnimJoint DEF="hanim_joint_rmet4_center" name="joint_rmet4_center">
+<HAnimSegment DEF="hanim_segment_rmet4" name="segment_rmet4">
+<Inline url="&quot;rmet4.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmet4">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmet4_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rmet5" name="joint_rmet5">
+<HAnimJoint DEF="hanim_joint_rmet5_center" name="joint_rmet5_center">
+<HAnimSegment DEF="hanim_segment_rmet5" name="segment_rmet5">
+<Inline url="&quot;rmet5.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmet5">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmet5_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rmolar1c" name="joint_rmolar1c">
+<HAnimJoint DEF="hanim_joint_rmolar1c_center" name="joint_rmolar1c_center">
+<HAnimSegment DEF="hanim_segment_rmolar1c" name="segment_rmolar1c">
+<Inline url="&quot;rmolar1c.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmolar1c">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmolar1c_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rmolar1r" name="joint_rmolar1r">
+<HAnimJoint DEF="hanim_joint_rmolar1r_center" name="joint_rmolar1r_center">
+<HAnimSegment DEF="hanim_segment_rmolar1r" name="segment_rmolar1r">
+<Inline url="&quot;rmolar1r.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmolar1r">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmolar1r_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rmolar2c" name="joint_rmolar2c">
+<HAnimJoint DEF="hanim_joint_rmolar2c_center" name="joint_rmolar2c_center">
+<HAnimSegment DEF="hanim_segment_rmolar2c" name="segment_rmolar2c">
+<Inline url="&quot;rmolar2c.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmolar2c">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmolar2c_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rmolar2r" name="joint_rmolar2r">
+<HAnimJoint DEF="hanim_joint_rmolar2r_center" name="joint_rmolar2r_center">
+<HAnimSegment DEF="hanim_segment_rmolar2r" name="segment_rmolar2r">
+<Inline url="&quot;rmolar2r.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmolar2r">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmolar2r_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rmolar3c" name="joint_rmolar3c">
+<HAnimJoint DEF="hanim_joint_rmolar3c_center" name="joint_rmolar3c_center">
+<HAnimSegment DEF="hanim_segment_rmolar3c" name="segment_rmolar3c">
+<Inline url="&quot;rmolar3c.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmolar3c">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmolar3c_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rmolar3r" name="joint_rmolar3r">
+<HAnimJoint DEF="hanim_joint_rmolar3r_center" name="joint_rmolar3r_center">
+<HAnimSegment DEF="hanim_segment_rmolar3r" name="segment_rmolar3r">
+<Inline url="&quot;rmolar3r.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmolar3r">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmolar3r_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rmolr1lc" name="joint_rmolr1lc">
+<HAnimJoint DEF="hanim_joint_rmolr1lc_center" name="joint_rmolr1lc_center">
+<HAnimSegment DEF="hanim_segment_rmolr1lc" name="segment_rmolr1lc">
+<Inline url="&quot;rmolr1lc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmolr1lc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmolr1lc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rmolr1lr" name="joint_rmolr1lr">
+<HAnimJoint DEF="hanim_joint_rmolr1lr_center" name="joint_rmolr1lr_center">
+<HAnimSegment DEF="hanim_segment_rmolr1lr" name="segment_rmolr1lr">
+<Inline url="&quot;rmolr1lr.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmolr1lr">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmolr1lr_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rmolr2lc" name="joint_rmolr2lc">
+<HAnimJoint DEF="hanim_joint_rmolr2lc_center" name="joint_rmolr2lc_center">
+<HAnimSegment DEF="hanim_segment_rmolr2lc" name="segment_rmolr2lc">
+<Inline url="&quot;rmolr2lc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmolr2lc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmolr2lc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rmolr2lr" name="joint_rmolr2lr">
+<HAnimJoint DEF="hanim_joint_rmolr2lr_center" name="joint_rmolr2lr_center">
+<HAnimSegment DEF="hanim_segment_rmolr2lr" name="segment_rmolr2lr">
+<Inline url="&quot;rmolr2lr.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmolr2lr">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmolr2lr_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rmolr3lc" name="joint_rmolr3lc">
+<HAnimJoint DEF="hanim_joint_rmolr3lc_center" name="joint_rmolr3lc_center">
+<HAnimSegment DEF="hanim_segment_rmolr3lc" name="segment_rmolr3lc">
+<Inline url="&quot;rmolr3lc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmolr3lc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmolr3lc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rmolr3lr" name="joint_rmolr3lr">
+<HAnimJoint DEF="hanim_joint_rmolr3lr_center" name="joint_rmolr3lr_center">
+<HAnimSegment DEF="hanim_segment_rmolr3lr" name="segment_rmolr3lr">
+<Inline url="&quot;rmolr3lr.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmolr3lr">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmolr3lr_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rmphal2" name="joint_rmphal2">
+<HAnimJoint DEF="hanim_joint_rmphal2_center" name="joint_rmphal2_center">
+<HAnimSegment DEF="hanim_segment_rmphal2" name="segment_rmphal2">
+<Inline url="&quot;rmphal2.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmphal2">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmphal2_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rmphal3" name="joint_rmphal3">
+<HAnimJoint DEF="hanim_joint_rmphal3_center" name="joint_rmphal3_center">
+<HAnimSegment DEF="hanim_segment_rmphal3" name="segment_rmphal3">
+<Inline url="&quot;rmphal3.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmphal3">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmphal3_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rmphal4" name="joint_rmphal4">
+<HAnimJoint DEF="hanim_joint_rmphal4_center" name="joint_rmphal4_center">
+<HAnimSegment DEF="hanim_segment_rmphal4" name="segment_rmphal4">
+<Inline url="&quot;rmphal4.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmphal4">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmphal4_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rmphal5" name="joint_rmphal5">
+<HAnimJoint DEF="hanim_joint_rmphal5_center" name="joint_rmphal5_center">
+<HAnimSegment DEF="hanim_segment_rmphal5" name="segment_rmphal5">
+<Inline url="&quot;rmphal5.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmphal5">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rmphal5_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rnaviclr" name="joint_rnaviclr">
+<HAnimJoint DEF="hanim_joint_rnaviclr_center" name="joint_rnaviclr_center">
+<HAnimSegment DEF="hanim_segment_rnaviclr" name="segment_rnaviclr">
+<Inline url="&quot;rnaviclr.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rnaviclr">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rnaviclr_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_roscoxae" name="joint_roscoxae">
+<HAnimJoint DEF="hanim_joint_roscoxae_center" name="joint_roscoxae_center">
+<HAnimSegment DEF="hanim_segment_roscoxae" name="segment_roscoxae">
+<Inline url="&quot;roscoxae.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_roscoxae">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_roscoxae_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rpisform" name="joint_rpisform">
+<HAnimJoint DEF="hanim_joint_rpisform_center" name="joint_rpisform_center">
+<HAnimSegment DEF="hanim_segment_rpisform" name="segment_rpisform">
+<Inline url="&quot;rpisform.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rpisform">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rpisform_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rpphal" name="joint_rpphal">
+<HAnimJoint DEF="hanim_joint_rpphal_center" name="joint_rpphal_center">
+<HAnimSegment DEF="hanim_segment_rpphal" name="segment_rpphal">
+<Inline url="&quot;rpphal.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rpphal">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rpphal_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rpphal2" name="joint_rpphal2">
+<HAnimJoint DEF="hanim_joint_rpphal2_center" name="joint_rpphal2_center">
+<HAnimSegment DEF="hanim_segment_rpphal2" name="segment_rpphal2">
+<Inline url="&quot;rpphal2.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rpphal2">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rpphal2_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rpphal3" name="joint_rpphal3">
+<HAnimJoint DEF="hanim_joint_rpphal3_center" name="joint_rpphal3_center">
+<HAnimSegment DEF="hanim_segment_rpphal3" name="segment_rpphal3">
+<Inline url="&quot;rpphal3.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rpphal3">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rpphal3_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rpphal4" name="joint_rpphal4">
+<HAnimJoint DEF="hanim_joint_rpphal4_center" name="joint_rpphal4_center">
+<HAnimSegment DEF="hanim_segment_rpphal4" name="segment_rpphal4">
+<Inline url="&quot;rpphal4.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rpphal4">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rpphal4_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rpphal5" name="joint_rpphal5">
+<HAnimJoint DEF="hanim_joint_rpphal5_center" name="joint_rpphal5_center">
+<HAnimSegment DEF="hanim_segment_rpphal5" name="segment_rpphal5">
+<Inline url="&quot;rpphal5.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rpphal5">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rpphal5_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rprem1lc" name="joint_rprem1lc">
+<HAnimJoint DEF="hanim_joint_rprem1lc_center" name="joint_rprem1lc_center">
+<HAnimSegment DEF="hanim_segment_rprem1lc" name="segment_rprem1lc">
+<Inline url="&quot;rprem1lc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rprem1lc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rprem1lc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rprem1lr" name="joint_rprem1lr">
+<HAnimJoint DEF="hanim_joint_rprem1lr_center" name="joint_rprem1lr_center">
+<HAnimSegment DEF="hanim_segment_rprem1lr" name="segment_rprem1lr">
+<Inline url="&quot;rprem1lr.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rprem1lr">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rprem1lr_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rprem2lc" name="joint_rprem2lc">
+<HAnimJoint DEF="hanim_joint_rprem2lc_center" name="joint_rprem2lc_center">
+<HAnimSegment DEF="hanim_segment_rprem2lc" name="segment_rprem2lc">
+<Inline url="&quot;rprem2lc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rprem2lc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rprem2lc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rprem2lr" name="joint_rprem2lr">
+<HAnimJoint DEF="hanim_joint_rprem2lr_center" name="joint_rprem2lr_center">
+<HAnimSegment DEF="hanim_segment_rprem2lr" name="segment_rprem2lr">
+<Inline url="&quot;rprem2lr.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rprem2lr">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rprem2lr_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rpreol1c" name="joint_rpreol1c">
+<HAnimJoint DEF="hanim_joint_rpreol1c_center" name="joint_rpreol1c_center">
+<HAnimSegment DEF="hanim_segment_rpreol1c" name="segment_rpreol1c">
+<Inline url="&quot;rpreol1c.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rpreol1c">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rpreol1c_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rpreol1r" name="joint_rpreol1r">
+<HAnimJoint DEF="hanim_joint_rpreol1r_center" name="joint_rpreol1r_center">
+<HAnimSegment DEF="hanim_segment_rpreol1r" name="segment_rpreol1r">
+<Inline url="&quot;rpreol1r.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rpreol1r">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rpreol1r_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rpreol2c" name="joint_rpreol2c">
+<HAnimJoint DEF="hanim_joint_rpreol2c_center" name="joint_rpreol2c_center">
+<HAnimSegment DEF="hanim_segment_rpreol2c" name="segment_rpreol2c">
+<Inline url="&quot;rpreol2c.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rpreol2c">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rpreol2c_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rpreol2r" name="joint_rpreol2r">
+<HAnimJoint DEF="hanim_joint_rpreol2r_center" name="joint_rpreol2r_center">
+<HAnimSegment DEF="hanim_segment_rpreol2r" name="segment_rpreol2r">
+<Inline url="&quot;rpreol2r.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rpreol2r">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rpreol2r_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rradius" name="joint_rradius">
+<HAnimJoint DEF="hanim_joint_rradius_center" name="joint_rradius_center">
+<HAnimSegment DEF="hanim_segment_rradius" name="segment_rradius">
+<Inline url="&quot;rradius.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rradius">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rradius_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rrib10" name="joint_rrib10">
+<HAnimJoint DEF="hanim_joint_rrib10_center" name="joint_rrib10_center">
+<HAnimSegment DEF="hanim_segment_rrib10" name="segment_rrib10">
+<Inline url="&quot;rrib10.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rrib10">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rrib10_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rrib11" name="joint_rrib11">
+<HAnimJoint DEF="hanim_joint_rrib11_center" name="joint_rrib11_center">
+<HAnimSegment DEF="hanim_segment_rrib11" name="segment_rrib11">
+<Inline url="&quot;rrib11.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rrib11">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rrib11_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rrib12" name="joint_rrib12">
+<HAnimJoint DEF="hanim_joint_rrib12_center" name="joint_rrib12_center">
+<HAnimSegment DEF="hanim_segment_rrib12" name="segment_rrib12">
+<Inline url="&quot;rrib12.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rrib12">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rrib12_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rrib2" name="joint_rrib2">
+<HAnimJoint DEF="hanim_joint_rrib2_center" name="joint_rrib2_center">
+<HAnimSegment DEF="hanim_segment_rrib2" name="segment_rrib2">
+<Inline url="&quot;rrib2.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rrib2">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rrib2_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rrib3" name="joint_rrib3">
+<HAnimJoint DEF="hanim_joint_rrib3_center" name="joint_rrib3_center">
+<HAnimSegment DEF="hanim_segment_rrib3" name="segment_rrib3">
+<Inline url="&quot;rrib3.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rrib3">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rrib3_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rrib4" name="joint_rrib4">
+<HAnimJoint DEF="hanim_joint_rrib4_center" name="joint_rrib4_center">
+<HAnimSegment DEF="hanim_segment_rrib4" name="segment_rrib4">
+<Inline url="&quot;rrib4.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rrib4">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rrib4_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rrib5" name="joint_rrib5">
+<HAnimJoint DEF="hanim_joint_rrib5_center" name="joint_rrib5_center">
+<HAnimSegment DEF="hanim_segment_rrib5" name="segment_rrib5">
+<Inline url="&quot;rrib5.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rrib5">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rrib5_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rrib6" name="joint_rrib6">
+<HAnimJoint DEF="hanim_joint_rrib6_center" name="joint_rrib6_center">
+<HAnimSegment DEF="hanim_segment_rrib6" name="segment_rrib6">
+<Inline url="&quot;rrib6.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rrib6">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rrib6_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rrib7" name="joint_rrib7">
+<HAnimJoint DEF="hanim_joint_rrib7_center" name="joint_rrib7_center">
+<HAnimSegment DEF="hanim_segment_rrib7" name="segment_rrib7">
+<Inline url="&quot;rrib7.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rrib7">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rrib7_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rrib8" name="joint_rrib8">
+<HAnimJoint DEF="hanim_joint_rrib8_center" name="joint_rrib8_center">
+<HAnimSegment DEF="hanim_segment_rrib8" name="segment_rrib8">
+<Inline url="&quot;rrib8.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rrib8">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rrib8_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rrib9" name="joint_rrib9">
+<HAnimJoint DEF="hanim_joint_rrib9_center" name="joint_rrib9_center">
+<HAnimSegment DEF="hanim_segment_rrib9" name="segment_rrib9">
+<Inline url="&quot;rrib9.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rrib9">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rrib9_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rrrib" name="joint_rrrib">
+<HAnimJoint DEF="hanim_joint_rrrib_center" name="joint_rrrib_center">
+<HAnimSegment DEF="hanim_segment_rrrib" name="segment_rrrib">
+<Inline url="&quot;rrrib.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rrrib">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rrrib_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rscapula" name="joint_rscapula">
+<HAnimJoint DEF="hanim_joint_rscapula_center" name="joint_rscapula_center">
+<HAnimSegment DEF="hanim_segment_rscapula" name="segment_rscapula">
+<Inline url="&quot;rscapula.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rscapula">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rscapula_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rscphoid" name="joint_rscphoid">
+<HAnimJoint DEF="hanim_joint_rscphoid_center" name="joint_rscphoid_center">
+<HAnimSegment DEF="hanim_segment_rscphoid" name="segment_rscphoid">
+<Inline url="&quot;rscphoid.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rscphoid">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rscphoid_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rtalus" name="joint_rtalus">
+<HAnimJoint DEF="hanim_joint_rtalus_center" name="joint_rtalus_center">
+<HAnimSegment DEF="hanim_segment_rtalus" name="segment_rtalus">
+<Inline url="&quot;rtalus.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rtalus">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rtalus_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rtibia" name="joint_rtibia">
+<HAnimJoint DEF="hanim_joint_rtibia_center" name="joint_rtibia_center">
+<HAnimSegment DEF="hanim_segment_rtibia" name="segment_rtibia">
+<Inline url="&quot;rtibia.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rtibia">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rtibia_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rtrpzium" name="joint_rtrpzium">
+<HAnimJoint DEF="hanim_joint_rtrpzium_center" name="joint_rtrpzium_center">
+<HAnimSegment DEF="hanim_segment_rtrpzium" name="segment_rtrpzium">
+<Inline url="&quot;rtrpzium.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rtrpzium">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rtrpzium_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rtrpzoid" name="joint_rtrpzoid">
+<HAnimJoint DEF="hanim_joint_rtrpzoid_center" name="joint_rtrpzoid_center">
+<HAnimSegment DEF="hanim_segment_rtrpzoid" name="segment_rtrpzoid">
+<Inline url="&quot;rtrpzoid.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rtrpzoid">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rtrpzoid_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rtrqtral" name="joint_rtrqtral">
+<HAnimJoint DEF="hanim_joint_rtrqtral_center" name="joint_rtrqtral_center">
+<HAnimSegment DEF="hanim_segment_rtrqtral" name="segment_rtrqtral">
+<Inline url="&quot;rtrqtral.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rtrqtral">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rtrqtral_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_rulna" name="joint_rulna">
+<HAnimJoint DEF="hanim_joint_rulna_center" name="joint_rulna_center">
+<HAnimSegment DEF="hanim_segment_rulna" name="segment_rulna">
+<Inline url="&quot;rulna.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rulna">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_rulna_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_sacrum" name="joint_sacrum">
+<HAnimJoint DEF="hanim_joint_sacrum_center" name="joint_sacrum_center">
+<HAnimSegment DEF="hanim_segment_sacrum" name="segment_sacrum">
+<Inline url="&quot;sacrum.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_sacrum">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_sacrum_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_sphenoid" name="joint_sphenoid">
+<HAnimJoint DEF="hanim_joint_sphenoid_center" name="joint_sphenoid_center">
+<HAnimSegment DEF="hanim_segment_sphenoid" name="segment_sphenoid">
+<Inline url="&quot;sphenoid.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_sphenoid">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_sphenoid_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_sternum" name="joint_sternum">
+<HAnimJoint DEF="hanim_joint_sternum_center" name="joint_sternum_center">
+<HAnimSegment DEF="hanim_segment_sternum" name="segment_sternum">
+<Inline url="&quot;sternum.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_sternum">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_sternum_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_sympubis" name="joint_sympubis">
+<HAnimJoint DEF="hanim_joint_sympubis_center" name="joint_sympubis_center">
+<HAnimSegment DEF="hanim_segment_sympubis" name="segment_sympubis">
+<Inline url="&quot;sympubis.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_sympubis">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_sympubis_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_t" name="joint_t">
+<HAnimJoint DEF="hanim_joint_t_center" name="joint_t_center">
+<HAnimSegment DEF="hanim_segment_t" name="segment_t">
+<Inline url="&quot;t.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_t10" name="joint_t10">
+<HAnimJoint DEF="hanim_joint_t10_center" name="joint_t10_center">
+<HAnimSegment DEF="hanim_segment_t10" name="segment_t10">
+<Inline url="&quot;t10.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t10">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t10_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_t10disc" name="joint_t10disc">
+<HAnimJoint DEF="hanim_joint_t10disc_center" name="joint_t10disc_center">
+<HAnimSegment DEF="hanim_segment_t10disc" name="segment_t10disc">
+<Inline url="&quot;t10disc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t10disc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t10disc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_t11" name="joint_t11">
+<HAnimJoint DEF="hanim_joint_t11_center" name="joint_t11_center">
+<HAnimSegment DEF="hanim_segment_t11" name="segment_t11">
+<Inline url="&quot;t11.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t11">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t11_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_t11disc" name="joint_t11disc">
+<HAnimJoint DEF="hanim_joint_t11disc_center" name="joint_t11disc_center">
+<HAnimSegment DEF="hanim_segment_t11disc" name="segment_t11disc">
+<Inline url="&quot;t11disc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t11disc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t11disc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_t12" name="joint_t12">
+<HAnimJoint DEF="hanim_joint_t12_center" name="joint_t12_center">
+<HAnimSegment DEF="hanim_segment_t12" name="segment_t12">
+<Inline url="&quot;t12.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t12">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t12_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_t12disc" name="joint_t12disc">
+<HAnimJoint DEF="hanim_joint_t12disc_center" name="joint_t12disc_center">
+<HAnimSegment DEF="hanim_segment_t12disc" name="segment_t12disc">
+<Inline url="&quot;t12disc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t12disc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t12disc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_t1disc" name="joint_t1disc">
+<HAnimJoint DEF="hanim_joint_t1disc_center" name="joint_t1disc_center">
+<HAnimSegment DEF="hanim_segment_t1disc" name="segment_t1disc">
+<Inline url="&quot;t1disc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t1disc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t1disc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_t2" name="joint_t2">
+<HAnimJoint DEF="hanim_joint_t2_center" name="joint_t2_center">
+<HAnimSegment DEF="hanim_segment_t2" name="segment_t2">
+<Inline url="&quot;t2.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t2">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t2_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_t2disc" name="joint_t2disc">
+<HAnimJoint DEF="hanim_joint_t2disc_center" name="joint_t2disc_center">
+<HAnimSegment DEF="hanim_segment_t2disc" name="segment_t2disc">
+<Inline url="&quot;t2disc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t2disc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t2disc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_t3" name="joint_t3">
+<HAnimJoint DEF="hanim_joint_t3_center" name="joint_t3_center">
+<HAnimSegment DEF="hanim_segment_t3" name="segment_t3">
+<Inline url="&quot;t3.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t3">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t3_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_t3disc" name="joint_t3disc">
+<HAnimJoint DEF="hanim_joint_t3disc_center" name="joint_t3disc_center">
+<HAnimSegment DEF="hanim_segment_t3disc" name="segment_t3disc">
+<Inline url="&quot;t3disc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t3disc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t3disc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_t4" name="joint_t4">
+<HAnimJoint DEF="hanim_joint_t4_center" name="joint_t4_center">
+<HAnimSegment DEF="hanim_segment_t4" name="segment_t4">
+<Inline url="&quot;t4.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t4">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t4_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_t4disc" name="joint_t4disc">
+<HAnimJoint DEF="hanim_joint_t4disc_center" name="joint_t4disc_center">
+<HAnimSegment DEF="hanim_segment_t4disc" name="segment_t4disc">
+<Inline url="&quot;t4disc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t4disc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t4disc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_t5" name="joint_t5">
+<HAnimJoint DEF="hanim_joint_t5_center" name="joint_t5_center">
+<HAnimSegment DEF="hanim_segment_t5" name="segment_t5">
+<Inline url="&quot;t5.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t5">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t5_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_t5disc" name="joint_t5disc">
+<HAnimJoint DEF="hanim_joint_t5disc_center" name="joint_t5disc_center">
+<HAnimSegment DEF="hanim_segment_t5disc" name="segment_t5disc">
+<Inline url="&quot;t5disc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t5disc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t5disc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_t6" name="joint_t6">
+<HAnimJoint DEF="hanim_joint_t6_center" name="joint_t6_center">
+<HAnimSegment DEF="hanim_segment_t6" name="segment_t6">
+<Inline url="&quot;t6.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t6">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t6_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_t6disc" name="joint_t6disc">
+<HAnimJoint DEF="hanim_joint_t6disc_center" name="joint_t6disc_center">
+<HAnimSegment DEF="hanim_segment_t6disc" name="segment_t6disc">
+<Inline url="&quot;t6disc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t6disc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t6disc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_t7" name="joint_t7">
+<HAnimJoint DEF="hanim_joint_t7_center" name="joint_t7_center">
+<HAnimSegment DEF="hanim_segment_t7" name="segment_t7">
+<Inline url="&quot;t7.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t7">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t7_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_t7disc" name="joint_t7disc">
+<HAnimJoint DEF="hanim_joint_t7disc_center" name="joint_t7disc_center">
+<HAnimSegment DEF="hanim_segment_t7disc" name="segment_t7disc">
+<Inline url="&quot;t7disc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t7disc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t7disc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_t8" name="joint_t8">
+<HAnimJoint DEF="hanim_joint_t8_center" name="joint_t8_center">
+<HAnimSegment DEF="hanim_segment_t8" name="segment_t8">
+<Inline url="&quot;t8.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t8">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t8_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_t8disc" name="joint_t8disc">
+<HAnimJoint DEF="hanim_joint_t8disc_center" name="joint_t8disc_center">
+<HAnimSegment DEF="hanim_segment_t8disc" name="segment_t8disc">
+<Inline url="&quot;t8disc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t8disc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t8disc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_t9" name="joint_t9">
+<HAnimJoint DEF="hanim_joint_t9_center" name="joint_t9_center">
+<HAnimSegment DEF="hanim_segment_t9" name="segment_t9">
+<Inline url="&quot;t9.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t9">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t9_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_t9disc" name="joint_t9disc">
+<HAnimJoint DEF="hanim_joint_t9disc_center" name="joint_t9disc_center">
+<HAnimSegment DEF="hanim_segment_t9disc" name="segment_t9disc">
+<Inline url="&quot;t9disc.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t9disc">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_t9disc_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_templ" name="joint_templ">
+<HAnimJoint DEF="hanim_joint_templ_center" name="joint_templ_center">
+<HAnimSegment DEF="hanim_segment_templ" name="segment_templ">
+<Inline url="&quot;templ.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_templ">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_templ_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_tempr" name="joint_tempr">
+<HAnimJoint DEF="hanim_joint_tempr_center" name="joint_tempr_center">
+<HAnimSegment DEF="hanim_segment_tempr" name="segment_tempr">
+<Inline url="&quot;tempr.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_tempr">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_tempr_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_vom" name="joint_vom">
+<HAnimJoint DEF="hanim_joint_vom_center" name="joint_vom_center">
+<HAnimSegment DEF="hanim_segment_vom" name="segment_vom">
+<Inline url="&quot;vom.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_vom">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_vom_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_zygol" name="joint_zygol">
+<HAnimJoint DEF="hanim_joint_zygol_center" name="joint_zygol_center">
+<HAnimSegment DEF="hanim_segment_zygol" name="segment_zygol">
+<Inline url="&quot;zygol.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_zygol">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_zygol_center">
+</HAnimJoint>
+</HAnimHumanoid>
+<HAnimHumanoid version="2.0">
+<HAnimJoint containerField="skeleton" DEF="hanim_joint_zygor" name="joint_zygor">
+<HAnimJoint DEF="hanim_joint_zygor_center" name="joint_zygor_center">
+<HAnimSegment DEF="hanim_segment_zygor" name="segment_zygor">
+<Inline url="&quot;zygor.x3d&quot;">
+</Inline>
+</HAnimSegment>
+</HAnimJoint>
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_zygor">
+</HAnimJoint>
+<HAnimJoint containerField="joints" USE="hanim_joint_zygor_center">
+</HAnimJoint>
+</HAnimHumanoid>
+</Transform>
+  </Transform>
+ </Transform>
+</Transform>
+
+    <Group DEF="UserInterface">
+      
+      <Transform DEF="CoordinateAxesAdjustedScale" scale="0.175 0.175 0.175">
+        <Inline DEF="CoordinateAxes" url="&quot;JointCoordinateAxes.x3dv&quot; &quot;../../X3dForWebAuthors/Chapter03-Grouping/CoordinateAxes.x3d&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03-Grouping/CoordinateAxes.x3d&quot; &quot;../../X3dForWebAuthors/Chapter03-Grouping/CoordinateAxes.wrl&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03-Grouping/CoordinateAxes.wrl&quot;" />
+      </Transform>
+    </Group>
+
+</Scene>
+</X3D>
