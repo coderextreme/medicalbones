@@ -30,6 +30,8 @@ class Explode:
         self.readXML(INPUT_FILE)
         parent_map = {c: p for p in self.root.iter() for c in p}
 
+        humanoid = None
+
         for shape_index, shape in enumerate(self.root.findall('.//Shape')):
             if shape is not None:
                 #for coordinate in shape.findall(".//Coordinate"):
@@ -94,21 +96,23 @@ class Explode:
                 scene.tail = "\n"
                 scene.append(shape)
                 self.putRootFromTree(root, out_file, directory) 
-                humanoid = xml.etree.ElementTree.Element('HAnimHumanoid')
-                humanoid.text = "\n"
-                humanoid.tail = "\n"
-                humanoid.set("version", "2.0")
 
-                parent = parent_map[shape]
-                index = list(parent).index(shape)
-                parent.insert(index, humanoid)
                 out_joint = xml.etree.ElementTree.Element('HAnimJoint')
                 out_joint.text = "\n"
                 out_joint.tail = "\n"
-                # TODO only top-level Joint
-                out_joint.set("containerField", "skeleton")
                 out_joint.set("DEF", "hanim_joint_"+shapeDEF)
                 out_joint.set("name", "joint_"+shapeDEF)
+
+                if humanoid is None:
+                    humanoid = xml.etree.ElementTree.Element('HAnimHumanoid')
+                    humanoid.text = "\n"
+                    humanoid.tail = "\n"
+                    humanoid.set("version", "2.0")
+                    parent = parent_map[shape]
+                    index = list(parent).index(shape)
+                    parent.insert(index, humanoid)
+                    out_joint.set("containerField", "skeleton")
+
                 humanoid.append(out_joint)
 
                 use_joint = xml.etree.ElementTree.Element('HAnimJoint')

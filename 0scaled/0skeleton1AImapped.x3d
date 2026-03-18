@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 4.1//EN" "https://www.web3d.org/specifications/x3d-4.1.dtd">
+<X3D xmlns:ns0="https://www.w3.org/2001/XMLSchema-instance" profile="Full" version="4.1" ns0:noNamespaceSchemaLocation="https://www.web3d.org/specifications/x3d-4.1.xsd">
+<head>
+ <component level="3" name="HAnim" />
+ <component level="4" name="Networking" />
+ <meta name="title" content="0skeleton1.x3d" />
+ <meta name="identifier" content="https://coderextreme.net/X3DJSONLD/src/main/data/0skeleton1.x3d" />
+ <meta name="generator" content="medicalbones/Explode.py / AI Conversion to HAnim V2.0 LOA-4 Hierarchy" />
+</head>
+<Scene>
+<NavigationInfo avatarSize="0.25 1.6 0.75" visibilityLimit="0" speed="1" headlight="false" type="&quot;EXAMINE&quot; &quot;ANY&quot;" />
+
+<DirectionalLight direction="0 1 1" />
+
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 Front" position="0 0.4 4" />
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 FrontClose" position="0 0.8 2" />
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 FrontCloser" position="0 1.2 1" />
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 Right Side" orientation="0 1 0 1.5708" position="2.6 0.8 0" />
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 Right Side Close" orientation="0 1 0 1.2" position="1 0.8 0.5" />
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 Left Side Close" orientation="0 1 0 -1.2" position="-1 0.8 0.5" />
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 Left Side" orientation="0 1 0 -1.5708" position="-2.6 0.8 0" />
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 Top" orientation="1 0 0 -1.5708" position="0 3.5 0" />
+
+<Transform translation="0 0 0">   
+ <Transform scale="0.029 0.029 0.029">   
+  <Transform rotation="0 0 1 0">  
+   <Transform rotation="0 0 1 0"> 
+
+<HAnimHumanoid DEF="hanim_humanoid" name="humanoid" version="2.0" loa="4">
+<HAnimJoint DEF="hanim_humanoid_root" name="humanoid_root" containerField="skeleton">
+  <HAnimJoint DEF="hanim_sacroiliac" name="sacroiliac">
+    <HAnimSegment DEF="hanim_pelvis" name="pelvis">
+      <Inline url="&quot;sacrum.x3d&quot;" />
+    </HAnimSegment>
+    
+    <HAnimJoint DEF="hanim_sacrococcygeal" name="sacrococcygeal">
+      <HAnimSegment DEF="hanim_coccyx_segment" name="coccyx_segment"><Inline url="&quot;coccyx.x3d&quot;" /></HAnimSegment>
+    </HAnimJoint>
+    <HAnimJoint DEF="hanim_l_coxal_joint" name="l_coxal_joint">
+      <HAnimSegment DEF="hanim_l_coxal_segment" name="l_coxal_segment"><Inline url="&quot;loscoxae.x3d&quot;" /></HAnimSegment>
+    </HAnimJoint>
+    <HAnimJoint DEF="hanim_r_coxal_joint" name="r_coxal_joint">
+      <HAnimSegment DEF="hanim_r_coxal_segment" name="r_coxal_segment"><Inline url="&quot;roscoxae.x3d&quot;" /></HAnimSegment>
+    </HAnimJoint>
+    <HAnimJoint DEF="hanim_sympubis_joint" name="sympubis_joint">
+      <HAnimSegment DEF="hanim_sympubis_segment" name="sympubis_segment"><Inline url="&quot;sympubis.x3d&quot;" /></HAnimSegment>
+    </HAnimJoint>
+
+    <!-- LEFT LEG -->
+    <HAnimJoint DEF="hanim_l_hip" name="l_hip">
+      <HAnimSegment DEF="hanim_l_thigh" name="l_thigh"><Inline url="&quot;lfemur.x3d&quot;" /></HAnimSegment>
+      <HAnimJoint DEF="hanim_l_knee" name="l_knee">
+        <HAnimSegment DEF="hanim_l_calf" name="l_calf"><Inline url="&quot;ltibia.x3d&quot;" /></HAnimSegment>
+        <HAnimJoint DEF="hanim_l_fibula_joint" name="l_fibula_joint">
+          <HAnimSegment DEF="hanim_l_fibula_segment" name="l_fibula_segment"><Inline url="&quot;lfibula.x3d&quot;" /></HAnimSegment>
+        </HAnimJoint>
+        <HAnimJoint DEF="hanim_l_ankle" name="l_ankle">
+          <HAnimSegment DEF="hanim_l_talus" name="l_talus"><Inline url="&quot;ltalus.x3d&quot;" /></HAnimSegment>
+          <HAnimJoint DEF="hanim_l_subtalar" name="l_subtalar">
+            <HAnimSegment DEF="hanim_l_calcaneus" name="l_calcaneus"><Inline url="&quot;lcalc.x3d&quot;" /></HAnimSegment>
+            <HAnimJoint DEF="hanim_l_midtarsal" name="l_midtarsal">
+              <HAnimSegment DEF="hanim_l_navicular" name="l_navicular"><Inline url="&quot;lnaviclr.x3d&quot;" /></HAnimSegment>
+              <HAnimJoint DEF="hanim_l_cuneiform_medial_joint" name="l_cuneiform_medial_joint"><HAnimSegment DEF="hanim_l_cuneiform_medial_segment" name="l_cuneiform_medial_segment"><Inline url="&quot;lmcun.x3d&quot;" /></HAnimSegment></HAnimJoint>
+              <HAnimJoint DEF="hanim_l_cuneiform_intermediate_joint" name="l_cuneiform_intermediate_joint"><HAnimSegment DEF="hanim_l_cuneiform_intermediate_segment" name="l_cuneiform_intermediate_segment"><Inline url="&quot;licun.x3d&quot;" /></HAnimSegment></HAnimJoint>
+              <HAnimJoint DEF="hanim_l_cuneiform_lateral_joint" name="l_cuneiform_lateral_joint"><HAnimSegment DEF="hanim_l_cuneiform_lateral_segment" name="l_cuneiform_lateral_segment"><Inline url="&quot;llcun.x3d&quot;" /></HAnimSegment></HAnimJoint>
+              <HAnimJoint DEF="hanim_l_cuboid_joint" name="l_cuboid_joint"><HAnimSegment DEF="hanim_l_cuboid_segment" name="l_cuboid_segment"><Inline url="&quot;lcuboid.x3d&quot;" /></HAnimSegment></HAnimJoint>
+              <HAnimJoint DEF="hanim_l_metatarsal_1" name="l_metatarsal_1">
+                <HAnimSegment DEF="hanim_l_metatarsal_1_segment" name="l_metatarsal_1_segment"><Inline url="&quot;lfmet.x3d&quot;" /></HAnimSegment>
+                <HAnimJoint DEF="hanim_l_metatarsophalangeal_1" name="l_metatarsophalangeal_1">
+                  <HAnimSegment DEF="hanim_l_proximal_phalanx_1" name="l_proximal_phalanx_1"><Inline url="&quot;lfpprox.x3d&quot;" /></HAnimSegment>
+                  <HAnimJoint DEF="hanim_l_interphalangeal_1" name="l_interphalangeal_1">
+                    <HAnimSegment DEF="hanim_l_distal_phalanx_1" name="l_distal_phalanx_1"><Inline url="&quot;lfdphal.x3d&quot;" /></HAnimSegment>
+                  </HAnimJoint>
+                </HAnimJoint>
+              </HAnimJoint>
+              <HAnimJoint DEF="hanim_l_metatarsal_2" name="l_metatarsal_2">
+                <HAnimSegment DEF="hanim_l_metatarsal_2_segment" name="l_metatarsal_2_segment"><Inline url="&quot;lmet2.x3d&quot;" /></HAnimSegment>
+                <HAnimJoint DEF="hanim_l_metatarsophalangeal_2" name="l_metatarsophalangeal_2">
+                  <HAnimSegment DEF="hanim_l_proximal_phalanx_2" name="l_proximal_phalanx_2"><Inline url="&quot;lfpprox2.x3d&quot;" /></HAnimSegment>
+                  <HAnimJoint DEF="hanim_l_proximal_interphalangeal_2" name="l_proximal_interphalangeal_2">
+                    <HAnimSegment DEF="hanim_l_middle_phalanx_2" name="l_middle_phalanx_2"><Inline url="&quot;lfmphal2.x3d&quot;" /></HAnimSegment>
+                    <HAnimJoint DEF="hanim_l_distal_interphalangeal_2" name="l_distal_interphalangeal_2">
+                      <HAnimSegment DEF="hanim_l_distal_phalanx_2" name="l_distal_phalanx_2"><Inline url="&quot;lfdphal2.x3d&quot;" /></HAnimSegment>
+                    </HAnimJoint>
+                  </HAnimJoint>
+                </HAnimJoint>
+              </HAnimJoint>
+              <HAnimJoint DEF="hanim_l_metatarsal_3" name="l_metatarsal_3">
+                <HAnimSegment DEF="hanim_l_metatarsal_3_segment" name="l_metatarsal_3_segment"><Inline url="&quot;lmet3.x3d&quot;" /></HAnimSegment>
+                <HAnimJoint DEF="hanim_l_metatarsophalangeal_3" name="l_metatarsophalangeal_3">
+                  <HAnimSegment DEF="hanim_l_proximal_phalanx_3" name="l_proximal_phalanx_3"><Inline url="&quot;lfpprox3.x3d&quot;" /></HAnimSegment>
+                  <HAnimJoint DEF="hanim_l_proximal_interphalangeal_3" name="l_proximal_interphalangeal_3">
+                    <HAnimSegment DEF="hanim_l_middle_phalanx_3" name="l_middle_phalanx_3"><Inline url="&quot;lfmphal3.x3d&quot;" /></HAnimSegment>
+                    <HAnimJoint DEF="hanim_l_distal_interphalangeal_3" name="l_distal_interphalangeal_3">
+                      <HAnimSegment DEF="hanim_l_distal_phalanx_3" name="l_distal_phalanx_3"><Inline url="&quot;lfdphal3.x3d&quot;" /></HAnimSegment>
+                    </HAnimJoint>
+                  </HAnimJoint>
+                </HAnimJoint>
+              </HAnimJoint>
+              <HAnimJoint DEF="hanim_l_metatarsal_4" name="l_metatarsal_4">
+                <HAnimSegment DEF="hanim_l_metatarsal_4_segment" name="l_metatarsal_4_segment"><Inline url="&quot;lmet4.x3d&quot;" /></HAnimSegment>
+                <HAnimJoint DEF="hanim_l_metatarsophalangeal_4" name="l_metatarsophalangeal_4">
+                  <HAnimSegment DEF="hanim_l_proximal_phalanx_4" name="l_proximal_phalanx_4"><Inline url="&quot;lfpprox4.x3d&quot;" /></HAnimSegment>
+                  <HAnimJoint DEF="hanim_l_proximal_interphalangeal_4" name="l_proximal_interphalangeal_4">
+                    <HAnimSegment DEF="hanim_l_middle_phalanx_4" name="l_middle_phalanx_4"><Inline url="&quot;lfmphal4.x3d&quot;" /></HAnimSegment>
+                    <HAnimJoint DEF="hanim_l_distal_interphalangeal_4" name="l_distal_interphalangeal_4">
+                      <HAnimSegment DEF="hanim_l_distal_phalanx_4" name="l_distal_phalanx_4"><Inline url="&quot;lfdphal4.x3d&quot;" /></HAnimSegment>
+                    </HAnimJoint>
+                  </HAnimJoint>
+                </HAnimJoint>
+              </HAnimJoint>
+              <HAnimJoint DEF="hanim_l_metatarsal_5" name="l_metatarsal_5">
+                <HAnimSegment DEF="hanim_l_metatarsal_5_segment" name="l_metatarsal_5_segment"><Inline url="&quot;lmet5.x3d&quot;" /></HAnimSegment>
+                <HAnimJoint DEF="hanim_l_metatarsophalangeal_5" name="l_metatarsophalangeal_5">
+                  <HAnimSegment DEF="hanim_l_proximal_phalanx_5" name="l_proximal_phalanx_5"><Inline url="&quot;lfpprox5.x3d&quot;" /></HAnimSegment>
+                  <HAnimJoint DEF="hanim_l_distal_interphalangeal_5" name="l_distal_interphalangeal_5">
+			  <!--
+                    <HAnimSegment DEF="hanim_l_distal_phalanx_5" name="l_distal_phalanx_5"><Inline url="&quot;lfdphal5.x3d&quot;" /></HAnimSegment>
+			  -->
+                  </HAnimJoint>
+                </HAnimJoint>
+              </HAnimJoint>
+            </HAnimJoint>
+          </HAnimJoint>
+        </HAnimJoint>
+      </HAnimJoint>
+    </HAnimJoint>
+
+    <!-- RIGHT LEG -->
+    <HAnimJoint DEF="hanim_r_hip" name="r_hip">
+      <HAnimSegment DEF="hanim_r_thigh" name="r_thigh"><Inline url="&quot;rfemur.x3d&quot;" /></HAnimSegment>
+      <HAnimJoint DEF="hanim_r_knee" name="r_knee">
+        <HAnimSegment DEF="hanim_r_calf" name="r_calf"><Inline url="&quot;rtibia.x3d&quot;" /></HAnimSegment>
+        <HAnimJoint DEF="hanim_r_fibula_joint" name="r_fibula_joint">
+          <HAnimSegment DEF="hanim_r_fibula_segment" name="r_fibula_segment"><Inline url="&quot;lowleg.x3d&quot;" /></HAnimSegment>
+        </HAnimJoint>
+        <HAnimJoint DEF="hanim_r_ankle" name="r_ankle">
+          <HAnimSegment DEF="hanim_r_talus" name="r_talus"><Inline url="&quot;rtalus.x3d&quot;" /></HAnimSegment>
+          <HAnimJoint DEF="hanim_r_subtalar" name="r_subtalar">
+            <HAnimSegment DEF="hanim_r_calcaneus" name="r_calcaneus"><Inline url="&quot;rcalc.x3d&quot;" /></HAnimSegment>
+            <HAnimJoint DEF="hanim_r_midtarsal" name="r_midtarsal">
+              <HAnimSegment DEF="hanim_r_navicular" name="r_navicular"><Inline url="&quot;rnaviclr.x3d&quot;" /></HAnimSegment>
+              <HAnimJoint DEF="hanim_r_cuneiform_medial_joint" name="r_cuneiform_medial_joint"><HAnimSegment DEF="hanim_r_cuneiform_medial_segment" name="r_cuneiform_medial_segment"><Inline url="&quot;rmcun.x3d&quot;" /></HAnimSegment></HAnimJoint>
+              <HAnimJoint DEF="hanim_r_cuneiform_intermediate_joint" name="r_cuneiform_intermediate_joint"><HAnimSegment DEF="hanim_r_cuneiform_intermediate_segment" name="r_cuneiform_intermediate_segment"><Inline url="&quot;ricun.x3d&quot;" /></HAnimSegment></HAnimJoint>
+              <HAnimJoint DEF="hanim_r_cuneiform_lateral_joint" name="r_cuneiform_lateral_joint"><HAnimSegment DEF="hanim_r_cuneiform_lateral_segment" name="r_cuneiform_lateral_segment"><Inline url="&quot;rlcun.x3d&quot;" /></HAnimSegment></HAnimJoint>
+              <HAnimJoint DEF="hanim_r_cuboid_joint" name="r_cuboid_joint"><HAnimSegment DEF="hanim_r_cuboid_segment" name="r_cuboid_segment"><Inline url="&quot;rcuboid.x3d&quot;" /></HAnimSegment></HAnimJoint>
+              <HAnimJoint DEF="hanim_r_metatarsal_1" name="r_metatarsal_1">
+                <HAnimSegment DEF="hanim_r_metatarsal_1_segment" name="r_metatarsal_1_segment"><Inline url="&quot;rfmet.x3d&quot;" /></HAnimSegment>
+                <HAnimJoint DEF="hanim_r_metatarsophalangeal_1" name="r_metatarsophalangeal_1">
+                  <HAnimSegment DEF="hanim_r_proximal_phalanx_1" name="r_proximal_phalanx_1"><Inline url="&quot;rfprox.x3d&quot;" /></HAnimSegment>
+                  <HAnimJoint DEF="hanim_r_proximal_interphalangeal_1" name="r_proximal_interphalangeal_1">
+                    <HAnimSegment DEF="hanim_r_middle_phalanx_1" name="r_middle_phalanx_1"><Inline url="&quot;rfmphal.x3d&quot;" /></HAnimSegment>
+                    <HAnimJoint DEF="hanim_r_interphalangeal_1" name="r_interphalangeal_1">
+                      <HAnimSegment DEF="hanim_r_distal_phalanx_1" name="r_distal_phalanx_1"><Inline url="&quot;rfdphal.x3d&quot;" /></HAnimSegment>
+                    </HAnimJoint>
+                  </HAnimJoint>
+                </HAnimJoint>
+              </HAnimJoint>
+              <HAnimJoint DEF="hanim_r_metatarsal_2" name="r_metatarsal_2">
+                <HAnimSegment DEF="hanim_r_metatarsal_2_segment" name="r_metatarsal_2_segment"><Inline url="&quot;rmet2.x3d&quot;" /></HAnimSegment>
+                <HAnimJoint DEF="hanim_r_metatarsophalangeal_2" name="r_metatarsophalangeal_2">
+                  <HAnimSegment DEF="hanim_r_proximal_phalanx_2" name="r_proximal_phalanx_2"><Inline url="&quot;rfpprox2.x3d&quot;" /></HAnimSegment>
+                  <HAnimJoint DEF="hanim_r_proximal_interphalangeal_2" name="r_proximal_interphalangeal_2">
+                    <HAnimSegment DEF="hanim_r_middle_phalanx_2" name="r_middle_phalanx_2"><Inline url="&quot;rfmphal2.x3d&quot;" /></HAnimSegment>
+                    <HAnimJoint DEF="hanim_r_distal_interphalangeal_2" name="r_distal_interphalangeal_2">
+                      <HAnimSegment DEF="hanim_r_distal_phalanx_2" name="r_distal_phalanx_2"><Inline url="&quot;rfdphal2.x3d&quot;" /></HAnimSegment>
+                    </HAnimJoint>
+                  </HAnimJoint>
+                </HAnimJoint>
+              </HAnimJoint>
+              <HAnimJoint DEF="hanim_r_metatarsal_3" name="r_metatarsal_3">
+                <HAnimSegment DEF="hanim_r_metatarsal_3_segment" name="r_metatarsal_3_segment"><Inline url="&quot;rmet3.x3d&quot;" /></HAnimSegment>
+                <HAnimJoint DEF="hanim_r_metatarsophalangeal_3" name="r_metatarsophalangeal_3">
+                  <HAnimSegment DEF="hanim_r_proximal_phalanx_3" name="r_proximal_phalanx_3"><Inline url="&quot;rfpprox3.x3d&quot;" /></HAnimSegment>
+                  <HAnimJoint DEF="hanim_r_proximal_interphalangeal_3" name="r_proximal_interphalangeal_3">
+                    <HAnimSegment DEF="hanim_r_middle_phalanx_3" name="r_middle_phalanx_3"><Inline url="&quot;rfmphal3.x3d&quot;" /></HAnimSegment>
+                    <HAnimJoint DEF="hanim_r_distal_interphalangeal_3" name="r_distal_interphalangeal_3">
+                      <HAnimSegment DEF="hanim_r_distal_phalanx_3" name="r_distal_phalanx_3"><Inline url="&quot;rfdphal3.x3d&quot;" /></HAnimSegment>
+                    </HAnimJoint>
+                  </HAnimJoint>
+                </HAnimJoint>
+              </HAnimJoint>
+              <HAnimJoint DEF="hanim_r_metatarsal_4" name="r_metatarsal_4">
+                <HAnimSegment DEF="hanim_r_metatarsal_4_segment" name="r_metatarsal_4_segment"><Inline url="&quot;rmet4.x3d&quot;" /></HAnimSegment>
+                <HAnimJoint DEF="hanim_r_metatarsophalangeal_4" name="r_metatarsophalangeal_4">
+                  <HAnimSegment DEF="hanim_r_proximal_phalanx_4" name="r_proximal_phalanx_4"><Inline url="&quot;rfpprox4.x3d&quot;" /></HAnimSegment>
+                  <HAnimJoint DEF="hanim_r_proximal_interphalangeal_4" name="r_proximal_interphalangeal_4">
+                    <HAnimSegment DEF="hanim_r_middle_phalanx_4" name="r_middle_phalanx_4"><Inline url="&quot;rfmphal4.x3d&quot;" /></HAnimSegment>
+                    <HAnimJoint DEF="hanim_r_distal_interphalangeal_4" name="r_distal_interphalangeal_4">
+                      <HAnimSegment DEF="hanim_r_distal_phalanx_4" name="r_distal_phalanx_4"><Inline url="&quot;rfdphal4.x3d&quot;" /></HAnimSegment>
+                    </HAnimJoint>
+                  </HAnimJoint>
+                </HAnimJoint>
+              </HAnimJoint>
+              <HAnimJoint DEF="hanim_r_metatarsal_5" name="r_metatarsal_5">
+                <HAnimSegment DEF="hanim_r_metatarsal_5_segment" name="r_metatarsal_5_segment"><Inline url="&quot;rmet5.x3d&quot;" /></HAnimSegment>
+                <HAnimJoint DEF="hanim_r_metatarsophalangeal_5" name="r_metatarsophalangeal_5">
+                  <HAnimSegment DEF="hanim_r_proximal_phalanx_5" name="r_proximal_phalanx_5"><Inline url="&quot;rfpprox5.x3d&quot;" /></HAnimSegment>
+                  <HAnimJoint DEF="hanim_r_distal_interphalangeal_5" name="r_distal_interphalangeal_5">
+                    <HAnimSegment DEF="hanim_r_distal_phalanx_5" name="r_distal_phalanx_5"><Inline url="&quot;rfdphal5.x3d&quot;" /></HAnimSegment>
+                  </HAnimJoint>
+                </HAnimJoint>
+              </HAnimJoint>
+            </HAnimJoint>
+          </HAnimJoint>
+        </HAnimJoint>
+      </HAnimJoint>
+    </HAnimJoint>
+
+    <!-- SPINE -->
+    <HAnimJoint DEF="hanim_vl5" name="vl5">
+      <HAnimSegment DEF="hanim_l5" name="l5"><Inline url="&quot;l5.x3d&quot;" /></HAnimSegment>
+      <HAnimJoint DEF="hanim_vl5_disc_joint" name="vl5_disc_joint">
+        <HAnimSegment DEF="hanim_l5_disc_segment" name="l5_disc_segment"><Inline url="&quot;l5disc.x3d&quot;" /></HAnimSegment>
+      </HAnimJoint>
+      <HAnimJoint DEF="hanim_vl4" name="vl4">
+        <HAnimSegment DEF="hanim_l4" name="l4"><Inline url="&quot;l4.x3d&quot;" /></HAnimSegment>
+        <HAnimJoint DEF="hanim_vl4_disc_joint" name="vl4_disc_joint">
+          <HAnimSegment DEF="hanim_l4_disc_segment" name="l4_disc_segment"><Inline url="&quot;l4disk.x3d&quot;" /></HAnimSegment>
+        </HAnimJoint>
+        <HAnimJoint DEF="hanim_vl3" name="vl3">
+          <HAnimSegment DEF="hanim_l3" name="l3"><Inline url="&quot;l3.x3d&quot;" /></HAnimSegment>
+          <HAnimJoint DEF="hanim_vl3_disc_joint" name="vl3_disc_joint">
+            <HAnimSegment DEF="hanim_l3_disc_segment" name="l3_disc_segment"><Inline url="&quot;l3disk.x3d&quot;" /></HAnimSegment>
+          </HAnimJoint>
+          <HAnimJoint DEF="hanim_vl2" name="vl2">
+            <HAnimSegment DEF="hanim_l2" name="l2"><Inline url="&quot;l2.x3d&quot;" /></HAnimSegment>
+            <HAnimJoint DEF="hanim_vl2_disc_joint" name="vl2_disc_joint">
+              <HAnimSegment DEF="hanim_l2_disc_segment" name="l2_disc_segment"><Inline url="&quot;l2disk.x3d&quot;" /></HAnimSegment>
+            </HAnimJoint>
+            <HAnimJoint DEF="hanim_vl1" name="vl1">
+              <HAnimJoint DEF="hanim_vl1_disc_joint" name="vl1_disc_joint">
+                <HAnimSegment DEF="hanim_l1_disc_segment" name="l1_disc_segment"><Inline url="&quot;l1disk.x3d&quot;" /></HAnimSegment>
+              </HAnimJoint>
+              <HAnimJoint DEF="hanim_vt12" name="vt12">
+                <HAnimSegment DEF="hanim_t12" name="t12"><Inline url="&quot;t12.x3d&quot;" /></HAnimSegment>
+                <HAnimJoint DEF="hanim_l_rib12_joint" name="l_rib12_joint"><HAnimSegment DEF="hanim_l_rib12_segment" name="l_rib12_segment"><Inline url="&quot;lrib12.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                <HAnimJoint DEF="hanim_r_rib12_joint" name="r_rib12_joint"><HAnimSegment DEF="hanim_r_rib12_segment" name="r_rib12_segment"><Inline url="&quot;rrib12.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                <HAnimJoint DEF="hanim_vt12_disc_joint" name="vt12_disc_joint"><HAnimSegment DEF="hanim_t12_disc_segment" name="t12_disc_segment"><Inline url="&quot;t12disc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                
+                <HAnimJoint DEF="hanim_vt11" name="vt11">
+                  <HAnimSegment DEF="hanim_t11" name="t11"><Inline url="&quot;t11.x3d&quot;" /></HAnimSegment>
+                  <HAnimJoint DEF="hanim_l_rib11_joint" name="l_rib11_joint"><HAnimSegment DEF="hanim_l_rib11_segment" name="l_rib11_segment"><Inline url="&quot;lrib11.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                  <HAnimJoint DEF="hanim_r_rib11_joint" name="r_rib11_joint"><HAnimSegment DEF="hanim_r_rib11_segment" name="r_rib11_segment"><Inline url="&quot;rrib11.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                  <HAnimJoint DEF="hanim_vt11_disc_joint" name="vt11_disc_joint"><HAnimSegment DEF="hanim_t11_disc_segment" name="t11_disc_segment"><Inline url="&quot;t11disc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+
+                  <HAnimJoint DEF="hanim_vt10" name="vt10">
+                    <HAnimSegment DEF="hanim_t10" name="t10"><Inline url="&quot;t10.x3d&quot;" /></HAnimSegment>
+                    <HAnimJoint DEF="hanim_l_rib10_joint" name="l_rib10_joint"><HAnimSegment DEF="hanim_l_rib10_segment" name="l_rib10_segment"><Inline url="&quot;lrib10.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                    <HAnimJoint DEF="hanim_r_rib10_joint" name="r_rib10_joint"><HAnimSegment DEF="hanim_r_rib10_segment" name="r_rib10_segment"><Inline url="&quot;rrib10.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                    <HAnimJoint DEF="hanim_vt10_disc_joint" name="vt10_disc_joint"><HAnimSegment DEF="hanim_t10_disc_segment" name="t10_disc_segment"><Inline url="&quot;t10disc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+
+                    <HAnimJoint DEF="hanim_vt9" name="vt9">
+                      <HAnimSegment DEF="hanim_t9" name="t9"><Inline url="&quot;t9.x3d&quot;" /></HAnimSegment>
+                      <HAnimJoint DEF="hanim_l_rib9_joint" name="l_rib9_joint"><HAnimSegment DEF="hanim_l_rib9_segment" name="l_rib9_segment"><Inline url="&quot;lrib9.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                      <HAnimJoint DEF="hanim_r_rib9_joint" name="r_rib9_joint"><HAnimSegment DEF="hanim_r_rib9_segment" name="r_rib9_segment"><Inline url="&quot;rrib9.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                      <HAnimJoint DEF="hanim_vt9_disc_joint" name="vt9_disc_joint"><HAnimSegment DEF="hanim_t9_disc_segment" name="t9_disc_segment"><Inline url="&quot;t9disc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+
+                      <HAnimJoint DEF="hanim_vt8" name="vt8">
+                        <HAnimSegment DEF="hanim_t8" name="t8"><Inline url="&quot;t8.x3d&quot;" /></HAnimSegment>
+                        <HAnimJoint DEF="hanim_l_rib8_joint" name="l_rib8_joint"><HAnimSegment DEF="hanim_l_rib8_segment" name="l_rib8_segment"><Inline url="&quot;lrib8.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                        <HAnimJoint DEF="hanim_r_rib8_joint" name="r_rib8_joint"><HAnimSegment DEF="hanim_r_rib8_segment" name="r_rib8_segment"><Inline url="&quot;rrib8.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                        <HAnimJoint DEF="hanim_vt8_disc_joint" name="vt8_disc_joint"><HAnimSegment DEF="hanim_t8_disc_segment" name="t8_disc_segment"><Inline url="&quot;t8disc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+
+                        <HAnimJoint DEF="hanim_vt7" name="vt7">
+                          <HAnimSegment DEF="hanim_t7" name="t7"><Inline url="&quot;t7.x3d&quot;" /></HAnimSegment>
+                          <HAnimJoint DEF="hanim_l_rib7_joint" name="l_rib7_joint"><HAnimSegment DEF="hanim_l_rib7_segment" name="l_rib7_segment"><Inline url="&quot;lrib7.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                          <HAnimJoint DEF="hanim_r_rib7_joint" name="r_rib7_joint"><HAnimSegment DEF="hanim_r_rib7_segment" name="r_rib7_segment"><Inline url="&quot;rrib7.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                          <HAnimJoint DEF="hanim_vt7_disc_joint" name="vt7_disc_joint"><HAnimSegment DEF="hanim_t7_disc_segment" name="t7_disc_segment"><Inline url="&quot;t7disc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+
+                          <HAnimJoint DEF="hanim_vt6" name="vt6">
+                            <HAnimSegment DEF="hanim_t6" name="t6"><Inline url="&quot;t6.x3d&quot;" /></HAnimSegment>
+                            <HAnimJoint DEF="hanim_l_rib6_joint" name="l_rib6_joint"><HAnimSegment DEF="hanim_l_rib6_segment" name="l_rib6_segment"><Inline url="&quot;lrib6.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                            <HAnimJoint DEF="hanim_r_rib6_joint" name="r_rib6_joint"><HAnimSegment DEF="hanim_r_rib6_segment" name="r_rib6_segment"><Inline url="&quot;rrib6.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                            <HAnimJoint DEF="hanim_vt6_disc_joint" name="vt6_disc_joint"><HAnimSegment DEF="hanim_t6_disc_segment" name="t6_disc_segment"><Inline url="&quot;t6disc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+
+                            <HAnimJoint DEF="hanim_vt5" name="vt5">
+                              <HAnimSegment DEF="hanim_t5" name="t5"><Inline url="&quot;t5.x3d&quot;" /></HAnimSegment>
+                              <HAnimJoint DEF="hanim_l_rib5_joint" name="l_rib5_joint"><HAnimSegment DEF="hanim_l_rib5_segment" name="l_rib5_segment"><Inline url="&quot;lrib5.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                              <HAnimJoint DEF="hanim_r_rib5_joint" name="r_rib5_joint"><HAnimSegment DEF="hanim_r_rib5_segment" name="r_rib5_segment"><Inline url="&quot;rrib5.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                              <HAnimJoint DEF="hanim_vt5_disc_joint" name="vt5_disc_joint"><HAnimSegment DEF="hanim_t5_disc_segment" name="t5_disc_segment"><Inline url="&quot;t5disc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+
+                              <HAnimJoint DEF="hanim_vt4" name="vt4">
+                                <HAnimSegment DEF="hanim_t4" name="t4"><Inline url="&quot;t4.x3d&quot;" /></HAnimSegment>
+                                <HAnimJoint DEF="hanim_l_rib4_joint" name="l_rib4_joint"><HAnimSegment DEF="hanim_l_rib4_segment" name="l_rib4_segment"><Inline url="&quot;lrib4.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                <HAnimJoint DEF="hanim_r_rib4_joint" name="r_rib4_joint"><HAnimSegment DEF="hanim_r_rib4_segment" name="r_rib4_segment"><Inline url="&quot;rrib4.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                <HAnimJoint DEF="hanim_vt4_disc_joint" name="vt4_disc_joint"><HAnimSegment DEF="hanim_t4_disc_segment" name="t4_disc_segment"><Inline url="&quot;t4disc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+
+                                <HAnimJoint DEF="hanim_vt3" name="vt3">
+                                  <HAnimSegment DEF="hanim_t3" name="t3"><Inline url="&quot;t3.x3d&quot;" /></HAnimSegment>
+                                  <HAnimJoint DEF="hanim_l_rib3_joint" name="l_rib3_joint"><HAnimSegment DEF="hanim_l_rib3_segment" name="l_rib3_segment"><Inline url="&quot;lrib3.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                  <HAnimJoint DEF="hanim_r_rib3_joint" name="r_rib3_joint"><HAnimSegment DEF="hanim_r_rib3_segment" name="r_rib3_segment"><Inline url="&quot;rrib3.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                  <HAnimJoint DEF="hanim_vt3_disc_joint" name="vt3_disc_joint"><HAnimSegment DEF="hanim_t3_disc_segment" name="t3_disc_segment"><Inline url="&quot;t3disc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+
+                                  <HAnimJoint DEF="hanim_vt2" name="vt2">
+                                    <HAnimSegment DEF="hanim_t2" name="t2"><Inline url="&quot;t2.x3d&quot;" /></HAnimSegment>
+                                    <HAnimJoint DEF="hanim_l_rib2_joint" name="l_rib2_joint"><HAnimSegment DEF="hanim_l_rib2_segment" name="l_rib2_segment"><Inline url="&quot;lrib2.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                    <HAnimJoint DEF="hanim_r_rib2_joint" name="r_rib2_joint"><HAnimSegment DEF="hanim_r_rib2_segment" name="r_rib2_segment"><Inline url="&quot;rrib2.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                    <HAnimJoint DEF="hanim_vt2_disc_joint" name="vt2_disc_joint"><HAnimSegment DEF="hanim_t2_disc_segment" name="t2_disc_segment"><Inline url="&quot;t2disc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+
+                                    <HAnimJoint DEF="hanim_vt1" name="vt1">
+                                      <HAnimSegment DEF="hanim_t1" name="t1"><Inline url="&quot;t.x3d&quot;" /></HAnimSegment>
+                                      <HAnimJoint DEF="hanim_l_rib1_joint" name="l_rib1_joint"><HAnimSegment DEF="hanim_l_rib1_segment" name="l_rib1_segment"><Inline url="&quot;lrrib.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                      <HAnimJoint DEF="hanim_r_rib1_joint" name="r_rib1_joint"><HAnimSegment DEF="hanim_r_rib1_segment" name="r_rib1_segment"><Inline url="&quot;rrrib.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                      <HAnimJoint DEF="hanim_vt1_disc_joint" name="vt1_disc_joint"><HAnimSegment DEF="hanim_t1_disc_segment" name="t1_disc_segment"><Inline url="&quot;t1disc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+
+                                      <!-- STERNUM AND RIBCAGE ATTACHMENTS -->
+                                      <HAnimJoint DEF="hanim_sternum_joint" name="sternum_joint">
+                                        <HAnimSegment DEF="hanim_sternum_segment" name="sternum_segment"><Inline url="&quot;sternum.x3d&quot;" /></HAnimSegment>
+                                        <HAnimJoint DEF="hanim_lum_joint" name="lum_joint"><HAnimSegment DEF="hanim_lum_segment" name="lum_segment"><Inline url="&quot;lum.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                        <HAnimJoint DEF="hanim_l_costal_cartilage_joint" name="l_costal_cartilage_joint"><HAnimSegment DEF="hanim_l_costal_cartilage_segment" name="l_costal_cartilage_segment"><Inline url="&quot;lcoscart.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                        <HAnimJoint DEF="hanim_r_costal_cartilage_joint" name="r_costal_cartilage_joint"><HAnimSegment DEF="hanim_r_costal_cartilage_segment" name="r_costal_cartilage_segment"><Inline url="&quot;rcoscart.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                        <HAnimJoint DEF="hanim_lccart_joint" name="lccart_joint"><HAnimSegment DEF="hanim_lccart_segment" name="lccart_segment"><Inline url="&quot;lccart.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                        <HAnimJoint DEF="hanim_rccart_joint" name="rccart_joint"><HAnimSegment DEF="hanim_rccart_segment" name="rccart_segment"><Inline url="&quot;rccart.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                        <HAnimJoint DEF="hanim_lccart2_joint" name="lccart2_joint"><HAnimSegment DEF="hanim_lccart2_segment" name="lccart2_segment"><Inline url="&quot;lccart2.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                        <HAnimJoint DEF="hanim_rccart2_joint" name="rccart2_joint"><HAnimSegment DEF="hanim_rccart2_segment" name="rccart2_segment"><Inline url="&quot;rccart2.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                        <HAnimJoint DEF="hanim_lfreecrt_joint" name="lfreecrt_joint"><HAnimSegment DEF="hanim_lfreecrt_segment" name="lfreecrt_segment"><Inline url="&quot;lfreecrt.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                        <HAnimJoint DEF="hanim_rfreecrt_joint" name="rfreecrt_joint"><HAnimSegment DEF="hanim_rfreecrt_segment" name="rfreecrt_segment"><Inline url="&quot;rfreecrt.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                      </HAnimJoint>
+
+                                      <!-- LEFT ARM -->
+                                      <HAnimJoint DEF="hanim_l_sternoclavicular" name="l_sternoclavicular">
+                                        <HAnimSegment DEF="hanim_l_clavicle" name="l_clavicle"><Inline url="&quot;lclavcle.x3d&quot;" /></HAnimSegment>
+                                        <HAnimJoint DEF="hanim_l_acromioclavicular" name="l_acromioclavicular">
+                                          <HAnimSegment DEF="hanim_l_scapula" name="l_scapula"><Inline url="&quot;lscapula.x3d&quot;" /></HAnimSegment>
+                                          <HAnimJoint DEF="hanim_l_shoulder" name="l_shoulder">
+                                            <HAnimSegment DEF="hanim_l_upperarm" name="l_upperarm"><Inline url="&quot;lhumrus.x3d&quot;" /></HAnimSegment>
+                                            <HAnimJoint DEF="hanim_l_elbow" name="l_elbow">
+                                              <HAnimSegment DEF="hanim_l_forearm" name="l_forearm"><Inline url="&quot;lradius.x3d&quot;" /></HAnimSegment>
+                                              <HAnimJoint DEF="hanim_l_radioulnar" name="l_radioulnar">
+                                                <HAnimSegment DEF="hanim_l_ulna_segment" name="l_ulna_segment"><Inline url="&quot;lulna.x3d&quot;" /></HAnimSegment>
+                                              </HAnimJoint>
+                                              <HAnimJoint DEF="hanim_l_wrist" name="l_wrist">
+                                                <HAnimSegment DEF="hanim_l_carpal_scaphoid" name="l_carpal_scaphoid"><Inline url="&quot;lscphoid.x3d&quot;" /></HAnimSegment>
+                                                <HAnimJoint DEF="hanim_l_carpal_capitate_joint" name="l_carpal_capitate_joint"><HAnimSegment DEF="hanim_l_carpal_capitate_segment" name="l_carpal_capitate_segment"><Inline url="&quot;lcaptate.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                <HAnimJoint DEF="hanim_l_carpal_hamate_joint" name="l_carpal_hamate_joint"><HAnimSegment DEF="hanim_l_carpal_hamate_segment" name="l_carpal_hamate_segment"><Inline url="&quot;lhamate.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                <HAnimJoint DEF="hanim_l_carpal_lunate_joint" name="l_carpal_lunate_joint"><HAnimSegment DEF="hanim_l_carpal_lunate_segment" name="l_carpal_lunate_segment"><Inline url="&quot;llunate.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                <HAnimJoint DEF="hanim_l_carpal_pisiform_joint" name="l_carpal_pisiform_joint"><HAnimSegment DEF="hanim_l_carpal_pisiform_segment" name="l_carpal_pisiform_segment"><Inline url="&quot;lpisform.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                <HAnimJoint DEF="hanim_l_carpal_trapezium_joint" name="l_carpal_trapezium_joint"><HAnimSegment DEF="hanim_l_carpal_trapezium_segment" name="l_carpal_trapezium_segment"><Inline url="&quot;ltrpzium.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                <HAnimJoint DEF="hanim_l_carpal_trapezoid_joint" name="l_carpal_trapezoid_joint"><HAnimSegment DEF="hanim_l_carpal_trapezoid_segment" name="l_carpal_trapezoid_segment"><Inline url="&quot;ltrpzoid.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                <HAnimJoint DEF="hanim_l_carpal_triquetral_joint" name="l_carpal_triquetral_joint"><HAnimSegment DEF="hanim_l_carpal_triquetral_segment" name="l_carpal_triquetral_segment"><Inline url="&quot;ltrqtral.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                <HAnimJoint DEF="hanim_l_carpometacarpal_1" name="l_carpometacarpal_1">
+                                                  <HAnimSegment DEF="hanim_l_metacarpal_1" name="l_metacarpal_1"><Inline url="&quot;lmc.x3d&quot;" /></HAnimSegment>
+                                                  <HAnimJoint DEF="hanim_l_metacarpophalangeal_1" name="l_metacarpophalangeal_1">
+                                                    <HAnimSegment DEF="hanim_l_proximal_phalanx_1" name="l_proximal_phalanx_1"><Inline url="&quot;lpphal.x3d&quot;" /></HAnimSegment>
+                                                    <HAnimJoint DEF="hanim_l_interphalangeal_1" name="l_interphalangeal_1">
+                                                      <HAnimSegment DEF="hanim_l_distal_phalanx_1" name="l_distal_phalanx_1"><Inline url="&quot;ldphal.x3d&quot;" /></HAnimSegment>
+                                                    </HAnimJoint>
+                                                  </HAnimJoint>
+                                                </HAnimJoint>
+                                                <HAnimJoint DEF="hanim_l_carpometacarpal_2" name="l_carpometacarpal_2">
+                                                  <HAnimSegment DEF="hanim_l_metacarpal_2" name="l_metacarpal_2"><Inline url="&quot;lmc2.x3d&quot;" /></HAnimSegment>
+                                                  <HAnimJoint DEF="hanim_l_metacarpophalangeal_2" name="l_metacarpophalangeal_2">
+                                                    <HAnimSegment DEF="hanim_l_proximal_phalanx_2" name="l_proximal_phalanx_2"><Inline url="&quot;lpphal2.x3d&quot;" /></HAnimSegment>
+                                                    <HAnimJoint DEF="hanim_l_proximal_interphalangeal_2" name="l_proximal_interphalangeal_2">
+                                                      <HAnimSegment DEF="hanim_l_middle_phalanx_2" name="l_middle_phalanx_2"><Inline url="&quot;lmphal2.x3d&quot;" /></HAnimSegment>
+                                                      <HAnimJoint DEF="hanim_l_distal_interphalangeal_2" name="l_distal_interphalangeal_2">
+                                                        <HAnimSegment DEF="hanim_l_distal_phalanx_2" name="l_distal_phalanx_2"><Inline url="&quot;ldphal2.x3d&quot;" /></HAnimSegment>
+                                                      </HAnimJoint>
+                                                    </HAnimJoint>
+                                                  </HAnimJoint>
+                                                </HAnimJoint>
+                                                <HAnimJoint DEF="hanim_l_carpometacarpal_3" name="l_carpometacarpal_3">
+                                                  <HAnimSegment DEF="hanim_l_metacarpal_3" name="l_metacarpal_3"><Inline url="&quot;lmc3.x3d&quot;" /></HAnimSegment>
+                                                  <HAnimJoint DEF="hanim_l_metacarpophalangeal_3" name="l_metacarpophalangeal_3">
+                                                    <HAnimSegment DEF="hanim_l_proximal_phalanx_3" name="l_proximal_phalanx_3"><Inline url="&quot;lpphal3.x3d&quot;" /></HAnimSegment>
+                                                    <HAnimJoint DEF="hanim_l_proximal_interphalangeal_3" name="l_proximal_interphalangeal_3">
+                                                      <HAnimSegment DEF="hanim_l_middle_phalanx_3" name="l_middle_phalanx_3"><Inline url="&quot;lmphal3.x3d&quot;" /></HAnimSegment>
+                                                      <HAnimJoint DEF="hanim_l_distal_interphalangeal_3" name="l_distal_interphalangeal_3">
+                                                        <HAnimSegment DEF="hanim_l_distal_phalanx_3" name="l_distal_phalanx_3"><Inline url="&quot;ldphal3.x3d&quot;" /></HAnimSegment>
+                                                      </HAnimJoint>
+                                                    </HAnimJoint>
+                                                  </HAnimJoint>
+                                                </HAnimJoint>
+                                                <HAnimJoint DEF="hanim_l_carpometacarpal_4" name="l_carpometacarpal_4">
+                                                  <HAnimSegment DEF="hanim_l_metacarpal_4" name="l_metacarpal_4"><Inline url="&quot;lmc4.x3d&quot;" /></HAnimSegment>
+                                                  <HAnimJoint DEF="hanim_l_metacarpophalangeal_4" name="l_metacarpophalangeal_4">
+                                                    <HAnimSegment DEF="hanim_l_proximal_phalanx_4" name="l_proximal_phalanx_4"><Inline url="&quot;lpphal4.x3d&quot;" /></HAnimSegment>
+                                                    <HAnimJoint DEF="hanim_l_proximal_interphalangeal_4" name="l_proximal_interphalangeal_4">
+                                                      <HAnimSegment DEF="hanim_l_middle_phalanx_4" name="l_middle_phalanx_4"><Inline url="&quot;lmphal4.x3d&quot;" /></HAnimSegment>
+                                                      <HAnimJoint DEF="hanim_l_distal_interphalangeal_4" name="l_distal_interphalangeal_4">
+                                                        <HAnimSegment DEF="hanim_l_distal_phalanx_4" name="l_distal_phalanx_4"><Inline url="&quot;ldphal4.x3d&quot;" /></HAnimSegment>
+                                                      </HAnimJoint>
+                                                    </HAnimJoint>
+                                                  </HAnimJoint>
+                                                </HAnimJoint>
+                                                <HAnimJoint DEF="hanim_l_carpometacarpal_5" name="l_carpometacarpal_5">
+                                                  <HAnimSegment DEF="hanim_l_metacarpal_5" name="l_metacarpal_5"><Inline url="&quot;lmc5.x3d&quot;" /></HAnimSegment>
+                                                  <HAnimJoint DEF="hanim_l_metacarpophalangeal_5" name="l_metacarpophalangeal_5">
+                                                    <HAnimSegment DEF="hanim_l_proximal_phalanx_5" name="l_proximal_phalanx_5"><Inline url="&quot;lpphal5.x3d&quot;" /></HAnimSegment>
+                                                    <HAnimJoint DEF="hanim_l_proximal_interphalangeal_5" name="l_proximal_interphalangeal_5">
+                                                      <HAnimSegment DEF="hanim_l_middle_phalanx_5" name="l_middle_phalanx_5"><Inline url="&quot;lmphal5.x3d&quot;" /></HAnimSegment>
+                                                      <HAnimJoint DEF="hanim_l_distal_interphalangeal_5" name="l_distal_interphalangeal_5">
+                                                        <HAnimSegment DEF="hanim_l_distal_phalanx_5" name="l_distal_phalanx_5"><Inline url="&quot;ldphal5.x3d&quot;" /></HAnimSegment>
+                                                      </HAnimJoint>
+                                                    </HAnimJoint>
+                                                  </HAnimJoint>
+                                                </HAnimJoint>
+                                              </HAnimJoint>
+                                            </HAnimJoint>
+                                          </HAnimJoint>
+                                        </HAnimJoint>
+                                      </HAnimJoint>
+
+                                      <!-- RIGHT ARM -->
+                                      <HAnimJoint DEF="hanim_r_sternoclavicular" name="r_sternoclavicular">
+                                        <HAnimSegment DEF="hanim_r_clavicle" name="r_clavicle"><Inline url="&quot;rclavcle.x3d&quot;" /></HAnimSegment>
+                                        <HAnimJoint DEF="hanim_r_acromioclavicular" name="r_acromioclavicular">
+                                          <HAnimSegment DEF="hanim_r_scapula" name="r_scapula"><Inline url="&quot;rscapula.x3d&quot;" /></HAnimSegment>
+                                          <HAnimJoint DEF="hanim_r_shoulder" name="r_shoulder">
+                                            <HAnimSegment DEF="hanim_r_upperarm" name="r_upperarm"><Inline url="&quot;rhumerus.x3d&quot;" /></HAnimSegment>
+                                            <HAnimJoint DEF="hanim_r_elbow" name="r_elbow">
+                                              <HAnimSegment DEF="hanim_r_forearm" name="r_forearm"><Inline url="&quot;rradius.x3d&quot;" /></HAnimSegment>
+                                              <HAnimJoint DEF="hanim_r_radioulnar" name="r_radioulnar">
+                                                <HAnimSegment DEF="hanim_r_ulna_segment" name="r_ulna_segment"><Inline url="&quot;rulna.x3d&quot;" /></HAnimSegment>
+                                              </HAnimJoint>
+                                              <HAnimJoint DEF="hanim_r_wrist" name="r_wrist">
+                                                <HAnimSegment DEF="hanim_r_carpal_scaphoid" name="r_carpal_scaphoid"><Inline url="&quot;rscphoid.x3d&quot;" /></HAnimSegment>
+                                                <HAnimJoint DEF="hanim_r_carpal_capitate_joint" name="r_carpal_capitate_joint"><HAnimSegment DEF="hanim_r_carpal_capitate_segment" name="r_carpal_capitate_segment"><Inline url="&quot;rcaptate.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                <HAnimJoint DEF="hanim_r_carpal_hamate_joint" name="r_carpal_hamate_joint"><HAnimSegment DEF="hanim_r_carpal_hamate_segment" name="r_carpal_hamate_segment"><Inline url="&quot;rhamate.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                <HAnimJoint DEF="hanim_r_carpal_lunate_joint" name="r_carpal_lunate_joint"><HAnimSegment DEF="hanim_r_carpal_lunate_segment" name="r_carpal_lunate_segment"><Inline url="&quot;rlunate.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                <HAnimJoint DEF="hanim_r_carpal_pisiform_joint" name="r_carpal_pisiform_joint"><HAnimSegment DEF="hanim_r_carpal_pisiform_segment" name="r_carpal_pisiform_segment"><Inline url="&quot;rpisform.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                <HAnimJoint DEF="hanim_r_carpal_trapezium_joint" name="r_carpal_trapezium_joint"><HAnimSegment DEF="hanim_r_carpal_trapezium_segment" name="r_carpal_trapezium_segment"><Inline url="&quot;rtrpzium.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                <HAnimJoint DEF="hanim_r_carpal_trapezoid_joint" name="r_carpal_trapezoid_joint"><HAnimSegment DEF="hanim_r_carpal_trapezoid_segment" name="r_carpal_trapezoid_segment"><Inline url="&quot;rtrpzoid.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                <HAnimJoint DEF="hanim_r_carpal_triquetral_joint" name="r_carpal_triquetral_joint"><HAnimSegment DEF="hanim_r_carpal_triquetral_segment" name="r_carpal_triquetral_segment"><Inline url="&quot;rtrqtral.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                <HAnimJoint DEF="hanim_r_carpometacarpal_1" name="r_carpometacarpal_1">
+                                                  <HAnimSegment DEF="hanim_r_metacarpal_1" name="r_metacarpal_1"><Inline url="&quot;rmc.x3d&quot;" /></HAnimSegment>
+                                                  <HAnimJoint DEF="hanim_r_metacarpophalangeal_1" name="r_metacarpophalangeal_1">
+                                                    <HAnimSegment DEF="hanim_r_proximal_phalanx_1" name="r_proximal_phalanx_1"><Inline url="&quot;rpphal.x3d&quot;" /></HAnimSegment>
+                                                    <HAnimJoint DEF="hanim_r_interphalangeal_1" name="r_interphalangeal_1">
+                                                      <HAnimSegment DEF="hanim_r_distal_phalanx_1" name="r_distal_phalanx_1"><Inline url="&quot;rdphal.x3d&quot;" /></HAnimSegment>
+                                                    </HAnimJoint>
+                                                  </HAnimJoint>
+                                                </HAnimJoint>
+                                                <HAnimJoint DEF="hanim_r_carpometacarpal_2" name="r_carpometacarpal_2">
+                                                  <HAnimSegment DEF="hanim_r_metacarpal_2" name="r_metacarpal_2"><Inline url="&quot;rmc2.x3d&quot;" /></HAnimSegment>
+                                                  <HAnimJoint DEF="hanim_r_metacarpophalangeal_2" name="r_metacarpophalangeal_2">
+                                                    <HAnimSegment DEF="hanim_r_proximal_phalanx_2" name="r_proximal_phalanx_2"><Inline url="&quot;rpphal2.x3d&quot;" /></HAnimSegment>
+                                                    <HAnimJoint DEF="hanim_r_proximal_interphalangeal_2" name="r_proximal_interphalangeal_2">
+                                                      <HAnimSegment DEF="hanim_r_middle_phalanx_2" name="r_middle_phalanx_2"><Inline url="&quot;rmphal2.x3d&quot;" /></HAnimSegment>
+                                                      <HAnimJoint DEF="hanim_r_distal_interphalangeal_2" name="r_distal_interphalangeal_2">
+                                                        <HAnimSegment DEF="hanim_r_distal_phalanx_2" name="r_distal_phalanx_2"><Inline url="&quot;rdphal2.x3d&quot;" /></HAnimSegment>
+                                                      </HAnimJoint>
+                                                    </HAnimJoint>
+                                                  </HAnimJoint>
+                                                </HAnimJoint>
+                                                <HAnimJoint DEF="hanim_r_carpometacarpal_3" name="r_carpometacarpal_3">
+                                                  <HAnimSegment DEF="hanim_r_metacarpal_3" name="r_metacarpal_3"><Inline url="&quot;rmc3.x3d&quot;" /></HAnimSegment>
+                                                  <HAnimJoint DEF="hanim_r_metacarpophalangeal_3" name="r_metacarpophalangeal_3">
+                                                    <HAnimSegment DEF="hanim_r_proximal_phalanx_3" name="r_proximal_phalanx_3"><Inline url="&quot;rpphal3.x3d&quot;" /></HAnimSegment>
+                                                    <HAnimJoint DEF="hanim_r_proximal_interphalangeal_3" name="r_proximal_interphalangeal_3">
+                                                      <HAnimSegment DEF="hanim_r_middle_phalanx_3" name="r_middle_phalanx_3"><Inline url="&quot;rmphal3.x3d&quot;" /></HAnimSegment>
+                                                      <HAnimJoint DEF="hanim_r_distal_interphalangeal_3" name="r_distal_interphalangeal_3">
+                                                        <HAnimSegment DEF="hanim_r_distal_phalanx_3" name="r_distal_phalanx_3"><Inline url="&quot;rdphal3.x3d&quot;" /></HAnimSegment>
+                                                      </HAnimJoint>
+                                                    </HAnimJoint>
+                                                  </HAnimJoint>
+                                                </HAnimJoint>
+                                                <HAnimJoint DEF="hanim_r_carpometacarpal_4" name="r_carpometacarpal_4">
+                                                  <HAnimSegment DEF="hanim_r_metacarpal_4" name="r_metacarpal_4"><Inline url="&quot;rmc4.x3d&quot;" /></HAnimSegment>
+                                                  <HAnimJoint DEF="hanim_r_metacarpophalangeal_4" name="r_metacarpophalangeal_4">
+                                                    <HAnimSegment DEF="hanim_r_proximal_phalanx_4" name="r_proximal_phalanx_4"><Inline url="&quot;rpphal4.x3d&quot;" /></HAnimSegment>
+                                                    <HAnimJoint DEF="hanim_r_proximal_interphalangeal_4" name="r_proximal_interphalangeal_4">
+                                                      <HAnimSegment DEF="hanim_r_middle_phalanx_4" name="r_middle_phalanx_4"><Inline url="&quot;rmphal4.x3d&quot;" /></HAnimSegment>
+                                                      <HAnimJoint DEF="hanim_r_distal_interphalangeal_4" name="r_distal_interphalangeal_4">
+                                                        <HAnimSegment DEF="hanim_r_distal_phalanx_4" name="r_distal_phalanx_4"><Inline url="&quot;rdphal4.x3d&quot;" /></HAnimSegment>
+                                                      </HAnimJoint>
+                                                    </HAnimJoint>
+                                                  </HAnimJoint>
+                                                </HAnimJoint>
+                                                <HAnimJoint DEF="hanim_r_carpometacarpal_5" name="r_carpometacarpal_5">
+                                                  <HAnimSegment DEF="hanim_r_metacarpal_5" name="r_metacarpal_5"><Inline url="&quot;rmc5.x3d&quot;" /></HAnimSegment>
+                                                  <HAnimJoint DEF="hanim_r_metacarpophalangeal_5" name="r_metacarpophalangeal_5">
+                                                    <HAnimSegment DEF="hanim_r_proximal_phalanx_5" name="r_proximal_phalanx_5"><Inline url="&quot;rpphal5.x3d&quot;" /></HAnimSegment>
+                                                    <HAnimJoint DEF="hanim_r_proximal_interphalangeal_5" name="r_proximal_interphalangeal_5">
+                                                      <HAnimSegment DEF="hanim_r_middle_phalanx_5" name="r_middle_phalanx_5"><Inline url="&quot;rmphal5.x3d&quot;" /></HAnimSegment>
+                                                      <HAnimJoint DEF="hanim_r_distal_interphalangeal_5" name="r_distal_interphalangeal_5">
+                                                        <HAnimSegment DEF="hanim_r_distal_phalanx_5" name="r_distal_phalanx_5"><Inline url="&quot;rdphal5.x3d&quot;" /></HAnimSegment>
+                                                      </HAnimJoint>
+                                                    </HAnimJoint>
+                                                  </HAnimJoint>
+                                                </HAnimJoint>
+                                              </HAnimJoint>
+                                            </HAnimJoint>
+                                          </HAnimJoint>
+                                        </HAnimJoint>
+                                      </HAnimJoint>
+
+                                      <HAnimJoint DEF="hanim_vc7" name="vc7">
+                                        <HAnimSegment DEF="hanim_c7" name="c7"><Inline url="&quot;c7.x3d&quot;" /></HAnimSegment>
+                                        <HAnimJoint DEF="hanim_vc7_disc_joint" name="vc7_disc_joint"><HAnimSegment DEF="hanim_c7_disc_segment" name="c7_disc_segment"><Inline url="&quot;c7disc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                        <HAnimJoint DEF="hanim_vc6" name="vc6">
+                                          <HAnimSegment DEF="hanim_c6" name="c6"><Inline url="&quot;c6.x3d&quot;" /></HAnimSegment>
+                                          <HAnimJoint DEF="hanim_vc6_disc_joint" name="vc6_disc_joint"><HAnimSegment DEF="hanim_c6_disc_segment" name="c6_disc_segment"><Inline url="&quot;c6disc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                          <HAnimJoint DEF="hanim_vc5" name="vc5">
+                                            <HAnimSegment DEF="hanim_c5" name="c5"><Inline url="&quot;c5.x3d&quot;" /></HAnimSegment>
+                                            <HAnimJoint DEF="hanim_vc5_disc_joint" name="vc5_disc_joint"><HAnimSegment DEF="hanim_c5_disc_segment" name="c5_disc_segment"><Inline url="&quot;c5disc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                            <HAnimJoint DEF="hanim_vc4" name="vc4">
+                                              <HAnimSegment DEF="hanim_c4" name="c4"><Inline url="&quot;c4.x3d&quot;" /></HAnimSegment>
+                                              <HAnimJoint DEF="hanim_vc4_disc_joint" name="vc4_disc_joint"><HAnimSegment DEF="hanim_c4_disc_segment" name="c4_disc_segment"><Inline url="&quot;c4disc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                              <HAnimJoint DEF="hanim_vc3" name="vc3">
+                                                <HAnimSegment DEF="hanim_c3" name="c3"><Inline url="&quot;c3.x3d&quot;" /></HAnimSegment>
+                                                <HAnimJoint DEF="hanim_vc3_disc_joint" name="vc3_disc_joint"><HAnimSegment DEF="hanim_c3_disc_segment" name="c3_disc_segment"><Inline url="&quot;c3disc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                <HAnimJoint DEF="hanim_vc2" name="vc2">
+                                                  <HAnimSegment DEF="hanim_c2" name="c2"><Inline url="&quot;axis.x3d&quot;" /></HAnimSegment>
+                                                  <HAnimJoint DEF="hanim_vc2_disc_joint" name="vc2_disc_joint"><HAnimSegment DEF="hanim_c2_disc_segment" name="c2_disc_segment"><Inline url="&quot;c2disc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                  <HAnimJoint DEF="hanim_vc1" name="vc1">
+                                                    <HAnimSegment DEF="hanim_c1" name="c1"><Inline url="&quot;atlas.x3d&quot;" /></HAnimSegment>
+                                                    <HAnimJoint DEF="hanim_skullbase" name="skullbase">
+                                                      <HAnimSegment DEF="hanim_skull" name="skull"><Inline url="&quot;occip.x3d&quot;" /></HAnimSegment>
+                                                      <HAnimJoint DEF="hanim_temporomandibular" name="temporomandibular"><HAnimSegment DEF="hanim_jaw" name="jaw"><Inline url="&quot;mand.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      
+                                                      <!-- SKULL PLATES AND BONES -->
+                                                      <HAnimJoint DEF="hanim_ethmoid_joint" name="ethmoid_joint"><HAnimSegment DEF="hanim_ethmoid_segment" name="ethmoid_segment"><Inline url="&quot;ethmoid.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_ethmoid2_joint" name="ethmoid2_joint"><HAnimSegment DEF="hanim_ethmoid2_segment" name="ethmoid2_segment"><Inline url="&quot;ethmoid2.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_frontal_joint" name="frontal_joint"><HAnimSegment DEF="hanim_frontal_segment" name="frontal_segment"><Inline url="&quot;frontal.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_inconl_joint" name="inconl_joint"><HAnimSegment DEF="hanim_inconl_segment" name="inconl_segment"><Inline url="&quot;inconl.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_inconr_joint" name="inconr_joint"><HAnimSegment DEF="hanim_inconr_segment" name="inconr_segment"><Inline url="&quot;inconr.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lacl_joint" name="lacl_joint"><HAnimSegment DEF="hanim_lacl_segment" name="lacl_segment"><Inline url="&quot;lacl.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lacr_joint" name="lacr_joint"><HAnimSegment DEF="hanim_lacr_segment" name="lacr_segment"><Inline url="&quot;lacr.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_maxl_joint" name="maxl_joint"><HAnimSegment DEF="hanim_maxl_segment" name="maxl_segment"><Inline url="&quot;maxl.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_maxr_joint" name="maxr_joint"><HAnimSegment DEF="hanim_maxr_segment" name="maxr_segment"><Inline url="&quot;maxr.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_nasall_joint" name="nasall_joint"><HAnimSegment DEF="hanim_nasall_segment" name="nasall_segment"><Inline url="&quot;nasall.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_nasalr_joint" name="nasalr_joint"><HAnimSegment DEF="hanim_nasalr_segment" name="nasalr_segment"><Inline url="&quot;nasalr.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_palatl_joint" name="palatl_joint"><HAnimSegment DEF="hanim_palatl_segment" name="palatl_segment"><Inline url="&quot;palatl.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_palatr_joint" name="palatr_joint"><HAnimSegment DEF="hanim_palatr_segment" name="palatr_segment"><Inline url="&quot;palatr.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_parietl_joint" name="parietl_joint"><HAnimSegment DEF="hanim_parietl_segment" name="parietl_segment"><Inline url="&quot;parietl.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_parietr_joint" name="parietr_joint"><HAnimSegment DEF="hanim_parietr_segment" name="parietr_segment"><Inline url="&quot;parietr.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_sphenoid_joint" name="sphenoid_joint"><HAnimSegment DEF="hanim_sphenoid_segment" name="sphenoid_segment"><Inline url="&quot;sphenoid.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_templ_joint" name="templ_joint"><HAnimSegment DEF="hanim_templ_segment" name="templ_segment"><Inline url="&quot;templ.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_tempr_joint" name="tempr_joint"><HAnimSegment DEF="hanim_tempr_segment" name="tempr_segment"><Inline url="&quot;tempr.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_vom_joint" name="vom_joint"><HAnimSegment DEF="hanim_vom_segment" name="vom_segment"><Inline url="&quot;vom.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_zygol_joint" name="zygol_joint"><HAnimSegment DEF="hanim_zygol_segment" name="zygol_segment"><Inline url="&quot;zygol.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_zygor_joint" name="zygor_joint"><HAnimSegment DEF="hanim_zygor_segment" name="zygor_segment"><Inline url="&quot;zygor.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lcartend_joint" name="lcartend_joint"><HAnimSegment DEF="hanim_lcartend_segment" name="lcartend_segment"><Inline url="&quot;lcartend.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rcartend_joint" name="rcartend_joint"><HAnimSegment DEF="hanim_rcartend_segment" name="rcartend_segment"><Inline url="&quot;rcartend.x3d&quot;" /></HAnimSegment></HAnimJoint>
+
+                                                      <!-- TEETH -->
+                                                      <HAnimJoint DEF="hanim_lcaninec_joint" name="lcaninec_joint"><HAnimSegment DEF="hanim_lcaninec_segment" name="lcaninec_segment"><Inline url="&quot;lcaninec.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lcaniner_joint" name="lcaniner_joint"><HAnimSegment DEF="hanim_lcaniner_segment" name="lcaniner_segment"><Inline url="&quot;lcaniner.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lcaninlc_joint" name="lcaninlc_joint"><HAnimSegment DEF="hanim_lcaninlc_segment" name="lcaninlc_segment"><Inline url="&quot;lcaninlc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lcaninlr_joint" name="lcaninlr_joint"><HAnimSegment DEF="hanim_lcaninlr_segment" name="lcaninlr_segment"><Inline url="&quot;lcaninlr.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lcenincc_joint" name="lcenincc_joint"><HAnimSegment DEF="hanim_lcenincc_segment" name="lcenincc_segment"><Inline url="&quot;lcenincc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lcenincr_joint" name="lcenincr_joint"><HAnimSegment DEF="hanim_lcenincr_segment" name="lcenincr_segment"><Inline url="&quot;lcenincr.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lceninlc_joint" name="lceninlc_joint"><HAnimSegment DEF="hanim_lceninlc_segment" name="lceninlc_segment"><Inline url="&quot;lceninlc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lceninlr_joint" name="lceninlr_joint"><HAnimSegment DEF="hanim_lceninlr_segment" name="lceninlr_segment"><Inline url="&quot;lceninlr.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_llatincc_joint" name="llatincc_joint"><HAnimSegment DEF="hanim_llatincc_segment" name="llatincc_segment"><Inline url="&quot;llatincc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_llatincr_joint" name="llatincr_joint"><HAnimSegment DEF="hanim_llatincr_segment" name="llatincr_segment"><Inline url="&quot;llatincr.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_llatinlc_joint" name="llatinlc_joint"><HAnimSegment DEF="hanim_llatinlc_segment" name="llatinlc_segment"><Inline url="&quot;llatinlc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_llatinlr_joint" name="llatinlr_joint"><HAnimSegment DEF="hanim_llatinlr_segment" name="llatinlr_segment"><Inline url="&quot;llatinlr.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lmolar1c_joint" name="lmolar1c_joint"><HAnimSegment DEF="hanim_lmolar1c_segment" name="lmolar1c_segment"><Inline url="&quot;lmolar1c.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lmolar1r_joint" name="lmolar1r_joint"><HAnimSegment DEF="hanim_lmolar1r_segment" name="lmolar1r_segment"><Inline url="&quot;lmolar1r.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lmolar2c_joint" name="lmolar2c_joint"><HAnimSegment DEF="hanim_lmolar2c_segment" name="lmolar2c_segment"><Inline url="&quot;lmolar2c.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lmolar2r_joint" name="lmolar2r_joint"><HAnimSegment DEF="hanim_lmolar2r_segment" name="lmolar2r_segment"><Inline url="&quot;lmolar2r.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lmolar3c_joint" name="lmolar3c_joint"><HAnimSegment DEF="hanim_lmolar3c_segment" name="lmolar3c_segment"><Inline url="&quot;lmolar3c.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lmolar3r_joint" name="lmolar3r_joint"><HAnimSegment DEF="hanim_lmolar3r_segment" name="lmolar3r_segment"><Inline url="&quot;lmolar3r.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lmolr1lc_joint" name="lmolr1lc_joint"><HAnimSegment DEF="hanim_lmolr1lc_segment" name="lmolr1lc_segment"><Inline url="&quot;lmolr1lc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lmolr1lr_joint" name="lmolr1lr_joint"><HAnimSegment DEF="hanim_lmolr1lr_segment" name="lmolr1lr_segment"><Inline url="&quot;lmolr1lr.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lmolr2lc_joint" name="lmolr2lc_joint"><HAnimSegment DEF="hanim_lmolr2lc_segment" name="lmolr2lc_segment"><Inline url="&quot;lmolr2lc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lmolr2lr_joint" name="lmolr2lr_joint"><HAnimSegment DEF="hanim_lmolr2lr_segment" name="lmolr2lr_segment"><Inline url="&quot;lmolr2lr.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lmolr3lc_joint" name="lmolr3lc_joint"><HAnimSegment DEF="hanim_lmolr3lc_segment" name="lmolr3lc_segment"><Inline url="&quot;lmolr3lc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lmolr3lr_joint" name="lmolr3lr_joint"><HAnimSegment DEF="hanim_lmolr3lr_segment" name="lmolr3lr_segment"><Inline url="&quot;lmolr3lr.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lprem1lc_joint" name="lprem1lc_joint"><HAnimSegment DEF="hanim_lprem1lc_segment" name="lprem1lc_segment"><Inline url="&quot;lprem1lc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lprem1lr_joint" name="lprem1lr_joint"><HAnimSegment DEF="hanim_lprem1lr_segment" name="lprem1lr_segment"><Inline url="&quot;lprem1lr.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lprem2lc_joint" name="lprem2lc_joint"><HAnimSegment DEF="hanim_lprem2lc_segment" name="lprem2lc_segment"><Inline url="&quot;lprem2lc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lprem2lr_joint" name="lprem2lr_joint"><HAnimSegment DEF="hanim_lprem2lr_segment" name="lprem2lr_segment"><Inline url="&quot;lprem2lr.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lpreo1lc_joint" name="lpreo1lc_joint"><HAnimSegment DEF="hanim_lpreo1lc_segment" name="lpreo1lc_segment"><Inline url="&quot;lpreo1lc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lpreol1r_joint" name="lpreol1r_joint"><HAnimSegment DEF="hanim_lpreol1r_segment" name="lpreol1r_segment"><Inline url="&quot;lpreol1r.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lpreol2c_joint" name="lpreol2c_joint"><HAnimSegment DEF="hanim_lpreol2c_segment" name="lpreol2c_segment"><Inline url="&quot;lpreol2c.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_lpreol2r_joint" name="lpreol2r_joint"><HAnimSegment DEF="hanim_lpreol2r_segment" name="lpreol2r_segment"><Inline url="&quot;lpreol2r.x3d&quot;" /></HAnimSegment></HAnimJoint>
+
+                                                      <HAnimJoint DEF="hanim_rcaninec_joint" name="rcaninec_joint"><HAnimSegment DEF="hanim_rcaninec_segment" name="rcaninec_segment"><Inline url="&quot;rcaninec.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rcaniner_joint" name="rcaniner_joint"><HAnimSegment DEF="hanim_rcaniner_segment" name="rcaniner_segment"><Inline url="&quot;rcaniner.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rcaninlc_joint" name="rcaninlc_joint"><HAnimSegment DEF="hanim_rcaninlc_segment" name="rcaninlc_segment"><Inline url="&quot;rcaninlc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rcaninlr_joint" name="rcaninlr_joint"><HAnimSegment DEF="hanim_rcaninlr_segment" name="rcaninlr_segment"><Inline url="&quot;rcaninlr.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rcenincc_joint" name="rcenincc_joint"><HAnimSegment DEF="hanim_rcenincc_segment" name="rcenincc_segment"><Inline url="&quot;rcenincc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rcenincr_joint" name="rcenincr_joint"><HAnimSegment DEF="hanim_rcenincr_segment" name="rcenincr_segment"><Inline url="&quot;rcenincr.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rceninlc_joint" name="rceninlc_joint"><HAnimSegment DEF="hanim_rceninlc_segment" name="rceninlc_segment"><Inline url="&quot;rceninlc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rceninlr_joint" name="rceninlr_joint"><HAnimSegment DEF="hanim_rceninlr_segment" name="rceninlr_segment"><Inline url="&quot;rceninlr.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rlatincc_joint" name="rlatincc_joint"><HAnimSegment DEF="hanim_rlatincc_segment" name="rlatincc_segment"><Inline url="&quot;rlatincc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rlatincr_joint" name="rlatincr_joint"><HAnimSegment DEF="hanim_rlatincr_segment" name="rlatincr_segment"><Inline url="&quot;rlatincr.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rlatinlc_joint" name="rlatinlc_joint"><HAnimSegment DEF="hanim_rlatinlc_segment" name="rlatinlc_segment"><Inline url="&quot;rlatinlc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rlatinlr_joint" name="rlatinlr_joint"><HAnimSegment DEF="hanim_rlatinlr_segment" name="rlatinlr_segment"><Inline url="&quot;rlatinlr.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rmolar1c_joint" name="rmolar1c_joint"><HAnimSegment DEF="hanim_rmolar1c_segment" name="rmolar1c_segment"><Inline url="&quot;rmolar1c.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rmolar1r_joint" name="rmolar1r_joint"><HAnimSegment DEF="hanim_rmolar1r_segment" name="rmolar1r_segment"><Inline url="&quot;rmolar1r.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rmolar2c_joint" name="rmolar2c_joint"><HAnimSegment DEF="hanim_rmolar2c_segment" name="rmolar2c_segment"><Inline url="&quot;rmolar2c.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rmolar2r_joint" name="rmolar2r_joint"><HAnimSegment DEF="hanim_rmolar2r_segment" name="rmolar2r_segment"><Inline url="&quot;rmolar2r.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rmolar3c_joint" name="rmolar3c_joint"><HAnimSegment DEF="hanim_rmolar3c_segment" name="rmolar3c_segment"><Inline url="&quot;rmolar3c.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rmolar3r_joint" name="rmolar3r_joint"><HAnimSegment DEF="hanim_rmolar3r_segment" name="rmolar3r_segment"><Inline url="&quot;rmolar3r.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rmolr1lc_joint" name="rmolr1lc_joint"><HAnimSegment DEF="hanim_rmolr1lc_segment" name="rmolr1lc_segment"><Inline url="&quot;rmolr1lc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rmolr1lr_joint" name="rmolr1lr_joint"><HAnimSegment DEF="hanim_rmolr1lr_segment" name="rmolr1lr_segment"><Inline url="&quot;rmolr1lr.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rmolr2lc_joint" name="rmolr2lc_joint"><HAnimSegment DEF="hanim_rmolr2lc_segment" name="rmolr2lc_segment"><Inline url="&quot;rmolr2lc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rmolr2lr_joint" name="rmolr2lr_joint"><HAnimSegment DEF="hanim_rmolr2lr_segment" name="rmolr2lr_segment"><Inline url="&quot;rmolr2lr.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rmolr3lc_joint" name="rmolr3lc_joint"><HAnimSegment DEF="hanim_rmolr3lc_segment" name="rmolr3lc_segment"><Inline url="&quot;rmolr3lc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rmolr3lr_joint" name="rmolr3lr_joint"><HAnimSegment DEF="hanim_rmolr3lr_segment" name="rmolr3lr_segment"><Inline url="&quot;rmolr3lr.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rprem1lc_joint" name="rprem1lc_joint"><HAnimSegment DEF="hanim_rprem1lc_segment" name="rprem1lc_segment"><Inline url="&quot;rprem1lc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rprem1lr_joint" name="rprem1lr_joint"><HAnimSegment DEF="hanim_rprem1lr_segment" name="rprem1lr_segment"><Inline url="&quot;rprem1lr.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rprem2lc_joint" name="rprem2lc_joint"><HAnimSegment DEF="hanim_rprem2lc_segment" name="rprem2lc_segment"><Inline url="&quot;rprem2lc.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rprem2lr_joint" name="rprem2lr_joint"><HAnimSegment DEF="hanim_rprem2lr_segment" name="rprem2lr_segment"><Inline url="&quot;rprem2lr.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rpreol1c_joint" name="rpreol1c_joint"><HAnimSegment DEF="hanim_rpreol1c_segment" name="rpreol1c_segment"><Inline url="&quot;rpreol1c.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rpreol1r_joint" name="rpreol1r_joint"><HAnimSegment DEF="hanim_rpreol1r_segment" name="rpreol1r_segment"><Inline url="&quot;rpreol1r.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rpreol2c_joint" name="rpreol2c_joint"><HAnimSegment DEF="hanim_rpreol2c_segment" name="rpreol2c_segment"><Inline url="&quot;rpreol2c.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                      <HAnimJoint DEF="hanim_rpreol2r_joint" name="rpreol2r_joint"><HAnimSegment DEF="hanim_rpreol2r_segment" name="rpreol2r_segment"><Inline url="&quot;rpreol2r.x3d&quot;" /></HAnimSegment></HAnimJoint>
+                                                    </HAnimJoint>
+                                                  </HAnimJoint>
+                                                </HAnimJoint>
+                                              </HAnimJoint>
+                                            </HAnimJoint>
+                                          </HAnimJoint>
+                                        </HAnimJoint>
+                                      </HAnimJoint>
+
+                                    </HAnimJoint>
+                                  </HAnimJoint>
+                                </HAnimJoint>
+                              </HAnimJoint>
+                            </HAnimJoint>
+                          </HAnimJoint>
+                        </HAnimJoint>
+                      </HAnimJoint>
+                    </HAnimJoint>
+                  </HAnimJoint>
+                </HAnimJoint>
+              </HAnimJoint>
+            </HAnimJoint>
+          </HAnimJoint>
+        </HAnimJoint>
+      </HAnimJoint>
+    </HAnimJoint>
+  </HAnimJoint>
+</HAnimJoint>
+
+<!-- HAnimJoint containerField="joints" USE references for ALL defined joints -->
+<HAnimJoint containerField="joints" USE="hanim_humanoid_root" />
+<HAnimJoint containerField="joints" USE="hanim_sacroiliac" />
+<HAnimJoint containerField="joints" USE="hanim_sacrococcygeal" />
+<HAnimJoint containerField="joints" USE="hanim_l_coxal_joint" />
+<HAnimJoint containerField="joints" USE="hanim_r_coxal_joint" />
+<HAnimJoint containerField="joints" USE="hanim_sympubis_joint" />
+
+<HAnimJoint containerField="joints" USE="hanim_l_hip" />
+<HAnimJoint containerField="joints" USE="hanim_l_knee" />
+<HAnimJoint containerField="joints" USE="hanim_l_fibula_joint" />
+<HAnimJoint containerField="joints" USE="hanim_l_ankle" />
+<HAnimJoint containerField="joints" USE="hanim_l_subtalar" />
+<HAnimJoint containerField="joints" USE="hanim_l_midtarsal" />
+<HAnimJoint containerField="joints" USE="hanim_l_cuneiform_medial_joint" />
+<HAnimJoint containerField="joints" USE="hanim_l_cuneiform_intermediate_joint" />
+<HAnimJoint containerField="joints" USE="hanim_l_cuneiform_lateral_joint" />
+<HAnimJoint containerField="joints" USE="hanim_l_cuboid_joint" />
+<HAnimJoint containerField="joints" USE="hanim_l_metatarsal_1" />
+<HAnimJoint containerField="joints" USE="hanim_l_metatarsophalangeal_1" />
+<HAnimJoint containerField="joints" USE="hanim_l_interphalangeal_1" />
+<HAnimJoint containerField="joints" USE="hanim_l_metatarsal_2" />
+<HAnimJoint containerField="joints" USE="hanim_l_metatarsophalangeal_2" />
+<HAnimJoint containerField="joints" USE="hanim_l_proximal_interphalangeal_2" />
+<HAnimJoint containerField="joints" USE="hanim_l_distal_interphalangeal_2" />
+<HAnimJoint containerField="joints" USE="hanim_l_metatarsal_3" />
+<HAnimJoint containerField="joints" USE="hanim_l_metatarsophalangeal_3" />
+<HAnimJoint containerField="joints" USE="hanim_l_proximal_interphalangeal_3" />
+<HAnimJoint containerField="joints" USE="hanim_l_distal_interphalangeal_3" />
+<HAnimJoint containerField="joints" USE="hanim_l_metatarsal_4" />
+<HAnimJoint containerField="joints" USE="hanim_l_metatarsophalangeal_4" />
+<HAnimJoint containerField="joints" USE="hanim_l_proximal_interphalangeal_4" />
+<HAnimJoint containerField="joints" USE="hanim_l_distal_interphalangeal_4" />
+<HAnimJoint containerField="joints" USE="hanim_l_metatarsal_5" />
+<HAnimJoint containerField="joints" USE="hanim_l_metatarsophalangeal_5" />
+<HAnimJoint containerField="joints" USE="hanim_l_distal_interphalangeal_5" />
+
+<HAnimJoint containerField="joints" USE="hanim_r_hip" />
+<HAnimJoint containerField="joints" USE="hanim_r_knee" />
+<HAnimJoint containerField="joints" USE="hanim_r_fibula_joint" />
+<HAnimJoint containerField="joints" USE="hanim_r_ankle" />
+<HAnimJoint containerField="joints" USE="hanim_r_subtalar" />
+<HAnimJoint containerField="joints" USE="hanim_r_midtarsal" />
+<HAnimJoint containerField="joints" USE="hanim_r_cuneiform_medial_joint" />
+<HAnimJoint containerField="joints" USE="hanim_r_cuneiform_intermediate_joint" />
+<HAnimJoint containerField="joints" USE="hanim_r_cuneiform_lateral_joint" />
+<HAnimJoint containerField="joints" USE="hanim_r_cuboid_joint" />
+<HAnimJoint containerField="joints" USE="hanim_r_metatarsal_1" />
+<HAnimJoint containerField="joints" USE="hanim_r_metatarsophalangeal_1" />
+<HAnimJoint containerField="joints" USE="hanim_r_proximal_interphalangeal_1" />
+<HAnimJoint containerField="joints" USE="hanim_r_interphalangeal_1" />
+<HAnimJoint containerField="joints" USE="hanim_r_metatarsal_2" />
+<HAnimJoint containerField="joints" USE="hanim_r_metatarsophalangeal_2" />
+<HAnimJoint containerField="joints" USE="hanim_r_proximal_interphalangeal_2" />
+<HAnimJoint containerField="joints" USE="hanim_r_distal_interphalangeal_2" />
+<HAnimJoint containerField="joints" USE="hanim_r_metatarsal_3" />
+<HAnimJoint containerField="joints" USE="hanim_r_metatarsophalangeal_3" />
+<HAnimJoint containerField="joints" USE="hanim_r_proximal_interphalangeal_3" />
+<HAnimJoint containerField="joints" USE="hanim_r_distal_interphalangeal_3" />
+<HAnimJoint containerField="joints" USE="hanim_r_metatarsal_4" />
+<HAnimJoint containerField="joints" USE="hanim_r_metatarsophalangeal_4" />
+<HAnimJoint containerField="joints" USE="hanim_r_proximal_interphalangeal_4" />
+<HAnimJoint containerField="joints" USE="hanim_r_distal_interphalangeal_4" />
+<HAnimJoint containerField="joints" USE="hanim_r_metatarsal_5" />
+<HAnimJoint containerField="joints" USE="hanim_r_metatarsophalangeal_5" />
+<HAnimJoint containerField="joints" USE="hanim_r_distal_interphalangeal_5" />
+
+<HAnimJoint containerField="joints" USE="hanim_vl5" />
+<HAnimJoint containerField="joints" USE="hanim_vl5_disc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vl4" />
+<HAnimJoint containerField="joints" USE="hanim_vl4_disc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vl3" />
+<HAnimJoint containerField="joints" USE="hanim_vl3_disc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vl2" />
+<HAnimJoint containerField="joints" USE="hanim_vl2_disc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vl1" />
+<HAnimJoint containerField="joints" USE="hanim_vl1_disc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vt12" />
+<HAnimJoint containerField="joints" USE="hanim_l_rib12_joint" />
+<HAnimJoint containerField="joints" USE="hanim_r_rib12_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vt12_disc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vt11" />
+<HAnimJoint containerField="joints" USE="hanim_l_rib11_joint" />
+<HAnimJoint containerField="joints" USE="hanim_r_rib11_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vt11_disc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vt10" />
+<HAnimJoint containerField="joints" USE="hanim_l_rib10_joint" />
+<HAnimJoint containerField="joints" USE="hanim_r_rib10_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vt10_disc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vt9" />
+<HAnimJoint containerField="joints" USE="hanim_l_rib9_joint" />
+<HAnimJoint containerField="joints" USE="hanim_r_rib9_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vt9_disc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vt8" />
+<HAnimJoint containerField="joints" USE="hanim_l_rib8_joint" />
+<HAnimJoint containerField="joints" USE="hanim_r_rib8_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vt8_disc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vt7" />
+<HAnimJoint containerField="joints" USE="hanim_l_rib7_joint" />
+<HAnimJoint containerField="joints" USE="hanim_r_rib7_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vt7_disc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vt6" />
+<HAnimJoint containerField="joints" USE="hanim_l_rib6_joint" />
+<HAnimJoint containerField="joints" USE="hanim_r_rib6_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vt6_disc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vt5" />
+<HAnimJoint containerField="joints" USE="hanim_l_rib5_joint" />
+<HAnimJoint containerField="joints" USE="hanim_r_rib5_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vt5_disc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vt4" />
+<HAnimJoint containerField="joints" USE="hanim_l_rib4_joint" />
+<HAnimJoint containerField="joints" USE="hanim_r_rib4_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vt4_disc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vt3" />
+<HAnimJoint containerField="joints" USE="hanim_l_rib3_joint" />
+<HAnimJoint containerField="joints" USE="hanim_r_rib3_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vt3_disc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vt2" />
+<HAnimJoint containerField="joints" USE="hanim_l_rib2_joint" />
+<HAnimJoint containerField="joints" USE="hanim_r_rib2_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vt2_disc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vt1" />
+<HAnimJoint containerField="joints" USE="hanim_l_rib1_joint" />
+<HAnimJoint containerField="joints" USE="hanim_r_rib1_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vt1_disc_joint" />
+
+<HAnimJoint containerField="joints" USE="hanim_sternum_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lum_joint" />
+<HAnimJoint containerField="joints" USE="hanim_l_costal_cartilage_joint" />
+<HAnimJoint containerField="joints" USE="hanim_r_costal_cartilage_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lccart_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rccart_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lccart2_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rccart2_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lfreecrt_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rfreecrt_joint" />
+
+<HAnimJoint containerField="joints" USE="hanim_l_sternoclavicular" />
+<HAnimJoint containerField="joints" USE="hanim_l_acromioclavicular" />
+<HAnimJoint containerField="joints" USE="hanim_l_shoulder" />
+<HAnimJoint containerField="joints" USE="hanim_l_elbow" />
+<HAnimJoint containerField="joints" USE="hanim_l_radioulnar" />
+<HAnimJoint containerField="joints" USE="hanim_l_wrist" />
+<HAnimJoint containerField="joints" USE="hanim_l_carpal_capitate_joint" />
+<HAnimJoint containerField="joints" USE="hanim_l_carpal_hamate_joint" />
+<HAnimJoint containerField="joints" USE="hanim_l_carpal_lunate_joint" />
+<HAnimJoint containerField="joints" USE="hanim_l_carpal_pisiform_joint" />
+<HAnimJoint containerField="joints" USE="hanim_l_carpal_trapezium_joint" />
+<HAnimJoint containerField="joints" USE="hanim_l_carpal_trapezoid_joint" />
+<HAnimJoint containerField="joints" USE="hanim_l_carpal_triquetral_joint" />
+<HAnimJoint containerField="joints" USE="hanim_l_carpometacarpal_1" />
+<HAnimJoint containerField="joints" USE="hanim_l_metacarpophalangeal_1" />
+<HAnimJoint containerField="joints" USE="hanim_l_interphalangeal_1" />
+<HAnimJoint containerField="joints" USE="hanim_l_carpometacarpal_2" />
+<HAnimJoint containerField="joints" USE="hanim_l_metacarpophalangeal_2" />
+<HAnimJoint containerField="joints" USE="hanim_l_proximal_interphalangeal_2" />
+<HAnimJoint containerField="joints" USE="hanim_l_distal_interphalangeal_2" />
+<HAnimJoint containerField="joints" USE="hanim_l_carpometacarpal_3" />
+<HAnimJoint containerField="joints" USE="hanim_l_metacarpophalangeal_3" />
+<HAnimJoint containerField="joints" USE="hanim_l_proximal_interphalangeal_3" />
+<HAnimJoint containerField="joints" USE="hanim_l_distal_interphalangeal_3" />
+<HAnimJoint containerField="joints" USE="hanim_l_carpometacarpal_4" />
+<HAnimJoint containerField="joints" USE="hanim_l_metacarpophalangeal_4" />
+<HAnimJoint containerField="joints" USE="hanim_l_proximal_interphalangeal_4" />
+<HAnimJoint containerField="joints" USE="hanim_l_distal_interphalangeal_4" />
+<HAnimJoint containerField="joints" USE="hanim_l_carpometacarpal_5" />
+<HAnimJoint containerField="joints" USE="hanim_l_metacarpophalangeal_5" />
+<HAnimJoint containerField="joints" USE="hanim_l_proximal_interphalangeal_5" />
+<HAnimJoint containerField="joints" USE="hanim_l_distal_interphalangeal_5" />
+
+<HAnimJoint containerField="joints" USE="hanim_r_sternoclavicular" />
+<HAnimJoint containerField="joints" USE="hanim_r_acromioclavicular" />
+<HAnimJoint containerField="joints" USE="hanim_r_shoulder" />
+<HAnimJoint containerField="joints" USE="hanim_r_elbow" />
+<HAnimJoint containerField="joints" USE="hanim_r_radioulnar" />
+<HAnimJoint containerField="joints" USE="hanim_r_wrist" />
+<HAnimJoint containerField="joints" USE="hanim_r_carpal_capitate_joint" />
+<HAnimJoint containerField="joints" USE="hanim_r_carpal_hamate_joint" />
+<HAnimJoint containerField="joints" USE="hanim_r_carpal_lunate_joint" />
+<HAnimJoint containerField="joints" USE="hanim_r_carpal_pisiform_joint" />
+<HAnimJoint containerField="joints" USE="hanim_r_carpal_trapezium_joint" />
+<HAnimJoint containerField="joints" USE="hanim_r_carpal_trapezoid_joint" />
+<HAnimJoint containerField="joints" USE="hanim_r_carpal_triquetral_joint" />
+<HAnimJoint containerField="joints" USE="hanim_r_carpometacarpal_1" />
+<HAnimJoint containerField="joints" USE="hanim_r_metacarpophalangeal_1" />
+<HAnimJoint containerField="joints" USE="hanim_r_interphalangeal_1" />
+<HAnimJoint containerField="joints" USE="hanim_r_carpometacarpal_2" />
+<HAnimJoint containerField="joints" USE="hanim_r_metacarpophalangeal_2" />
+<HAnimJoint containerField="joints" USE="hanim_r_proximal_interphalangeal_2" />
+<HAnimJoint containerField="joints" USE="hanim_r_distal_interphalangeal_2" />
+<HAnimJoint containerField="joints" USE="hanim_r_carpometacarpal_3" />
+<HAnimJoint containerField="joints" USE="hanim_r_metacarpophalangeal_3" />
+<HAnimJoint containerField="joints" USE="hanim_r_proximal_interphalangeal_3" />
+<HAnimJoint containerField="joints" USE="hanim_r_distal_interphalangeal_3" />
+<HAnimJoint containerField="joints" USE="hanim_r_carpometacarpal_4" />
+<HAnimJoint containerField="joints" USE="hanim_r_metacarpophalangeal_4" />
+<HAnimJoint containerField="joints" USE="hanim_r_proximal_interphalangeal_4" />
+<HAnimJoint containerField="joints" USE="hanim_r_distal_interphalangeal_4" />
+<HAnimJoint containerField="joints" USE="hanim_r_carpometacarpal_5" />
+<HAnimJoint containerField="joints" USE="hanim_r_metacarpophalangeal_5" />
+<HAnimJoint containerField="joints" USE="hanim_r_proximal_interphalangeal_5" />
+<HAnimJoint containerField="joints" USE="hanim_r_distal_interphalangeal_5" />
+
+<HAnimJoint containerField="joints" USE="hanim_vc7" />
+<HAnimJoint containerField="joints" USE="hanim_vc7_disc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vc6" />
+<HAnimJoint containerField="joints" USE="hanim_vc6_disc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vc5" />
+<HAnimJoint containerField="joints" USE="hanim_vc5_disc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vc4" />
+<HAnimJoint containerField="joints" USE="hanim_vc4_disc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vc3" />
+<HAnimJoint containerField="joints" USE="hanim_vc3_disc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vc2" />
+<HAnimJoint containerField="joints" USE="hanim_vc2_disc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vc1" />
+<HAnimJoint containerField="joints" USE="hanim_skullbase" />
+<HAnimJoint containerField="joints" USE="hanim_temporomandibular" />
+
+<HAnimJoint containerField="joints" USE="hanim_ethmoid_joint" />
+<HAnimJoint containerField="joints" USE="hanim_ethmoid2_joint" />
+<HAnimJoint containerField="joints" USE="hanim_frontal_joint" />
+<HAnimJoint containerField="joints" USE="hanim_inconl_joint" />
+<HAnimJoint containerField="joints" USE="hanim_inconr_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lacl_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lacr_joint" />
+<HAnimJoint containerField="joints" USE="hanim_maxl_joint" />
+<HAnimJoint containerField="joints" USE="hanim_maxr_joint" />
+<HAnimJoint containerField="joints" USE="hanim_nasall_joint" />
+<HAnimJoint containerField="joints" USE="hanim_nasalr_joint" />
+<HAnimJoint containerField="joints" USE="hanim_palatl_joint" />
+<HAnimJoint containerField="joints" USE="hanim_palatr_joint" />
+<HAnimJoint containerField="joints" USE="hanim_parietl_joint" />
+<HAnimJoint containerField="joints" USE="hanim_parietr_joint" />
+<HAnimJoint containerField="joints" USE="hanim_sphenoid_joint" />
+<HAnimJoint containerField="joints" USE="hanim_templ_joint" />
+<HAnimJoint containerField="joints" USE="hanim_tempr_joint" />
+<HAnimJoint containerField="joints" USE="hanim_vom_joint" />
+<HAnimJoint containerField="joints" USE="hanim_zygol_joint" />
+<HAnimJoint containerField="joints" USE="hanim_zygor_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lcartend_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rcartend_joint" />
+
+<HAnimJoint containerField="joints" USE="hanim_lcaninec_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lcaniner_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lcaninlc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lcaninlr_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lcenincc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lcenincr_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lceninlc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lceninlr_joint" />
+<HAnimJoint containerField="joints" USE="hanim_llatincc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_llatincr_joint" />
+<HAnimJoint containerField="joints" USE="hanim_llatinlc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_llatinlr_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lmolar1c_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lmolar1r_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lmolar2c_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lmolar2r_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lmolar3c_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lmolar3r_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lmolr1lc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lmolr1lr_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lmolr2lc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lmolr2lr_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lmolr3lc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lmolr3lr_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lprem1lc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lprem1lr_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lprem2lc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lprem2lr_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lpreo1lc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lpreol1r_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lpreol2c_joint" />
+<HAnimJoint containerField="joints" USE="hanim_lpreol2r_joint" />
+
+<HAnimJoint containerField="joints" USE="hanim_rcaninec_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rcaniner_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rcaninlc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rcaninlr_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rcenincc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rcenincr_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rceninlc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rceninlr_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rlatincc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rlatincr_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rlatinlc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rlatinlr_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rmolar1c_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rmolar1r_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rmolar2c_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rmolar2r_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rmolar3c_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rmolar3r_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rmolr1lc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rmolr1lr_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rmolr2lc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rmolr2lr_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rmolr3lc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rmolr3lr_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rprem1lc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rprem1lr_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rprem2lc_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rprem2lr_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rpreol1c_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rpreol1r_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rpreol2c_joint" />
+<HAnimJoint containerField="joints" USE="hanim_rpreol2r_joint" />
+
+</HAnimHumanoid>
+   </Transform>
+  </Transform>
+ </Transform>
+</Transform>
+
+    <Group DEF="UserInterface">
+      <Transform DEF="CoordinateAxesAdjustedScale" scale="0.175 0.175 0.175">
+        <Inline DEF="CoordinateAxes" url="&quot;JointCoordinateAxes.x3dv&quot; &quot;../../X3dForWebAuthors/Chapter03-Grouping/CoordinateAxes.x3d&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03-Grouping/CoordinateAxes.x3d&quot; &quot;../../X3dForWebAuthors/Chapter03-Grouping/CoordinateAxes.wrl&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03-Grouping/CoordinateAxes.wrl&quot;" />
+      </Transform>
+    </Group>
+
+</Scene>
+</X3D>
