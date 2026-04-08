@@ -948,7 +948,7 @@
 
     <Group DEF="UserInterface">
       <Transform DEF="CoordinateAxesAdjustedScale" scale="0.175 0.175 0.175">
-        <Inline DEF="CoordinateAxes" url="&quot;JointCoordinateAxes.x3dv&quot; &quot;../../X3dForWebAuthors/Chapter03-Grouping/CoordinateAxes.x3d&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03-Grouping/CoordinateAxes.x3d&quot; &quot;../../X3dForWebAuthors/Chapter03-Grouping/CoordinateAxes.wrl&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03-Grouping/CoordinateAxes.wrl&quot;" />
+        <Inline DEF="CoordinateAxes" url="&quot;JointCoordinateAxes.x3d&quot; &quot;../../X3dForWebAuthors/Chapter03-Grouping/CoordinateAxes.x3d&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03-Grouping/CoordinateAxes.x3d&quot; &quot;../../X3dForWebAuthors/Chapter03-Grouping/CoordinateAxes.wrl&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03-Grouping/CoordinateAxes.wrl&quot;" />
       </Transform>
     </Group>
 

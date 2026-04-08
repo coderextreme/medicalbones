@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 4.1//EN" "https://www.web3d.org/specifications/x3d-4.1.dtd"><X3D xmlns:ns0="https://www.w3.org/2001/XMLSchema-instance" profile="Full" version="4.1" ns0:noNamespaceSchemaLocation="https://www.web3d.org/specifications/x3d-4.1.xsd">
+<head>
+ <component level="3" name="HAnim" />
+ <component level="4" name="Networking" />
+ <meta name="title" content="0skeleton1.x3d" />
+ <meta name="identifier" content="https://coderextreme.net/X3DJSONLD/src/main/data/0skeleton1.x3d" />
+ <meta name="generator" content="medicalbones/Explode.py / AI Conversion to HAnim V2.0 LOA-4 Hierarchy" />
+</head>
+<Scene>
+<NavigationInfo avatarSize="0.25 1.6 0.75" visibilityLimit="0" speed="1" headlight="false" type="&quot;EXAMINE&quot; &quot;ANY&quot;" />
+
+<DirectionalLight direction="0 1 1" />
+
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 Front" position="0 0.4 4" />
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 FrontClose" position="0 0.8 2" />
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 FrontCloser" position="0 1.2 1" />
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 Right Side" orientation="0 1 0 1.5708" position="2.6 0.8 0" />
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 Right Side Close" orientation="0 1 0 1.2" position="1 0.8 0.5" />
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 Left Side Close" orientation="0 1 0 -1.2" position="-1 0.8 0.5" />
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 Left Side" orientation="0 1 0 -1.5708" position="-2.6 0.8 0" />
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 Top" orientation="1 0 0 -1.5708" position="0 3.5 0" />
+
+<Transform translation="0 0 0">   
+ <Transform scale="0.029 0.029 0.029">   
+  <Transform rotation="0 0 1 0">  
+   <Transform rotation="0 0 1 0"> 
+
+<RigidBodyCollection DEF="hanim_humanoid">
+<RigidBody DEF="hanim_humanoid_root">
+  </RigidBody>
+
+
+<RigidBody DEF="hanim_sacroiliac">
+    <CollidableShape DEF="hanim_pelvis">
+      <InlineGeometry url="&quot;sacrum.x3d&quot;" containerField="shape" />
+    </CollidableShape>
+    
+    </RigidBody>
+<RigidBody DEF="hanim_sacrococcygeal">
+      <CollidableShape DEF="hanim_coccyx_segment"><InlineGeometry url="&quot;coccyx.x3d&quot;" containerField="shape" /></CollidableShape>
+    </RigidBody>
+    <RigidBody DEF="hanim_l_coxal_joint">
+      <CollidableShape DEF="hanim_l_coxal_segment"><InlineGeometry url="&quot;loscoxae.x3d&quot;" containerField="shape" /></CollidableShape>
+    </RigidBody>
+    <RigidBody DEF="hanim_r_coxal_joint">
+      <CollidableShape DEF="hanim_r_coxal_segment"><InlineGeometry url="&quot;roscoxae.x3d&quot;" containerField="shape" /></CollidableShape>
+    </RigidBody>
+    <RigidBody DEF="hanim_sympubis_joint">
+      <CollidableShape DEF="hanim_sympubis_segment"><InlineGeometry url="&quot;sympubis.x3d&quot;" containerField="shape" /></CollidableShape>
+    </RigidBody>
+
+    
+    <RigidBody DEF="hanim_l_hip">
+      <CollidableShape DEF="hanim_l_thigh"><InlineGeometry url="&quot;lfemur.x3d&quot;" containerField="shape" /></CollidableShape>
+      </RigidBody>
+
+    
+    <RigidBody DEF="hanim_r_hip">
+      <CollidableShape DEF="hanim_r_thigh"><InlineGeometry url="&quot;rfemur.x3d&quot;" containerField="shape" /></CollidableShape>
+      </RigidBody>
+
+    
+    <RigidBody DEF="hanim_vl5">
+      <CollidableShape DEF="hanim_l5"><InlineGeometry url="&quot;l5.x3d&quot;" containerField="shape" /></CollidableShape>
+      </RigidBody>
+  <RigidBody DEF="hanim_l_knee">
+        <CollidableShape DEF="hanim_l_calf"><InlineGeometry url="&quot;ltibia.x3d&quot;" containerField="shape" /></CollidableShape>
+        </RigidBody>
+    <RigidBody DEF="hanim_l_fibula_joint">
+          <CollidableShape DEF="hanim_l_fibula_segment"><InlineGeometry url="&quot;lfibula.x3d&quot;" containerField="shape" /></CollidableShape>
+        </RigidBody>
+        <RigidBody DEF="hanim_l_ankle">
+          <CollidableShape DEF="hanim_l_talus"><InlineGeometry url="&quot;ltalus.x3d&quot;" containerField="shape" /></CollidableShape>
+          </RigidBody>
+      <RigidBody DEF="hanim_l_subtalar">
+            <CollidableShape DEF="hanim_l_calcaneus"><InlineGeometry url="&quot;lcalc.x3d&quot;" containerField="shape" /></CollidableShape>
+            </RigidBody>
+        <RigidBody DEF="hanim_l_midtarsal">
+              <CollidableShape DEF="hanim_l_navicular"><InlineGeometry url="&quot;lnaviclr.x3d&quot;" containerField="shape" /></CollidableShape>
+              </RigidBody>
+          <RigidBody DEF="hanim_l_cuneiform_medial_joint"><CollidableShape DEF="hanim_l_cuneiform_medial_segment"><InlineGeometry url="&quot;lmcun.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+              <RigidBody DEF="hanim_l_cuneiform_intermediate_joint"><CollidableShape DEF="hanim_l_cuneiform_intermediate_segment"><InlineGeometry url="&quot;licun.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+              <RigidBody DEF="hanim_l_cuneiform_lateral_joint"><CollidableShape DEF="hanim_l_cuneiform_lateral_segment"><InlineGeometry url="&quot;llcun.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+              <RigidBody DEF="hanim_l_cuboid_joint"><CollidableShape DEF="hanim_l_cuboid_segment"><InlineGeometry url="&quot;lcuboid.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+              <RigidBody DEF="hanim_l_metatarsal_1">
+                <CollidableShape DEF="hanim_l_metatarsal_1_segment"><InlineGeometry url="&quot;lfmet.x3d&quot;" containerField="shape" /></CollidableShape>
+                </RigidBody>
+              <RigidBody DEF="hanim_l_metatarsal_2">
+                <CollidableShape DEF="hanim_l_metatarsal_2_segment"><InlineGeometry url="&quot;lmet2.x3d&quot;" containerField="shape" /></CollidableShape>
+                </RigidBody>
+              <RigidBody DEF="hanim_l_metatarsal_3">
+                <CollidableShape DEF="hanim_l_metatarsal_3_segment"><InlineGeometry url="&quot;lmet3.x3d&quot;" containerField="shape" /></CollidableShape>
+                </RigidBody>
+              <RigidBody DEF="hanim_l_metatarsal_4">
+                <CollidableShape DEF="hanim_l_metatarsal_4_segment"><InlineGeometry url="&quot;lmet4.x3d&quot;" containerField="shape" /></CollidableShape>
+                </RigidBody>
+              <RigidBody DEF="hanim_l_metatarsal_5">
+                <CollidableShape DEF="hanim_l_metatarsal_5_segment"><InlineGeometry url="&quot;lmet5.x3d&quot;" containerField="shape" /></CollidableShape>
+                </RigidBody>
+            <RigidBody DEF="hanim_l_metatarsophalangeal_1">
+                  <CollidableShape DEF="hanim_l_proximal_phalanx_1"><InlineGeometry url="&quot;lfpprox.x3d&quot;" containerField="shape" /></CollidableShape>
+                  </RigidBody>
+              <RigidBody DEF="hanim_l_interphalangeal_1">
+                    <CollidableShape DEF="hanim_l_distal_phalanx_1"><InlineGeometry url="&quot;lfdphal.x3d&quot;" containerField="shape" /></CollidableShape>
+                  </RigidBody>
+                <RigidBody DEF="hanim_l_metatarsophalangeal_2">
+                  <CollidableShape DEF="hanim_l_proximal_phalanx_2"><InlineGeometry url="&quot;lfpprox2.x3d&quot;" containerField="shape" /></CollidableShape>
+                  </RigidBody>
+              <RigidBody DEF="hanim_l_proximal_interphalangeal_2">
+                    <CollidableShape DEF="hanim_l_middle_phalanx_2"><InlineGeometry url="&quot;lfmphal2.x3d&quot;" containerField="shape" /></CollidableShape>
+                    </RigidBody>
+                <RigidBody DEF="hanim_l_distal_interphalangeal_2">
+                      <CollidableShape DEF="hanim_l_distal_phalanx_2"><InlineGeometry url="&quot;lfdphal2.x3d&quot;" containerField="shape" /></CollidableShape>
+                    </RigidBody>
+                  <RigidBody DEF="hanim_l_metatarsophalangeal_3">
+                  <CollidableShape DEF="hanim_l_proximal_phalanx_3"><InlineGeometry url="&quot;lfpprox3.x3d&quot;" containerField="shape" /></CollidableShape>
+                  </RigidBody>
+              <RigidBody DEF="hanim_l_proximal_interphalangeal_3">
+                    <CollidableShape DEF="hanim_l_middle_phalanx_3"><InlineGeometry url="&quot;lfmphal3.x3d&quot;" containerField="shape" /></CollidableShape>
+                    </RigidBody>
+                <RigidBody DEF="hanim_l_distal_interphalangeal_3">
+                      <CollidableShape DEF="hanim_l_distal_phalanx_3"><InlineGeometry url="&quot;lfdphal3.x3d&quot;" containerField="shape" /></CollidableShape>
+                    </RigidBody>
+                  <RigidBody DEF="hanim_l_metatarsophalangeal_4">
+                  <CollidableShape DEF="hanim_l_proximal_phalanx_4"><InlineGeometry url="&quot;lfpprox4.x3d&quot;" containerField="shape" /></CollidableShape>
+                  </RigidBody>
+              <RigidBody DEF="hanim_l_proximal_interphalangeal_4">
+                    <CollidableShape DEF="hanim_l_middle_phalanx_4"><InlineGeometry url="&quot;lfmphal4.x3d&quot;" containerField="shape" /></CollidableShape>
+                    </RigidBody>
+                <RigidBody DEF="hanim_l_distal_interphalangeal_4">
+                      <CollidableShape DEF="hanim_l_distal_phalanx_4"><InlineGeometry url="&quot;lfdphal4.x3d&quot;" containerField="shape" /></CollidableShape>
+                    </RigidBody>
+                  <RigidBody DEF="hanim_l_metatarsophalangeal_5">
+                  <CollidableShape DEF="hanim_l_proximal_phalanx_5"><InlineGeometry url="&quot;lfpprox5.x3d&quot;" containerField="shape" /></CollidableShape>
+                  </RigidBody>
+              <RigidBody DEF="hanim_l_distal_interphalangeal_5">
+			  
+                  </RigidBody>
+                <RigidBody DEF="hanim_r_knee">
+        <CollidableShape DEF="hanim_r_calf"><InlineGeometry url="&quot;rtibia.x3d&quot;" containerField="shape" /></CollidableShape>
+        </RigidBody>
+    <RigidBody DEF="hanim_r_fibula_joint">
+          <CollidableShape DEF="hanim_r_fibula_segment"><InlineGeometry url="&quot;lowleg.x3d&quot;" containerField="shape" /></CollidableShape>
+        </RigidBody>
+        <RigidBody DEF="hanim_r_ankle">
+          <CollidableShape DEF="hanim_r_talus"><InlineGeometry url="&quot;rtalus.x3d&quot;" containerField="shape" /></CollidableShape>
+          </RigidBody>
+      <RigidBody DEF="hanim_r_subtalar">
+            <CollidableShape DEF="hanim_r_calcaneus"><InlineGeometry url="&quot;rcalc.x3d&quot;" containerField="shape" /></CollidableShape>
+            </RigidBody>
+        <RigidBody DEF="hanim_r_midtarsal">
+              <CollidableShape DEF="hanim_r_navicular"><InlineGeometry url="&quot;rnaviclr.x3d&quot;" containerField="shape" /></CollidableShape>
+              </RigidBody>
+          <RigidBody DEF="hanim_r_cuneiform_medial_joint"><CollidableShape DEF="hanim_r_cuneiform_medial_segment"><InlineGeometry url="&quot;rmcun.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+              <RigidBody DEF="hanim_r_cuneiform_intermediate_joint"><CollidableShape DEF="hanim_r_cuneiform_intermediate_segment"><InlineGeometry url="&quot;ricun.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+              <RigidBody DEF="hanim_r_cuneiform_lateral_joint"><CollidableShape DEF="hanim_r_cuneiform_lateral_segment"><InlineGeometry url="&quot;rlcun.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+              <RigidBody DEF="hanim_r_cuboid_joint"><CollidableShape DEF="hanim_r_cuboid_segment"><InlineGeometry url="&quot;rcuboid.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+              <RigidBody DEF="hanim_r_metatarsal_1">
+                <CollidableShape DEF="hanim_r_metatarsal_1_segment"><InlineGeometry url="&quot;rfmet.x3d&quot;" containerField="shape" /></CollidableShape>
+                </RigidBody>
+              <RigidBody DEF="hanim_r_metatarsal_2">
+                <CollidableShape DEF="hanim_r_metatarsal_2_segment"><InlineGeometry url="&quot;rmet2.x3d&quot;" containerField="shape" /></CollidableShape>
+                </RigidBody>
+              <RigidBody DEF="hanim_r_metatarsal_3">
+                <CollidableShape DEF="hanim_r_metatarsal_3_segment"><InlineGeometry url="&quot;rmet3.x3d&quot;" containerField="shape" /></CollidableShape>
+                </RigidBody>
+              <RigidBody DEF="hanim_r_metatarsal_4">
+                <CollidableShape DEF="hanim_r_metatarsal_4_segment"><InlineGeometry url="&quot;rmet4.x3d&quot;" containerField="shape" /></CollidableShape>
+                </RigidBody>
+              <RigidBody DEF="hanim_r_metatarsal_5">
+                <CollidableShape DEF="hanim_r_metatarsal_5_segment"><InlineGeometry url="&quot;rmet5.x3d&quot;" containerField="shape" /></CollidableShape>
+                </RigidBody>
+            <RigidBody DEF="hanim_r_metatarsophalangeal_1">
+                  <CollidableShape DEF="hanim_r_proximal_phalanx_1"><InlineGeometry url="&quot;rfprox.x3d&quot;" containerField="shape" /></CollidableShape>
+                  </RigidBody>
+              <RigidBody DEF="hanim_r_proximal_interphalangeal_1">
+                    <CollidableShape DEF="hanim_r_middle_phalanx_1"><InlineGeometry url="&quot;rfmphal.x3d&quot;" containerField="shape" /></CollidableShape>
+                    </RigidBody>
+                <RigidBody DEF="hanim_r_interphalangeal_1">
+                      <CollidableShape DEF="hanim_r_distal_phalanx_1"><InlineGeometry url="&quot;rfdphal.x3d&quot;" containerField="shape" /></CollidableShape>
+                    </RigidBody>
+                  <RigidBody DEF="hanim_r_metatarsophalangeal_2">
+                  <CollidableShape DEF="hanim_r_proximal_phalanx_2"><InlineGeometry url="&quot;rfpprox2.x3d&quot;" containerField="shape" /></CollidableShape>
+                  </RigidBody>
+              <RigidBody DEF="hanim_r_proximal_interphalangeal_2">
+                    <CollidableShape DEF="hanim_r_middle_phalanx_2"><InlineGeometry url="&quot;rfmphal2.x3d&quot;" containerField="shape" /></CollidableShape>
+                    </RigidBody>
+                <RigidBody DEF="hanim_r_distal_interphalangeal_2">
+                      <CollidableShape DEF="hanim_r_distal_phalanx_2"><InlineGeometry url="&quot;rfdphal2.x3d&quot;" containerField="shape" /></CollidableShape>
+                    </RigidBody>
+                  <RigidBody DEF="hanim_r_metatarsophalangeal_3">
+                  <CollidableShape DEF="hanim_r_proximal_phalanx_3"><InlineGeometry url="&quot;rfpprox3.x3d&quot;" containerField="shape" /></CollidableShape>
+                  </RigidBody>
+              <RigidBody DEF="hanim_r_proximal_interphalangeal_3">
+                    <CollidableShape DEF="hanim_r_middle_phalanx_3"><InlineGeometry url="&quot;rfmphal3.x3d&quot;" containerField="shape" /></CollidableShape>
+                    </RigidBody>
+                <RigidBody DEF="hanim_r_distal_interphalangeal_3">
+                      <CollidableShape DEF="hanim_r_distal_phalanx_3"><InlineGeometry url="&quot;rfdphal3.x3d&quot;" containerField="shape" /></CollidableShape>
+                    </RigidBody>
+                  <RigidBody DEF="hanim_r_metatarsophalangeal_4">
+                  <CollidableShape DEF="hanim_r_proximal_phalanx_4"><InlineGeometry url="&quot;rfpprox4.x3d&quot;" containerField="shape" /></CollidableShape>
+                  </RigidBody>
+              <RigidBody DEF="hanim_r_proximal_interphalangeal_4">
+                    <CollidableShape DEF="hanim_r_middle_phalanx_4"><InlineGeometry url="&quot;rfmphal4.x3d&quot;" containerField="shape" /></CollidableShape>
+                    </RigidBody>
+                <RigidBody DEF="hanim_r_distal_interphalangeal_4">
+                      <CollidableShape DEF="hanim_r_distal_phalanx_4"><InlineGeometry url="&quot;rfdphal4.x3d&quot;" containerField="shape" /></CollidableShape>
+                    </RigidBody>
+                  <RigidBody DEF="hanim_r_metatarsophalangeal_5">
+                  <CollidableShape DEF="hanim_r_proximal_phalanx_5"><InlineGeometry url="&quot;rfpprox5.x3d&quot;" containerField="shape" /></CollidableShape>
+                  </RigidBody>
+              <RigidBody DEF="hanim_r_distal_interphalangeal_5">
+                    <CollidableShape DEF="hanim_r_distal_phalanx_5"><InlineGeometry url="&quot;rfdphal5.x3d&quot;" containerField="shape" /></CollidableShape>
+                  </RigidBody>
+                <RigidBody DEF="hanim_vl5_disc_joint">
+        <CollidableShape DEF="hanim_l5_disc_segment"><InlineGeometry url="&quot;l5disc.x3d&quot;" containerField="shape" /></CollidableShape>
+      </RigidBody>
+      <RigidBody DEF="hanim_vl4">
+        <CollidableShape DEF="hanim_l4"><InlineGeometry url="&quot;l4.x3d&quot;" containerField="shape" /></CollidableShape>
+        </RigidBody>
+    <RigidBody DEF="hanim_vl4_disc_joint">
+          <CollidableShape DEF="hanim_l4_disc_segment"><InlineGeometry url="&quot;l4disk.x3d&quot;" containerField="shape" /></CollidableShape>
+        </RigidBody>
+        <RigidBody DEF="hanim_vl3">
+          <CollidableShape DEF="hanim_l3"><InlineGeometry url="&quot;l3.x3d&quot;" containerField="shape" /></CollidableShape>
+          </RigidBody>
+      <RigidBody DEF="hanim_vl3_disc_joint">
+            <CollidableShape DEF="hanim_l3_disc_segment"><InlineGeometry url="&quot;l3disk.x3d&quot;" containerField="shape" /></CollidableShape>
+          </RigidBody>
+          <RigidBody DEF="hanim_vl2">
+            <CollidableShape DEF="hanim_l2"><InlineGeometry url="&quot;l2.x3d&quot;" containerField="shape" /></CollidableShape>
+            </RigidBody>
+        <RigidBody DEF="hanim_vl2_disc_joint">
+              <CollidableShape DEF="hanim_l2_disc_segment"><InlineGeometry url="&quot;l2disk.x3d&quot;" containerField="shape" /></CollidableShape>
+            </RigidBody>
+            <RigidBody DEF="hanim_vl1">
+              </RigidBody>
+          <RigidBody DEF="hanim_vl1_disc_joint">
+                <CollidableShape DEF="hanim_l1_disc_segment"><InlineGeometry url="&quot;l1disk.x3d&quot;" containerField="shape" /></CollidableShape>
+              </RigidBody>
+              <RigidBody DEF="hanim_vt12">
+                <CollidableShape DEF="hanim_t12"><InlineGeometry url="&quot;t12.x3d&quot;" containerField="shape" /></CollidableShape>
+                </RigidBody>
+            <RigidBody DEF="hanim_l_rib12_joint"><CollidableShape DEF="hanim_l_rib12_segment"><InlineGeometry url="&quot;lrib12.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                <RigidBody DEF="hanim_r_rib12_joint"><CollidableShape DEF="hanim_r_rib12_segment"><InlineGeometry url="&quot;rrib12.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                <RigidBody DEF="hanim_vt12_disc_joint"><CollidableShape DEF="hanim_t12_disc_segment"><InlineGeometry url="&quot;t12disc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                
+                <RigidBody DEF="hanim_vt11">
+                  <CollidableShape DEF="hanim_t11"><InlineGeometry url="&quot;t11.x3d&quot;" containerField="shape" /></CollidableShape>
+                  </RigidBody>
+              <RigidBody DEF="hanim_l_rib11_joint"><CollidableShape DEF="hanim_l_rib11_segment"><InlineGeometry url="&quot;lrib11.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                  <RigidBody DEF="hanim_r_rib11_joint"><CollidableShape DEF="hanim_r_rib11_segment"><InlineGeometry url="&quot;rrib11.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                  <RigidBody DEF="hanim_vt11_disc_joint"><CollidableShape DEF="hanim_t11_disc_segment"><InlineGeometry url="&quot;t11disc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+
+                  <RigidBody DEF="hanim_vt10">
+                    <CollidableShape DEF="hanim_t10"><InlineGeometry url="&quot;t10.x3d&quot;" containerField="shape" /></CollidableShape>
+                    </RigidBody>
+                <RigidBody DEF="hanim_l_rib10_joint"><CollidableShape DEF="hanim_l_rib10_segment"><InlineGeometry url="&quot;lrib10.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                    <RigidBody DEF="hanim_r_rib10_joint"><CollidableShape DEF="hanim_r_rib10_segment"><InlineGeometry url="&quot;rrib10.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                    <RigidBody DEF="hanim_vt10_disc_joint"><CollidableShape DEF="hanim_t10_disc_segment"><InlineGeometry url="&quot;t10disc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+
+                    <RigidBody DEF="hanim_vt9">
+                      <CollidableShape DEF="hanim_t9"><InlineGeometry url="&quot;t9.x3d&quot;" containerField="shape" /></CollidableShape>
+                      </RigidBody>
+                  <RigidBody DEF="hanim_l_rib9_joint"><CollidableShape DEF="hanim_l_rib9_segment"><InlineGeometry url="&quot;lrib9.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                      <RigidBody DEF="hanim_r_rib9_joint"><CollidableShape DEF="hanim_r_rib9_segment"><InlineGeometry url="&quot;rrib9.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                      <RigidBody DEF="hanim_vt9_disc_joint"><CollidableShape DEF="hanim_t9_disc_segment"><InlineGeometry url="&quot;t9disc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+
+                      <RigidBody DEF="hanim_vt8">
+                        <CollidableShape DEF="hanim_t8"><InlineGeometry url="&quot;t8.x3d&quot;" containerField="shape" /></CollidableShape>
+                        </RigidBody>
+                    <RigidBody DEF="hanim_l_rib8_joint"><CollidableShape DEF="hanim_l_rib8_segment"><InlineGeometry url="&quot;lrib8.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                        <RigidBody DEF="hanim_r_rib8_joint"><CollidableShape DEF="hanim_r_rib8_segment"><InlineGeometry url="&quot;rrib8.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                        <RigidBody DEF="hanim_vt8_disc_joint"><CollidableShape DEF="hanim_t8_disc_segment"><InlineGeometry url="&quot;t8disc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+
+                        <RigidBody DEF="hanim_vt7">
+                          <CollidableShape DEF="hanim_t7"><InlineGeometry url="&quot;t7.x3d&quot;" containerField="shape" /></CollidableShape>
+                          </RigidBody>
+                      <RigidBody DEF="hanim_l_rib7_joint"><CollidableShape DEF="hanim_l_rib7_segment"><InlineGeometry url="&quot;lrib7.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                          <RigidBody DEF="hanim_r_rib7_joint"><CollidableShape DEF="hanim_r_rib7_segment"><InlineGeometry url="&quot;rrib7.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                          <RigidBody DEF="hanim_vt7_disc_joint"><CollidableShape DEF="hanim_t7_disc_segment"><InlineGeometry url="&quot;t7disc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+
+                          <RigidBody DEF="hanim_vt6">
+                            <CollidableShape DEF="hanim_t6"><InlineGeometry url="&quot;t6.x3d&quot;" containerField="shape" /></CollidableShape>
+                            </RigidBody>
+                        <RigidBody DEF="hanim_l_rib6_joint"><CollidableShape DEF="hanim_l_rib6_segment"><InlineGeometry url="&quot;lrib6.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                            <RigidBody DEF="hanim_r_rib6_joint"><CollidableShape DEF="hanim_r_rib6_segment"><InlineGeometry url="&quot;rrib6.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                            <RigidBody DEF="hanim_vt6_disc_joint"><CollidableShape DEF="hanim_t6_disc_segment"><InlineGeometry url="&quot;t6disc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+
+                            <RigidBody DEF="hanim_vt5">
+                              <CollidableShape DEF="hanim_t5"><InlineGeometry url="&quot;t5.x3d&quot;" containerField="shape" /></CollidableShape>
+                              </RigidBody>
+                          <RigidBody DEF="hanim_l_rib5_joint"><CollidableShape DEF="hanim_l_rib5_segment"><InlineGeometry url="&quot;lrib5.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                              <RigidBody DEF="hanim_r_rib5_joint"><CollidableShape DEF="hanim_r_rib5_segment"><InlineGeometry url="&quot;rrib5.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                              <RigidBody DEF="hanim_vt5_disc_joint"><CollidableShape DEF="hanim_t5_disc_segment"><InlineGeometry url="&quot;t5disc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+
+                              <RigidBody DEF="hanim_vt4">
+                                <CollidableShape DEF="hanim_t4"><InlineGeometry url="&quot;t4.x3d&quot;" containerField="shape" /></CollidableShape>
+                                </RigidBody>
+                            <RigidBody DEF="hanim_l_rib4_joint"><CollidableShape DEF="hanim_l_rib4_segment"><InlineGeometry url="&quot;lrib4.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                <RigidBody DEF="hanim_r_rib4_joint"><CollidableShape DEF="hanim_r_rib4_segment"><InlineGeometry url="&quot;rrib4.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                <RigidBody DEF="hanim_vt4_disc_joint"><CollidableShape DEF="hanim_t4_disc_segment"><InlineGeometry url="&quot;t4disc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+
+                                <RigidBody DEF="hanim_vt3">
+                                  <CollidableShape DEF="hanim_t3"><InlineGeometry url="&quot;t3.x3d&quot;" containerField="shape" /></CollidableShape>
+                                  </RigidBody>
+                              <RigidBody DEF="hanim_l_rib3_joint"><CollidableShape DEF="hanim_l_rib3_segment"><InlineGeometry url="&quot;lrib3.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                  <RigidBody DEF="hanim_r_rib3_joint"><CollidableShape DEF="hanim_r_rib3_segment"><InlineGeometry url="&quot;rrib3.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                  <RigidBody DEF="hanim_vt3_disc_joint"><CollidableShape DEF="hanim_t3_disc_segment"><InlineGeometry url="&quot;t3disc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+
+                                  <RigidBody DEF="hanim_vt2">
+                                    <CollidableShape DEF="hanim_t2"><InlineGeometry url="&quot;t2.x3d&quot;" containerField="shape" /></CollidableShape>
+                                    </RigidBody>
+                                <RigidBody DEF="hanim_l_rib2_joint"><CollidableShape DEF="hanim_l_rib2_segment"><InlineGeometry url="&quot;lrib2.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                    <RigidBody DEF="hanim_r_rib2_joint"><CollidableShape DEF="hanim_r_rib2_segment"><InlineGeometry url="&quot;rrib2.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                    <RigidBody DEF="hanim_vt2_disc_joint"><CollidableShape DEF="hanim_t2_disc_segment"><InlineGeometry url="&quot;t2disc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+
+                                    <RigidBody DEF="hanim_vt1">
+                                      <CollidableShape DEF="hanim_t1"><InlineGeometry url="&quot;t.x3d&quot;" containerField="shape" /></CollidableShape>
+                                      </RigidBody>
+                                  <RigidBody DEF="hanim_l_rib1_joint"><CollidableShape DEF="hanim_l_rib1_segment"><InlineGeometry url="&quot;lrrib.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                      <RigidBody DEF="hanim_r_rib1_joint"><CollidableShape DEF="hanim_r_rib1_segment"><InlineGeometry url="&quot;rrrib.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                      <RigidBody DEF="hanim_vt1_disc_joint"><CollidableShape DEF="hanim_t1_disc_segment"><InlineGeometry url="&quot;t1disc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+
+                                      
+                                      <RigidBody DEF="hanim_sternum_joint">
+                                        <CollidableShape DEF="hanim_sternum_segment"><InlineGeometry url="&quot;sternum.x3d&quot;" containerField="shape" /></CollidableShape>
+                                        </RigidBody>
+
+                                      
+                                      <RigidBody DEF="hanim_l_sternoclavicular">
+                                        <CollidableShape DEF="hanim_l_clavicle"><InlineGeometry url="&quot;lclavcle.x3d&quot;" containerField="shape" /></CollidableShape>
+                                        </RigidBody>
+
+                                      
+                                      <RigidBody DEF="hanim_r_sternoclavicular">
+                                        <CollidableShape DEF="hanim_r_clavicle"><InlineGeometry url="&quot;rclavcle.x3d&quot;" containerField="shape" /></CollidableShape>
+                                        </RigidBody>
+
+                                      <RigidBody DEF="hanim_vc7">
+                                        <CollidableShape DEF="hanim_c7"><InlineGeometry url="&quot;c7.x3d&quot;" containerField="shape" /></CollidableShape>
+                                        </RigidBody>
+
+                                    <RigidBody DEF="hanim_lum_joint"><CollidableShape DEF="hanim_lum_segment"><InlineGeometry url="&quot;lum.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                        <RigidBody DEF="hanim_l_costal_cartilage_joint"><CollidableShape DEF="hanim_l_costal_cartilage_segment"><InlineGeometry url="&quot;lcoscart.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                        <RigidBody DEF="hanim_r_costal_cartilage_joint"><CollidableShape DEF="hanim_r_costal_cartilage_segment"><InlineGeometry url="&quot;rcoscart.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                        <RigidBody DEF="hanim_lccart_joint"><CollidableShape DEF="hanim_lccart_segment"><InlineGeometry url="&quot;lccart.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                        <RigidBody DEF="hanim_rccart_joint"><CollidableShape DEF="hanim_rccart_segment"><InlineGeometry url="&quot;rccart.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                        <RigidBody DEF="hanim_lccart2_joint"><CollidableShape DEF="hanim_lccart2_segment"><InlineGeometry url="&quot;lccart2.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                        <RigidBody DEF="hanim_rccart2_joint"><CollidableShape DEF="hanim_rccart2_segment"><InlineGeometry url="&quot;rccart2.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                        <RigidBody DEF="hanim_lfreecrt_joint"><CollidableShape DEF="hanim_lfreecrt_segment"><InlineGeometry url="&quot;lfreecrt.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                        <RigidBody DEF="hanim_rfreecrt_joint"><CollidableShape DEF="hanim_rfreecrt_segment"><InlineGeometry url="&quot;rfreecrt.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                      <RigidBody DEF="hanim_l_acromioclavicular">
+                                          <CollidableShape DEF="hanim_l_scapula"><InlineGeometry url="&quot;lscapula.x3d&quot;" containerField="shape" /></CollidableShape>
+                                          </RigidBody>
+                                      <RigidBody DEF="hanim_l_shoulder">
+                                            <CollidableShape DEF="hanim_l_upperarm"><InlineGeometry url="&quot;lhumrus.x3d&quot;" containerField="shape" /></CollidableShape>
+                                            </RigidBody>
+                                        <RigidBody DEF="hanim_l_elbow">
+                                              <CollidableShape DEF="hanim_l_forearm"><InlineGeometry url="&quot;lradius.x3d&quot;" containerField="shape" /></CollidableShape>
+                                              </RigidBody>
+                                          <RigidBody DEF="hanim_l_radioulnar">
+                                                <CollidableShape DEF="hanim_l_ulna_segment"><InlineGeometry url="&quot;lulna.x3d&quot;" containerField="shape" /></CollidableShape>
+                                              </RigidBody>
+                                              <RigidBody DEF="hanim_l_wrist">
+                                                <CollidableShape DEF="hanim_l_carpal_scaphoid"><InlineGeometry url="&quot;lscphoid.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                </RigidBody>
+                                            <RigidBody DEF="hanim_l_carpal_capitate_joint"><CollidableShape DEF="hanim_l_carpal_capitate_segment"><InlineGeometry url="&quot;lcaptate.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                <RigidBody DEF="hanim_l_carpal_hamate_joint"><CollidableShape DEF="hanim_l_carpal_hamate_segment"><InlineGeometry url="&quot;lhamate.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                <RigidBody DEF="hanim_l_carpal_lunate_joint"><CollidableShape DEF="hanim_l_carpal_lunate_segment"><InlineGeometry url="&quot;llunate.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                <RigidBody DEF="hanim_l_carpal_pisiform_joint"><CollidableShape DEF="hanim_l_carpal_pisiform_segment"><InlineGeometry url="&quot;lpisform.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                <RigidBody DEF="hanim_l_carpal_trapezium_joint"><CollidableShape DEF="hanim_l_carpal_trapezium_segment"><InlineGeometry url="&quot;ltrpzium.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                <RigidBody DEF="hanim_l_carpal_trapezoid_joint"><CollidableShape DEF="hanim_l_carpal_trapezoid_segment"><InlineGeometry url="&quot;ltrpzoid.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                <RigidBody DEF="hanim_l_carpal_triquetral_joint"><CollidableShape DEF="hanim_l_carpal_triquetral_segment"><InlineGeometry url="&quot;ltrqtral.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                <RigidBody DEF="hanim_l_carpometacarpal_1">
+                                                  <CollidableShape DEF="hanim_l_metacarpal_1"><InlineGeometry url="&quot;lmc.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                  </RigidBody>
+                                                <RigidBody DEF="hanim_l_carpometacarpal_2">
+                                                  <CollidableShape DEF="hanim_l_metacarpal_2"><InlineGeometry url="&quot;lmc2.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                  </RigidBody>
+                                                <RigidBody DEF="hanim_l_carpometacarpal_3">
+                                                  <CollidableShape DEF="hanim_l_metacarpal_3"><InlineGeometry url="&quot;lmc3.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                  </RigidBody>
+                                                <RigidBody DEF="hanim_l_carpometacarpal_4">
+                                                  <CollidableShape DEF="hanim_l_metacarpal_4"><InlineGeometry url="&quot;lmc4.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                  </RigidBody>
+                                                <RigidBody DEF="hanim_l_carpometacarpal_5">
+                                                  <CollidableShape DEF="hanim_l_metacarpal_5"><InlineGeometry url="&quot;lmc5.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                  </RigidBody>
+                                              <RigidBody DEF="hanim_l_metacarpophalangeal_1">
+                                                    <CollidableShape DEF="hanim_l_proximal_phalanx_1"><InlineGeometry url="&quot;lpphal.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                    </RigidBody>
+                                                <RigidBody DEF="hanim_l_interphalangeal_1">
+                                                      <CollidableShape DEF="hanim_l_distal_phalanx_1"><InlineGeometry url="&quot;ldphal.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                    </RigidBody>
+                                                  <RigidBody DEF="hanim_l_metacarpophalangeal_2">
+                                                    <CollidableShape DEF="hanim_l_proximal_phalanx_2"><InlineGeometry url="&quot;lpphal2.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                    </RigidBody>
+                                                <RigidBody DEF="hanim_l_proximal_interphalangeal_2">
+                                                      <CollidableShape DEF="hanim_l_middle_phalanx_2"><InlineGeometry url="&quot;lmphal2.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                      </RigidBody>
+                                                  <RigidBody DEF="hanim_l_distal_interphalangeal_2">
+                                                        <CollidableShape DEF="hanim_l_distal_phalanx_2"><InlineGeometry url="&quot;ldphal2.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                      </RigidBody>
+                                                    <RigidBody DEF="hanim_l_metacarpophalangeal_3">
+                                                    <CollidableShape DEF="hanim_l_proximal_phalanx_3"><InlineGeometry url="&quot;lpphal3.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                    </RigidBody>
+                                                <RigidBody DEF="hanim_l_proximal_interphalangeal_3">
+                                                      <CollidableShape DEF="hanim_l_middle_phalanx_3"><InlineGeometry url="&quot;lmphal3.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                      </RigidBody>
+                                                  <RigidBody DEF="hanim_l_distal_interphalangeal_3">
+                                                        <CollidableShape DEF="hanim_l_distal_phalanx_3"><InlineGeometry url="&quot;ldphal3.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                      </RigidBody>
+                                                    <RigidBody DEF="hanim_l_metacarpophalangeal_4">
+                                                    <CollidableShape DEF="hanim_l_proximal_phalanx_4"><InlineGeometry url="&quot;lpphal4.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                    </RigidBody>
+                                                <RigidBody DEF="hanim_l_proximal_interphalangeal_4">
+                                                      <CollidableShape DEF="hanim_l_middle_phalanx_4"><InlineGeometry url="&quot;lmphal4.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                      </RigidBody>
+                                                  <RigidBody DEF="hanim_l_distal_interphalangeal_4">
+                                                        <CollidableShape DEF="hanim_l_distal_phalanx_4"><InlineGeometry url="&quot;ldphal4.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                      </RigidBody>
+                                                    <RigidBody DEF="hanim_l_metacarpophalangeal_5">
+                                                    <CollidableShape DEF="hanim_l_proximal_phalanx_5"><InlineGeometry url="&quot;lpphal5.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                    </RigidBody>
+                                                <RigidBody DEF="hanim_l_proximal_interphalangeal_5">
+                                                      <CollidableShape DEF="hanim_l_middle_phalanx_5"><InlineGeometry url="&quot;lmphal5.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                      </RigidBody>
+                                                  <RigidBody DEF="hanim_l_distal_interphalangeal_5">
+                                                        <CollidableShape DEF="hanim_l_distal_phalanx_5"><InlineGeometry url="&quot;ldphal5.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                      </RigidBody>
+                                                    <RigidBody DEF="hanim_r_acromioclavicular">
+                                          <CollidableShape DEF="hanim_r_scapula"><InlineGeometry url="&quot;rscapula.x3d&quot;" containerField="shape" /></CollidableShape>
+                                          </RigidBody>
+                                      <RigidBody DEF="hanim_r_shoulder">
+                                            <CollidableShape DEF="hanim_r_upperarm"><InlineGeometry url="&quot;rhumerus.x3d&quot;" containerField="shape" /></CollidableShape>
+                                            </RigidBody>
+                                        <RigidBody DEF="hanim_r_elbow">
+                                              <CollidableShape DEF="hanim_r_forearm"><InlineGeometry url="&quot;rradius.x3d&quot;" containerField="shape" /></CollidableShape>
+                                              </RigidBody>
+                                          <RigidBody DEF="hanim_r_radioulnar">
+                                                <CollidableShape DEF="hanim_r_ulna_segment"><InlineGeometry url="&quot;rulna.x3d&quot;" containerField="shape" /></CollidableShape>
+                                              </RigidBody>
+                                              <RigidBody DEF="hanim_r_wrist">
+                                                <CollidableShape DEF="hanim_r_carpal_scaphoid"><InlineGeometry url="&quot;rscphoid.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                </RigidBody>
+                                            <RigidBody DEF="hanim_r_carpal_capitate_joint"><CollidableShape DEF="hanim_r_carpal_capitate_segment"><InlineGeometry url="&quot;rcaptate.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                <RigidBody DEF="hanim_r_carpal_hamate_joint"><CollidableShape DEF="hanim_r_carpal_hamate_segment"><InlineGeometry url="&quot;rhamate.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                <RigidBody DEF="hanim_r_carpal_lunate_joint"><CollidableShape DEF="hanim_r_carpal_lunate_segment"><InlineGeometry url="&quot;rlunate.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                <RigidBody DEF="hanim_r_carpal_pisiform_joint"><CollidableShape DEF="hanim_r_carpal_pisiform_segment"><InlineGeometry url="&quot;rpisform.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                <RigidBody DEF="hanim_r_carpal_trapezium_joint"><CollidableShape DEF="hanim_r_carpal_trapezium_segment"><InlineGeometry url="&quot;rtrpzium.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                <RigidBody DEF="hanim_r_carpal_trapezoid_joint"><CollidableShape DEF="hanim_r_carpal_trapezoid_segment"><InlineGeometry url="&quot;rtrpzoid.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                <RigidBody DEF="hanim_r_carpal_triquetral_joint"><CollidableShape DEF="hanim_r_carpal_triquetral_segment"><InlineGeometry url="&quot;rtrqtral.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                <RigidBody DEF="hanim_r_carpometacarpal_1">
+                                                  <CollidableShape DEF="hanim_r_metacarpal_1"><InlineGeometry url="&quot;rmc.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                  </RigidBody>
+                                                <RigidBody DEF="hanim_r_carpometacarpal_2">
+                                                  <CollidableShape DEF="hanim_r_metacarpal_2"><InlineGeometry url="&quot;rmc2.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                  </RigidBody>
+                                                <RigidBody DEF="hanim_r_carpometacarpal_3">
+                                                  <CollidableShape DEF="hanim_r_metacarpal_3"><InlineGeometry url="&quot;rmc3.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                  </RigidBody>
+                                                <RigidBody DEF="hanim_r_carpometacarpal_4">
+                                                  <CollidableShape DEF="hanim_r_metacarpal_4"><InlineGeometry url="&quot;rmc4.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                  </RigidBody>
+                                                <RigidBody DEF="hanim_r_carpometacarpal_5">
+                                                  <CollidableShape DEF="hanim_r_metacarpal_5"><InlineGeometry url="&quot;rmc5.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                  </RigidBody>
+                                              <RigidBody DEF="hanim_r_metacarpophalangeal_1">
+                                                    <CollidableShape DEF="hanim_r_proximal_phalanx_1"><InlineGeometry url="&quot;rpphal.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                    </RigidBody>
+                                                <RigidBody DEF="hanim_r_interphalangeal_1">
+                                                      <CollidableShape DEF="hanim_r_distal_phalanx_1"><InlineGeometry url="&quot;rdphal.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                    </RigidBody>
+                                                  <RigidBody DEF="hanim_r_metacarpophalangeal_2">
+                                                    <CollidableShape DEF="hanim_r_proximal_phalanx_2"><InlineGeometry url="&quot;rpphal2.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                    </RigidBody>
+                                                <RigidBody DEF="hanim_r_proximal_interphalangeal_2">
+                                                      <CollidableShape DEF="hanim_r_middle_phalanx_2"><InlineGeometry url="&quot;rmphal2.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                      </RigidBody>
+                                                  <RigidBody DEF="hanim_r_distal_interphalangeal_2">
+                                                        <CollidableShape DEF="hanim_r_distal_phalanx_2"><InlineGeometry url="&quot;rdphal2.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                      </RigidBody>
+                                                    <RigidBody DEF="hanim_r_metacarpophalangeal_3">
+                                                    <CollidableShape DEF="hanim_r_proximal_phalanx_3"><InlineGeometry url="&quot;rpphal3.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                    </RigidBody>
+                                                <RigidBody DEF="hanim_r_proximal_interphalangeal_3">
+                                                      <CollidableShape DEF="hanim_r_middle_phalanx_3"><InlineGeometry url="&quot;rmphal3.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                      </RigidBody>
+                                                  <RigidBody DEF="hanim_r_distal_interphalangeal_3">
+                                                        <CollidableShape DEF="hanim_r_distal_phalanx_3"><InlineGeometry url="&quot;rdphal3.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                      </RigidBody>
+                                                    <RigidBody DEF="hanim_r_metacarpophalangeal_4">
+                                                    <CollidableShape DEF="hanim_r_proximal_phalanx_4"><InlineGeometry url="&quot;rpphal4.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                    </RigidBody>
+                                                <RigidBody DEF="hanim_r_proximal_interphalangeal_4">
+                                                      <CollidableShape DEF="hanim_r_middle_phalanx_4"><InlineGeometry url="&quot;rmphal4.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                      </RigidBody>
+                                                  <RigidBody DEF="hanim_r_distal_interphalangeal_4">
+                                                        <CollidableShape DEF="hanim_r_distal_phalanx_4"><InlineGeometry url="&quot;rdphal4.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                      </RigidBody>
+                                                    <RigidBody DEF="hanim_r_metacarpophalangeal_5">
+                                                    <CollidableShape DEF="hanim_r_proximal_phalanx_5"><InlineGeometry url="&quot;rpphal5.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                    </RigidBody>
+                                                <RigidBody DEF="hanim_r_proximal_interphalangeal_5">
+                                                      <CollidableShape DEF="hanim_r_middle_phalanx_5"><InlineGeometry url="&quot;rmphal5.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                      </RigidBody>
+                                                  <RigidBody DEF="hanim_r_distal_interphalangeal_5">
+                                                        <CollidableShape DEF="hanim_r_distal_phalanx_5"><InlineGeometry url="&quot;rdphal5.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                      </RigidBody>
+                                                    <RigidBody DEF="hanim_vc7_disc_joint"><CollidableShape DEF="hanim_c7_disc_segment"><InlineGeometry url="&quot;c7disc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                        <RigidBody DEF="hanim_vc6">
+                                          <CollidableShape DEF="hanim_c6"><InlineGeometry url="&quot;c6.x3d&quot;" containerField="shape" /></CollidableShape>
+                                          </RigidBody>
+                                      <RigidBody DEF="hanim_vc6_disc_joint"><CollidableShape DEF="hanim_c6_disc_segment"><InlineGeometry url="&quot;c6disc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                          <RigidBody DEF="hanim_vc5">
+                                            <CollidableShape DEF="hanim_c5"><InlineGeometry url="&quot;c5.x3d&quot;" containerField="shape" /></CollidableShape>
+                                            </RigidBody>
+                                        <RigidBody DEF="hanim_vc5_disc_joint"><CollidableShape DEF="hanim_c5_disc_segment"><InlineGeometry url="&quot;c5disc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                            <RigidBody DEF="hanim_vc4">
+                                              <CollidableShape DEF="hanim_c4"><InlineGeometry url="&quot;c4.x3d&quot;" containerField="shape" /></CollidableShape>
+                                              </RigidBody>
+                                          <RigidBody DEF="hanim_vc4_disc_joint"><CollidableShape DEF="hanim_c4_disc_segment"><InlineGeometry url="&quot;c4disc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                              <RigidBody DEF="hanim_vc3">
+                                                <CollidableShape DEF="hanim_c3"><InlineGeometry url="&quot;c3.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                </RigidBody>
+                                            <RigidBody DEF="hanim_vc3_disc_joint"><CollidableShape DEF="hanim_c3_disc_segment"><InlineGeometry url="&quot;c3disc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                <RigidBody DEF="hanim_vc2">
+                                                  <CollidableShape DEF="hanim_c2"><InlineGeometry url="&quot;axis.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                  </RigidBody>
+                                              <RigidBody DEF="hanim_vc2_disc_joint"><CollidableShape DEF="hanim_c2_disc_segment"><InlineGeometry url="&quot;c2disc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                  <RigidBody DEF="hanim_vc1">
+                                                    <CollidableShape DEF="hanim_c1"><InlineGeometry url="&quot;atlas.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                    </RigidBody>
+                                                <RigidBody DEF="hanim_skullbase">
+                                                      <CollidableShape DEF="hanim_skull"><InlineGeometry url="&quot;occip.x3d&quot;" containerField="shape" /></CollidableShape>
+                                                      </RigidBody>
+                                                  <RigidBody DEF="hanim_temporomandibular"><CollidableShape DEF="hanim_jaw"><InlineGeometry url="&quot;mand.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      
+                                                      
+                                                      <RigidBody DEF="hanim_ethmoid_joint"><CollidableShape DEF="hanim_ethmoid_segment"><InlineGeometry url="&quot;ethmoid.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_ethmoid2_joint"><CollidableShape DEF="hanim_ethmoid2_segment"><InlineGeometry url="&quot;ethmoid2.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_frontal_joint"><CollidableShape DEF="hanim_frontal_segment"><InlineGeometry url="&quot;frontal.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_inconl_joint"><CollidableShape DEF="hanim_inconl_segment"><InlineGeometry url="&quot;inconl.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_inconr_joint"><CollidableShape DEF="hanim_inconr_segment"><InlineGeometry url="&quot;inconr.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lacl_joint"><CollidableShape DEF="hanim_lacl_segment"><InlineGeometry url="&quot;lacl.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lacr_joint"><CollidableShape DEF="hanim_lacr_segment"><InlineGeometry url="&quot;lacr.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_maxl_joint"><CollidableShape DEF="hanim_maxl_segment"><InlineGeometry url="&quot;maxl.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_maxr_joint"><CollidableShape DEF="hanim_maxr_segment"><InlineGeometry url="&quot;maxr.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_nasall_joint"><CollidableShape DEF="hanim_nasall_segment"><InlineGeometry url="&quot;nasall.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_nasalr_joint"><CollidableShape DEF="hanim_nasalr_segment"><InlineGeometry url="&quot;nasalr.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_palatl_joint"><CollidableShape DEF="hanim_palatl_segment"><InlineGeometry url="&quot;palatl.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_palatr_joint"><CollidableShape DEF="hanim_palatr_segment"><InlineGeometry url="&quot;palatr.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_parietl_joint"><CollidableShape DEF="hanim_parietl_segment"><InlineGeometry url="&quot;parietl.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_parietr_joint"><CollidableShape DEF="hanim_parietr_segment"><InlineGeometry url="&quot;parietr.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_sphenoid_joint"><CollidableShape DEF="hanim_sphenoid_segment"><InlineGeometry url="&quot;sphenoid.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_templ_joint"><CollidableShape DEF="hanim_templ_segment"><InlineGeometry url="&quot;templ.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_tempr_joint"><CollidableShape DEF="hanim_tempr_segment"><InlineGeometry url="&quot;tempr.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_vom_joint"><CollidableShape DEF="hanim_vom_segment"><InlineGeometry url="&quot;vom.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_zygol_joint"><CollidableShape DEF="hanim_zygol_segment"><InlineGeometry url="&quot;zygol.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_zygor_joint"><CollidableShape DEF="hanim_zygor_segment"><InlineGeometry url="&quot;zygor.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lcartend_joint"><CollidableShape DEF="hanim_lcartend_segment"><InlineGeometry url="&quot;lcartend.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rcartend_joint"><CollidableShape DEF="hanim_rcartend_segment"><InlineGeometry url="&quot;rcartend.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+
+                                                      
+                                                      <RigidBody DEF="hanim_lcaninec_joint"><CollidableShape DEF="hanim_lcaninec_segment"><InlineGeometry url="&quot;lcaninec.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lcaniner_joint"><CollidableShape DEF="hanim_lcaniner_segment"><InlineGeometry url="&quot;lcaniner.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lcaninlc_joint"><CollidableShape DEF="hanim_lcaninlc_segment"><InlineGeometry url="&quot;lcaninlc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lcaninlr_joint"><CollidableShape DEF="hanim_lcaninlr_segment"><InlineGeometry url="&quot;lcaninlr.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lcenincc_joint"><CollidableShape DEF="hanim_lcenincc_segment"><InlineGeometry url="&quot;lcenincc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lcenincr_joint"><CollidableShape DEF="hanim_lcenincr_segment"><InlineGeometry url="&quot;lcenincr.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lceninlc_joint"><CollidableShape DEF="hanim_lceninlc_segment"><InlineGeometry url="&quot;lceninlc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lceninlr_joint"><CollidableShape DEF="hanim_lceninlr_segment"><InlineGeometry url="&quot;lceninlr.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_llatincc_joint"><CollidableShape DEF="hanim_llatincc_segment"><InlineGeometry url="&quot;llatincc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_llatincr_joint"><CollidableShape DEF="hanim_llatincr_segment"><InlineGeometry url="&quot;llatincr.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_llatinlc_joint"><CollidableShape DEF="hanim_llatinlc_segment"><InlineGeometry url="&quot;llatinlc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_llatinlr_joint"><CollidableShape DEF="hanim_llatinlr_segment"><InlineGeometry url="&quot;llatinlr.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lmolar1c_joint"><CollidableShape DEF="hanim_lmolar1c_segment"><InlineGeometry url="&quot;lmolar1c.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lmolar1r_joint"><CollidableShape DEF="hanim_lmolar1r_segment"><InlineGeometry url="&quot;lmolar1r.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lmolar2c_joint"><CollidableShape DEF="hanim_lmolar2c_segment"><InlineGeometry url="&quot;lmolar2c.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lmolar2r_joint"><CollidableShape DEF="hanim_lmolar2r_segment"><InlineGeometry url="&quot;lmolar2r.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lmolar3c_joint"><CollidableShape DEF="hanim_lmolar3c_segment"><InlineGeometry url="&quot;lmolar3c.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lmolar3r_joint"><CollidableShape DEF="hanim_lmolar3r_segment"><InlineGeometry url="&quot;lmolar3r.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lmolr1lc_joint"><CollidableShape DEF="hanim_lmolr1lc_segment"><InlineGeometry url="&quot;lmolr1lc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lmolr1lr_joint"><CollidableShape DEF="hanim_lmolr1lr_segment"><InlineGeometry url="&quot;lmolr1lr.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lmolr2lc_joint"><CollidableShape DEF="hanim_lmolr2lc_segment"><InlineGeometry url="&quot;lmolr2lc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lmolr2lr_joint"><CollidableShape DEF="hanim_lmolr2lr_segment"><InlineGeometry url="&quot;lmolr2lr.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lmolr3lc_joint"><CollidableShape DEF="hanim_lmolr3lc_segment"><InlineGeometry url="&quot;lmolr3lc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lmolr3lr_joint"><CollidableShape DEF="hanim_lmolr3lr_segment"><InlineGeometry url="&quot;lmolr3lr.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lprem1lc_joint"><CollidableShape DEF="hanim_lprem1lc_segment"><InlineGeometry url="&quot;lprem1lc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lprem1lr_joint"><CollidableShape DEF="hanim_lprem1lr_segment"><InlineGeometry url="&quot;lprem1lr.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lprem2lc_joint"><CollidableShape DEF="hanim_lprem2lc_segment"><InlineGeometry url="&quot;lprem2lc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lprem2lr_joint"><CollidableShape DEF="hanim_lprem2lr_segment"><InlineGeometry url="&quot;lprem2lr.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lpreo1lc_joint"><CollidableShape DEF="hanim_lpreo1lc_segment"><InlineGeometry url="&quot;lpreo1lc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lpreol1r_joint"><CollidableShape DEF="hanim_lpreol1r_segment"><InlineGeometry url="&quot;lpreol1r.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lpreol2c_joint"><CollidableShape DEF="hanim_lpreol2c_segment"><InlineGeometry url="&quot;lpreol2c.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_lpreol2r_joint"><CollidableShape DEF="hanim_lpreol2r_segment"><InlineGeometry url="&quot;lpreol2r.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+
+                                                      <RigidBody DEF="hanim_rcaninec_joint"><CollidableShape DEF="hanim_rcaninec_segment"><InlineGeometry url="&quot;rcaninec.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rcaniner_joint"><CollidableShape DEF="hanim_rcaniner_segment"><InlineGeometry url="&quot;rcaniner.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rcaninlc_joint"><CollidableShape DEF="hanim_rcaninlc_segment"><InlineGeometry url="&quot;rcaninlc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rcaninlr_joint"><CollidableShape DEF="hanim_rcaninlr_segment"><InlineGeometry url="&quot;rcaninlr.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rcenincc_joint"><CollidableShape DEF="hanim_rcenincc_segment"><InlineGeometry url="&quot;rcenincc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rcenincr_joint"><CollidableShape DEF="hanim_rcenincr_segment"><InlineGeometry url="&quot;rcenincr.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rceninlc_joint"><CollidableShape DEF="hanim_rceninlc_segment"><InlineGeometry url="&quot;rceninlc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rceninlr_joint"><CollidableShape DEF="hanim_rceninlr_segment"><InlineGeometry url="&quot;rceninlr.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rlatincc_joint"><CollidableShape DEF="hanim_rlatincc_segment"><InlineGeometry url="&quot;rlatincc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rlatincr_joint"><CollidableShape DEF="hanim_rlatincr_segment"><InlineGeometry url="&quot;rlatincr.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rlatinlc_joint"><CollidableShape DEF="hanim_rlatinlc_segment"><InlineGeometry url="&quot;rlatinlc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rlatinlr_joint"><CollidableShape DEF="hanim_rlatinlr_segment"><InlineGeometry url="&quot;rlatinlr.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rmolar1c_joint"><CollidableShape DEF="hanim_rmolar1c_segment"><InlineGeometry url="&quot;rmolar1c.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rmolar1r_joint"><CollidableShape DEF="hanim_rmolar1r_segment"><InlineGeometry url="&quot;rmolar1r.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rmolar2c_joint"><CollidableShape DEF="hanim_rmolar2c_segment"><InlineGeometry url="&quot;rmolar2c.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rmolar2r_joint"><CollidableShape DEF="hanim_rmolar2r_segment"><InlineGeometry url="&quot;rmolar2r.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rmolar3c_joint"><CollidableShape DEF="hanim_rmolar3c_segment"><InlineGeometry url="&quot;rmolar3c.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rmolar3r_joint"><CollidableShape DEF="hanim_rmolar3r_segment"><InlineGeometry url="&quot;rmolar3r.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rmolr1lc_joint"><CollidableShape DEF="hanim_rmolr1lc_segment"><InlineGeometry url="&quot;rmolr1lc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rmolr1lr_joint"><CollidableShape DEF="hanim_rmolr1lr_segment"><InlineGeometry url="&quot;rmolr1lr.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rmolr2lc_joint"><CollidableShape DEF="hanim_rmolr2lc_segment"><InlineGeometry url="&quot;rmolr2lc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rmolr2lr_joint"><CollidableShape DEF="hanim_rmolr2lr_segment"><InlineGeometry url="&quot;rmolr2lr.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rmolr3lc_joint"><CollidableShape DEF="hanim_rmolr3lc_segment"><InlineGeometry url="&quot;rmolr3lc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rmolr3lr_joint"><CollidableShape DEF="hanim_rmolr3lr_segment"><InlineGeometry url="&quot;rmolr3lr.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rprem1lc_joint"><CollidableShape DEF="hanim_rprem1lc_segment"><InlineGeometry url="&quot;rprem1lc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rprem1lr_joint"><CollidableShape DEF="hanim_rprem1lr_segment"><InlineGeometry url="&quot;rprem1lr.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rprem2lc_joint"><CollidableShape DEF="hanim_rprem2lc_segment"><InlineGeometry url="&quot;rprem2lc.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rprem2lr_joint"><CollidableShape DEF="hanim_rprem2lr_segment"><InlineGeometry url="&quot;rprem2lr.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rpreol1c_joint"><CollidableShape DEF="hanim_rpreol1c_segment"><InlineGeometry url="&quot;rpreol1c.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rpreol1r_joint"><CollidableShape DEF="hanim_rpreol1r_segment"><InlineGeometry url="&quot;rpreol1r.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rpreol2c_joint"><CollidableShape DEF="hanim_rpreol2c_segment"><InlineGeometry url="&quot;rpreol2c.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                      <RigidBody DEF="hanim_rpreol2r_joint"><CollidableShape DEF="hanim_rpreol2r_segment"><InlineGeometry url="&quot;rpreol2r.x3d&quot;" containerField="shape" /></CollidableShape></RigidBody>
+                                                    </RigidBodyCollection>
+   </Transform>
+  </Transform>
+ </Transform>
+</Transform>
+
+    <Group DEF="UserInterface">
+      <Transform DEF="CoordinateAxesAdjustedScale" scale="0.175 0.175 0.175">
+        <Inline DEF="CoordinateAxes" url="&quot;JointCoordinateAxes.x3d&quot; &quot;../../X3dForWebAuthors/Chapter03-Grouping/CoordinateAxes.x3d&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03-Grouping/CoordinateAxes.x3d&quot; &quot;../../X3dForWebAuthors/Chapter03-Grouping/CoordinateAxes.wrl&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03-Grouping/CoordinateAxes.wrl&quot;" />
+      </Transform>
+    </Group>
+
+</Scene>
+</X3D>
