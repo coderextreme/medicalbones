@@ -1,0 +1,3 @@
+skeleton1_hanim.x3d
+skeleton1_hanim_LOA4.x3d
+hanim/skeleton1base_hanim.x3d

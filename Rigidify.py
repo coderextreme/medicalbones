@@ -21,36 +21,70 @@ class Rigidify:
         self.readXML(INPUT_FILE)
         parent_map = {c: p for p in self.root.iter() for c in p}
 
+        scene = self.root.find('.//Scene')
+        humanoids = []
+
+        for humanoid_index, humanoid in enumerate(self.root.findall('.//HAnimHumanoid')):
+            humanoids.append(copy.deepcopy(humanoid))
+
         for humanoid_index, humanoid in enumerate(self.root.findall('.//HAnimHumanoid')):
             humanoid.tag = "RigidBodyCollection"
             humanoid.attrib.pop('name', None)
+            # humanoid.set('DEF', humanoid.get('DEF')+"_rbc")
+            humanoid.set('gravity', "0 -9.8 0")
             humanoid.attrib.pop('loa', None)
             humanoid.attrib.pop('version', None)
 
         for joint_index, joint in enumerate(self.root.findall('.//HAnimJoint')):
             if joint.get('USE') is not None:
                 parent_map[joint].remove(joint)
+            else:
+                jointDEF = joint.get('DEF')
+                joint.set('DEF', jointDEF+"_rb")
+
+                routepos = xml.etree.ElementTree.SubElement(scene, "ROUTE")
+                routepos.set('fromNode', jointDEF+"_rb")
+                routepos.set('toNode', jointDEF)
+                routepos.set('fromField', "position")
+                routepos.set('toField', "translation")
+                routepos.tail = '\n'
+
+                routerot = xml.etree.ElementTree.SubElement(scene, "ROUTE")
+                routerot.set('fromNode', jointDEF+"_rb")
+                routerot.set('toNode', jointDEF)
+                routerot.set('fromField', "orientation")
+                routerot.set('toField', "rotation")
+                routerot.tail = '\n'
+
             joint.tag = "RigidBody"
             joint.attrib.pop('name', None)
-            joint.attrib.pop('containerField', None)
+            joint.set('containerField', "bodies")
+            joint.set('mass', "0.5")
 
         for segment_index, segment in enumerate(self.root.findall('.//HAnimSegment')):
             segment.tag = "CollidableShape"
             segment.attrib.pop('name', None)
-            for inline_index, inline in enumerate(segment.findall('Inline')):
-                inline.tag = "InlineGeometry"
-                inline.set('containerField', "shape")
+            segment.set('DEF', segment.get('DEF')+"_cs")
+            segment.set('containerField', "geometry")
+            for shape_index, shape in enumerate(segment.findall('Shape')):
+                shapeDEF = shape.get('DEF')
+                shape.attrib.clear()
+                shape.clear()
+                shape.set('containerField', "shape")
+                shape.set('USE', shapeDEF)
 
         for humanoid_index, humanoid in enumerate(self.root.findall('.//RigidBodyCollection')):
             for body_index, body in enumerate(humanoid.findall('.//RigidBody')):
                 for subbody_index, subbody in enumerate(body.findall('RigidBody')):
                     if parent_map[subbody] != humanoid:
-                        print(f" remove {subbody.get('DEF')} from {parent_map[subbody].get('DEF')}")
                         humanoid.append(subbody)
                         parent_map[subbody].remove(subbody)
+
+        for humanoid_index, humanoid in enumerate(humanoids):
+            scene.insert(0, humanoid)
 
         self.writeXML(OUTPUT_FILE)
 
 skeleton = Rigidify()
 
-skeleton.rigidify("0scaled/0skeleton1AImapped.x3d", "0scaled/0RigidBody.x3d")
+skeleton.rigidify("0scaled/0skeleton1scaled.x3d", "0scaled/0RigidBody.x3d")

@@ -102,6 +102,8 @@ class Explode:
                 out_joint.tail = "\n"
                 out_joint.set("DEF", "hanim_joint_"+shapeDEF)
                 out_joint.set("name", "joint_"+shapeDEF)
+                # No hierarchy!
+                out_joint.set("containerField", "skeleton")
 
                 if humanoid is None:
                     humanoid = xml.etree.ElementTree.Element('HAnimHumanoid')
@@ -111,7 +113,6 @@ class Explode:
                     parent = parent_map[shape]
                     index = list(parent).index(shape)
                     parent.insert(index, humanoid)
-                    out_joint.set("containerField", "skeleton")
 
                 humanoid.append(out_joint)
 
@@ -122,34 +123,34 @@ class Explode:
                 use_joint.set("USE", "hanim_joint_"+shapeDEF)
                 humanoid.append(use_joint)
 
-                in_joint = xml.etree.ElementTree.Element('HAnimJoint')
-                in_joint.text = "\n"
-                in_joint.tail = "\n"
-                in_joint.set("DEF", "hanim_joint_"+shapeDEF+"_center")
-                in_joint.set("name", "joint_"+shapeDEF+"_center")
-                out_joint.append(in_joint)
+                #in_joint = xml.etree.ElementTree.Element('HAnimJoint')
+                #in_joint.text = "\n"
+                #in_joint.tail = "\n"
+                #in_joint.set("DEF", "hanim_joint_"+shapeDEF+"_center")
+                #in_joint.set("name", "joint_"+shapeDEF+"_center")
+                #out_joint.append(in_joint)
 
-                use_joint_center = xml.etree.ElementTree.Element('HAnimJoint')
-                use_joint_center.text = "\n"
-                use_joint_center.tail = "\n"
-                use_joint_center.set("containerField", "joints")
-                use_joint_center.set("USE", "hanim_joint_"+shapeDEF+"_center")
-                humanoid.append(use_joint_center)
+                #use_joint_center = xml.etree.ElementTree.Element('HAnimJoint')
+                #use_joint_center.text = "\n"
+                #use_joint_center.tail = "\n"
+                #use_joint_center.set("containerField", "joints")
+                #use_joint_center.set("USE", "hanim_joint_"+shapeDEF+"_center")
+                #humanoid.append(use_joint_center)
 
                 segment = xml.etree.ElementTree.Element('HAnimSegment')
                 segment.text = "\n"
                 segment.tail = "\n"
                 segment.set("DEF", "hanim_segment_"+shapeDEF)
                 segment.set("name", "segment_"+shapeDEF)
-                in_joint.append(segment)
+                out_joint.append(segment)
 
-                inline = xml.etree.ElementTree.Element('Inline')
-                inline.text = "\n"
-                inline.tail = "\n"
-                segment.append(inline)
-                # inline.set("url", '"'+out_file+'#'+shape.get("DEF")+'_Geo"')
-                inline.set("url", '"'+out_file+'"')
+                #inline = xml.etree.ElementTree.Element('Inline')
+                #inline.text = "\n"
+                #inline.tail = "\n"
+                #inline.set("url", '"'+out_file+'#'+shape.get("DEF")+'_Geo"')
+                #inline.set("url", '"'+out_file+'"')
                 parent.remove(shape)
+                segment.append(shape)
 
         self.writeXML(OUTPUT_FILE, directory)
 
