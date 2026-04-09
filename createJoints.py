@@ -25,15 +25,15 @@ class Rigidify:
                 joint.set("containerField", 'joints')
                 joint.tail = "\n"
 
-                body1 = xml.etree.ElementTree.SubElement(joint, "RigidBody")
-                elemDEF = elem.get('DEF').replace("_joint", "_rb")
-                body1.set('USE', "hanim_joint_"+elemDEF)
-                body1.set("containerField", 'body1')
-
                 body2 = xml.etree.ElementTree.SubElement(joint, "RigidBody")
-                childDEF = child.get('DEF').replace("_joint", "_rb")
-                body2.set('USE', "hanim_joint_"+childDEF)
+                elemDEF = elem.get('DEF').replace("_joint", "_rb")
+                body2.set('USE', "hanim_joint_"+elemDEF)
                 body2.set("containerField", 'body2')
+
+                body1 = xml.etree.ElementTree.SubElement(joint, "RigidBody")
+                childDEF = child.get('DEF').replace("_joint", "_rb")
+                body1.set('USE', "hanim_joint_"+childDEF)
+                body1.set("containerField", 'body1')
             self.print_hierarchy(child, scene, level + 1)
 
     def rigidify(self, INPUT_FILE, OUTPUT_FILE):
