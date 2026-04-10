@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 4.1//EN" "https://www.web3d.org/specifications/x3d-4.1.dtd"><X3D xmlns:xsd="https://www.w3.org/2001/XMLSchema-instance" profile="Full" version="4.1" xsd:noNamespaceSchemaLocation="https://www.web3d.org/specifications/x3d-4.1.xsd">
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 4.1//EN" "https://www.web3d.org/specifications/x3d-4.1.dtd"><X3D xmlns:ns0="https://www.w3.org/2001/XMLSchema-instance" profile="Full" version="4.1" ns0:noNamespaceSchemaLocation="https://www.web3d.org/specifications/x3d-4.1.xsd">
 <head>
  <component level="3" name="HAnim" />
  <component level="4" name="Networking" />
@@ -8,7 +8,8 @@
  <meta name="generator" content="medicalbones/Explode.py" />
 </head>
 <Scene>
-<Background skyColor='0.3 0.5 0.9'></Background>
+<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 Far" position="0 20.0 100" />
+<Background skyColor="0.3 0.5 0.9" />
 <HAnimHumanoid version="2.0">
 <HAnimJoint DEF="hanim_joint_atlas" name="joint_atlas" containerField="skeleton">
 <HAnimSegment DEF="hanim_segment_atlas" name="segment_atlas">
@@ -4145,17 +4146,10 @@
 <HAnimJoint containerField="joints" USE="hanim_joint_zygor">
 </HAnimJoint>
 </HAnimHumanoid>
-<Shape DEF="box">
- <Appearance>
- <Material diffuseColor="0.5 0.5 0.5" />
- </Appearance>
- <Box size="10 0.1 10"/>
-</Shape>
 <NavigationInfo avatarSize="0.25 1.6 0.75" visibilityLimit="0" speed="1" headlight="false" type="&quot;EXAMINE&quot; &quot;ANY&quot;" />
 
 <DirectionalLight direction="0 1 1" />
 
-<Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 Far" position="0 20.0 100" />
 <Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 Front" position="0 0.4 4" />
 <Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 FrontClose" position="0 0.8 2" />
 <Viewpoint centerOfRotation="0 0 0" description="Humanoid LOA 3 FrontCloser" position="0 1.2 1" />
@@ -4172,11 +4166,7 @@
   <Transform rotation="0 0 1 0">  
    <Transform rotation="0 0 1 0"> 
 
-<RigidBodyCollection gravity="0 -9.8 0">
-<RigidBody DEF="box_rb" containerField="bodies" mass="0">
-<CollidableShape DEF="box_cs" containerField="geometry">
-<Shape containerField="shape" USE="box" /></CollidableShape>
-</RigidBody>
+<RigidBodyCollection gravity="0 -9.8 0" iterations="3">
 <RigidBody DEF="hanim_joint_atlas_rb" containerField="bodies" mass="0.5">
 <CollidableShape DEF="hanim_segment_atlas_cs" containerField="geometry">
 <Shape containerField="shape" USE="atlas" /></CollidableShape>
@@ -5357,7 +5347,15 @@
 <CollidableShape DEF="hanim_segment_zygor_cs" containerField="geometry">
 <Shape containerField="shape" USE="zygor" /></CollidableShape>
 </RigidBody>
-<!--<BallJoint containerField="joints"><RigidBody USE="hanim_joint_hanim_humanoid_root" containerField="body2" /><RigidBody USE="hanim_joint_sacrum_rb" containerField="body1" /></BallJoint>-->
+<CollisionCollection containerField="collider" appliedParameters="&quot;FRICTION_COEFFICIENT_1&quot; &quot;SLIP_COEFFICIENTS&quot;" />
+<RigidBody DEF="box_rb" containerField="bodies" mass="0"><CollidableShape DEF="box_cs" containerField="geometry"><Shape DEF="box" containerField="shape"><Appearance><Material diffuseColor="0.5 0.5 0.5" />
+</Appearance>
+<Sphere radius="3" />
+</Shape>
+</CollidableShape>
+</RigidBody>
+<!--
+<BallJoint containerField="joints"><RigidBody USE="hanim_joint_hanim_humanoid_root" containerField="body2" /><RigidBody USE="hanim_joint_sacrum_rb" containerField="body1" /></BallJoint>-->
 <BallJoint containerField="joints"><RigidBody USE="hanim_joint_sacrum_rb" containerField="body2" /><RigidBody USE="hanim_joint_coccyx_rb" containerField="body1" /></BallJoint>
 <BallJoint containerField="joints"><RigidBody USE="hanim_joint_sacrum_rb" containerField="body2" /><RigidBody USE="hanim_joint_l5_rb" containerField="body1" /></BallJoint>
 <BallJoint containerField="joints"><RigidBody USE="hanim_joint_l5_rb" containerField="body2" /><RigidBody USE="hanim_joint_l5disc_rb" containerField="body1" /></BallJoint>
@@ -5665,6 +5663,7 @@
       </Transform>
     </Group>
 
+<Transform translation="0 -3 0"><Shape USE="box" /></Transform>
 <ROUTE fromNode="hanim_joint_atlas_rb" toNode="hanim_joint_atlas" fromField="position" toField="translation" />
 <ROUTE fromNode="hanim_joint_atlas_rb" toNode="hanim_joint_atlas" fromField="orientation" toField="rotation" />
 <ROUTE fromNode="hanim_joint_axis_rb" toNode="hanim_joint_axis" fromField="position" toField="translation" />
